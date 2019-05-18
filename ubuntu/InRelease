@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Date: Sat, 18 May 2019 06:23:08 UTC
+MD5Sum:
+ 924740b6f959d52e4c1b8c8a5a60d2e0           379056 Packages
+ bf5344568549d07c2e62cbbcfc33bada           130096 Packages.gz
+ 2dc7fe1d15a0d48862e530e80096b320               36 Release
+ cb84bc2269ed79102e85557f59b88677           245130 xenial/Packages
+ 514280d7780a544d7d54b09b80c181f5            84383 xenial/Packages.gz
+ ac37f600a70ddc8ec32a4f1ad204c369             1202 xenial/Release
+SHA1:
+ 39e2e2d8d24c95fe6a9d5368784dfe4860ef1ab7           379056 Packages
+ f7bd73eaeb0b0c709aa83dcb42c64c741ca80046           130096 Packages.gz
+ 2a7b852ef198e8348fe163ee4920180b9be60cdb               36 Release
+ eaf65e562a8f86e560a7be4b731a2d77409b2bac           245130 xenial/Packages
+ 44f7e5f948c503f2185f7f45ecc3629cbc29116e            84383 xenial/Packages.gz
+ 9bcb53216ebcce88b6c718cdbe5a33343496d2d9             1202 xenial/Release
+SHA256:
+ 06ffe86a75b28dd2fa61a3c6a393adceafc05377c79730b41c273b0609094455           379056 Packages
+ 5a261822fafee2cabf36ea7a285ece970c7d45fb1b70f512d20b0a33a9d01603           130096 Packages.gz
+ 0ff2471046c81b7ca53f7996bb47bbe2faaf1a1f00c1e662f3e0198fb9d6ff09               36 Release
+ db105b48a6d76ac4bd45a8f49265365db7f8cf7b8155f7adbfe73ede73384c4e           245130 xenial/Packages
+ f3c09f169b41a104e757614ee2b3f50101260cf0f4cf166a185652bee064fe5b            84383 xenial/Packages.gz
+ 5b18e5a25c3d1a06fa91f7daffe9f57dcb8497c63af7d0ed134c4f45f7267aff             1202 xenial/Release
+SHA512:
+ 9e7c471f4458c5eae41b1dbb5a4faff998c9edcb759f7523a1d1ce6f1640444c386a325b40589a4f673cdac223cb85a7d9a4b15851072b2ae18fe5c54c5b5269           379056 Packages
+ 81cdcf42aa64cd545d13b66dc4bcf080ad14bb12ef0c394e7304c0d6fd55b833851807dfad1c488111cd25b99f1813f3866b1a8e9954e969454940e024fba2b8           130096 Packages.gz
+ 2b2922dfb6657c4e11eb7838e569bec47254b868e3d58deabe6d7c97205a16f092a0958d3b518dc64bdd6666821b0d44cd3e3a053d74114ce72afebb51211047               36 Release
+ 8aed5973e801f7e2158f29c2ffafae3bd0ab6982422a4364f96d8aafa16dac8595688aa4ebe6aaa62406597b2689c695e6656b56d7d606e5c5d830d8f7236382           245130 xenial/Packages
+ c5bcd6e890fcdc0dd04c09883a2429c90127e0f6798208ed9fd6d89070958e97e770a1d41faccb7b8c7431014fef41064a90bafad23a80f69c55f46e4457c9c7            84383 xenial/Packages.gz
+ 7bf3f20059dfde510e92b8c1aa147a504befc052f4fc0d12f5e1ec333586aeb7b2f4cc8e118b59c9bb1942811e960fd3d0fdea370b52fd9a31616904d9192651             1202 xenial/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJc36TdAAoJECbDxdD4N4RS9ykH/jsouS2QnBJRriddN84M0TdF
+/A1TwFjVaDg6e9JNfEQ4QkEtU+PVKHNFUSbPPrysuqa08MiHSVWpOWJEv8jYXhod
+cNvG4VeIu+fHWDDb+YfD+sgjTiBPyi+5+QI4t0fpPYHQq8oZvx1/0CTlSDK5IZe5
+W3BEmeDluSvhosqW7o/IUVofsa31JM3gqZfpzUd4/JitewFpmpLUbkpdrfCzhGnb
+zl5T/wLEsDAYZVG4KYXG4h5w68AC7EbHo58O1erNbfb/4AXH7niYab7QoFY1kHNy
+Sctv8nZfVQ0f9Adu2FeHF0axaV4Tu9m8+XsWSf/K8n0mZkl1uiYPc2OFCjw82ec=
+=WlDL
+-----END PGP SIGNATURE-----
