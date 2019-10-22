@@ -28,7 +28,7 @@ rsa==3.4.2
 pycrypto==2.6.1
 IPy==0.83
 Scrapy==1.4.0
-paramiko==2.4.1
+paramiko==2.4.2
 python-nmap
 pysnmp>=4.3.3
 openpyxl
