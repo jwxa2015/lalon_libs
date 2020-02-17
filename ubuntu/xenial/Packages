@@ -27,6 +27,39 @@ Description: Docker: the open-source application container engine
  for deploying and scaling web apps, databases, and backend services without
  depending on a particular stack or provider.
 
+Package: perl-modules-5.22
+Architecture: all
+Version: 5.22.1-9ubuntu0.6
+Multi-Arch: foreign
+Priority: standard
+Section: perl
+Source: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Niko Tyni <ntyni@debian.org>
+Installed-Size: 17264
+Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcpan-meta-perl, libcpan-meta-requirements-perl, libcpan-meta-yaml-perl, libdigest-perl, libexperimental-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-spec-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libtest-harness-perl, libtest-simple-perl, libtest-tester-perl, libtest-use-ok-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, perl-modules, podlators-perl
+Pre-Depends: dpkg (>= 1.17.17)
+Depends: perl-base (>= 5.22.1-1)
+Recommends: perl (>= 5.22.1-1)
+Conflicts: defoma (<< 0.11.12), mono-gac (<< 2.10.8.1-3), perl-modules
+Breaks: cli-common (<< 0.9+nmu1), libansicolor-perl (<< 4.03), libarchive-tar-perl (<< 2.04), libattribute-handlers-perl (<< 0.97), libautodie-perl (<< 2.29-2), libcpan-meta-perl (<< 2.150001), libcpan-meta-requirements-perl (<< 2.132), libcpan-meta-yaml-perl (<< 0.012), libdigest-perl (<< 1.17), libexperimental-perl (<< 0.013), libextutils-cbuilder-perl (<< 0.280221), libextutils-command-perl (<< 1.20), libextutils-install-perl (<< 2.04), libextutils-parsexs-perl (<< 3.280000), libfile-spec-perl (<< 3.5600), libhttp-tiny-perl (<< 0.054), libi18n-langtags-perl (<< 0.40), libio-zlib-perl (<< 1.10), libjson-pp-perl (<< 2.27300), liblocale-codes-perl (<< 3.34), liblocale-maketext-perl (<< 1.26), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.999700), libmath-complex-perl (<< 1.59), libmodule-corelist-perl (<< 5.20151213), libmodule-load-conditional-perl (<< 0.64), libmodule-load-perl (<< 0.32), libmodule-metadata-perl (<< 1.000026), libnet-perl (<= 1:1.22), libnet-ping-perl (<< 2.43), libparams-check-perl (<< 0.38), libparent-perl (<< 0.232), libparse-cpan-meta-perl (<< 1.4414), libperl-ostype-perl (<< 1.008), libpod-escapes-perl (<< 1.07), libpod-parser-perl (<< 1.63), libpod-simple-perl (<< 3.29), libtest-harness-perl (<< 3.35), libtest-simple-perl (<< 1.001014), libtest-tester-perl (<< 0.114), libtest-use-ok-perl (<< 0.16), libthread-queue-perl (<< 3.05), libtime-local-perl (<< 1.2300), libunicode-collate-perl (<< 1.12), libversion-perl (<< 1:0.9909), libversion-requirements-perl (<< 0.101022), maildirsync (<< 1.2-2.1), mono-apache-server2 (<< 3.8-2.1), mono-apache-server4 (<< 3.8-2.1), mono-fastcgi-server2 (<< 3.8-2.1), mono-fastcgi-server4 (<< 3.8-2.1), patcher (<< 0.0.20040521-6.1), pdl (<< 1:2.007-4), perl (<< 5.22.1~), podlators-perl (<< 2.3.1), polygen-data (<< 1.0.6.ds2-13.1), pristine-tar (<< 1.33), pure-ftpd-common (<< 1.0.36-3.2), rinse (<< 3.0.7), shorewall (<< 4.6.4.3-2), shorewall-core (<< 4.6.4.3-2), tvtime (<< 1.0.2-14)
+Replaces: libansicolor-perl (<< 4.03), libarchive-tar-perl (<< 2.04), libattribute-handlers-perl (<< 0.97), libautodie-perl (<< 2.29-2), libcpan-meta-perl (<< 2.150001), libcpan-meta-requirements-perl (<< 2.132), libcpan-meta-yaml-perl (<< 0.012), libdigest-perl (<< 1.17), libexperimental-perl (<< 0.013), libextutils-cbuilder-perl (<< 0.280221), libextutils-command-perl (<< 1.20), libextutils-install-perl (<< 2.04), libextutils-parsexs-perl (<< 3.280000), libfile-spec-perl (<< 3.5600), libhttp-tiny-perl (<< 0.054), libi18n-langtags-perl (<< 0.40), libio-zlib-perl (<< 1.10), libjson-pp-perl (<< 2.27300), liblocale-codes-perl (<< 3.34), liblocale-maketext-perl (<< 1.26), liblocale-maketext-simple-perl (<< 0.21), libmath-bigint-perl (<< 1.999700), libmath-complex-perl (<< 1.59), libmodule-corelist-perl (<< 5.20151213), libmodule-load-conditional-perl (<< 0.64), libmodule-load-perl (<< 0.32), libmodule-metadata-perl (<< 1.000026), libnet-perl, libnet-ping-perl (<< 2.43), libpackage-constants-perl, libparams-check-perl (<< 0.38), libparent-perl (<< 0.232), libparse-cpan-meta-perl (<< 1.4414), libperl-ostype-perl (<< 1.008), libpod-escapes-perl (<< 1.07), libpod-parser-perl (<< 1.63), libpod-simple-perl (<< 3.29), libtest-harness-perl (<< 3.35), libtest-simple-perl (<< 1.001014), libtest-tester-perl (<< 0.114), libtest-use-ok-perl (<< 0.16), libthread-queue-perl (<< 3.05), libtime-local-perl (<< 1.2300), libunicode-collate-perl (<< 1.12), libversion-perl (<< 1:0.9909), libversion-requirements-perl, perl-base (<< 5.22.0~), perl-modules, podlators-perl
+Filename: xenial/./perl-modules-5.22_5.22.1-9ubuntu0.6_all.deb
+Size: 2628922
+MD5sum: 70ca2f14eceb3241b92baba54b50a577
+SHA1: 57189f5b8fb399f4cfae723f689d0304576d6c23
+SHA256: b46a16a99afdc2e9e69ebee6695f049d3a87a8bce6556279ff341d7bdd30d5bb
+SHA512: 8a4f1e863c7de777a2123bc39079f66e077e5d653e24fc141a5b2be8aabefc9c040a3529d1edf7ab5854948db90456375c263e131c8b6a8b791bc6b3b2630cb9
+Homepage: http://dev.perl.org/perl5/
+Description: Core Perl modules
+ Architecture independent Perl modules.  These modules are part of Perl and
+ required if the `perl' package is installed.
+ .
+ Note that this package only exists to save archive space and should be
+ considered an internal implementation detail of the `perl' package.
+ Other packages should not depend on `perl-modules-5.22' directly, they
+ should use `perl' (which depends on `perl-modules-5.22') instead.
+
 Package: erlang-corba
 Architecture: amd64
 Version: 1:18.3-dfsg-1ubuntu3.1
@@ -568,6 +601,30 @@ Description: minimal subset of the Python language (default python3 version)
  See /usr/share/doc/python3.5-minimal/README.Debian for a list of the modules
  contained in this package.
 
+Package: libpython2.7-minimal
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: same
+Priority: standard
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 2774
+Recommends: libpython2.7-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Breaks: python2.7-minimal (<< 2.7.4~rc1-1~)
+Replaces: libpython2.7-stdlib (<< 2.7.8-7), python2.7 (<< 2.7.4-2), python2.7-minimal (<< 2.7.3-10)
+Filename: xenial/./libpython2.7-minimal_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 337788
+MD5sum: d70338c78ba7c9ea5e091bc97a4fb502
+SHA1: c6b26078cefcfe5a6ed74da51e779aa322b60972
+SHA256: 88bcba3c3cee0ed30b114b6c3aee3628a1bcc2f154dcdf45d2d295760b55e2f9
+SHA512: 4edf0fe9a65d6bb7b18715a0ac1423996381fa7adf9f66eb8c6bac65da334905a02e585c53c8f479929696782cb9110dad2c0d6abf20b480234a3a2632949506
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python2.7-minimal.
+
 Package: erlang-ssl
 Architecture: amd64
 Version: 1:21.3.8.11-1
@@ -620,6 +677,32 @@ Description: asynchronous event notification library (extra)
  .
  If you're writing software that uses libevent's protocol support, you
  need to link libevent_core and libevent_extra as well.
+
+Package: libsasl2-modules-db
+Architecture: amd64
+Version: 2.1.26.dfsg1-14ubuntu0.2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: cyrus-sasl2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
+Installed-Size: 60
+Depends: libc6 (>= 2.14), libdb5.3
+Breaks: libsasl2-2 (<< 2.1.26.dfsg1-2~)
+Replaces: libsasl2-2 (<< 2.1.26.dfsg1-2~), libsasl2-modules (<< 2.1.26.dfsg1-6~)
+Filename: xenial/./libsasl2-modules-db_2.1.26.dfsg1-14ubuntu0.2_amd64.deb
+Size: 14546
+MD5sum: 18d0a78c3539c8de3dd18986e4a550ce
+SHA1: cf8208a73f16cfe4a435f1c8f185581c576be478
+SHA256: 04a4bc67e5a69edacf78f1bd33955a026ca94587b516213f266d20cacbf3b9af
+SHA512: 980a4cbb5b8275cbcc98e04e61861d93b1e53404868832d468debea2ea2f3d37c144f60448a3883cb63d3b6997c0d7f82234a245cae1b869f426cf9401d29ea6
+Homepage: http://www.cyrusimap.org/
+Description: Cyrus SASL - pluggable authentication modules (DB)
+ This is the Cyrus SASL API implementation, version 2.1. See package
+ libsasl2-2 and RFC 2222 for more information.
+ .
+ This package provides the DB plugin, which supports Berkeley DB lookups.
 
 Package: libpython2.7-stdlib
 Architecture: amd64
@@ -775,6 +858,31 @@ Description: development libraries, header files and docs for libevent
  that provides a mechanish to execute a callback function when a specific
  event occurs on a file descriptor or after a timeout has been reached.
 
+Package: libvpx3
+Architecture: amd64
+Version: 1.5.0-2ubuntu1.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libvpx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sebastian Dröge <slomo@debian.org>
+Installed-Size: 2236
+Depends: libc6 (>= 2.14)
+Filename: xenial/./libvpx3_1.5.0-2ubuntu1.1_amd64.deb
+Size: 732254
+MD5sum: 9abcc80739adc9553eaf81a8001967d6
+SHA1: d2bb3c75b69c3c2a514965bf167011b27575d92a
+SHA256: 2b54c32aa43bc9014e485a370fa13f69e70b060b672c99671740a2138c3700d9
+SHA512: 66b7568956e3cc76890c3860fe6d6f8b6c13fe2f2f177253e639b2c422c5c962f388f0e6eee925a6268b47bd1c063aa5834d7a09f37d9389b15d6ac2df82e400
+Homepage: http://www.webmproject.org
+Description: VP8 and VP9 video codec (shared library)
+ VP8 and VP9 are open video codecs, originally developed by On2 and released
+ as open source by Google Inc. They are the successor of the VP3 codec,
+ on which the Theora codec was based.
+ .
+ This package contains the shared libraries.
+
 Package: libdbus-1-3
 Architecture: amd64
 Version: 1.10.6-1ubuntu3.4
@@ -892,6 +1000,92 @@ Description: high-quality block-sorting file compressor - utilities
  The archive file format of bzip2 (.bz2) is incompatible with that of its
  predecessor, bzip (.bz).
 
+Package: libfreetype6
+Architecture: amd64
+Version: 2.6.1-0.1ubuntu2.4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: freetype
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+Installed-Size: 906
+Depends: libc6 (>= 2.14), libpng12-0 (>= 1.2.13-4), zlib1g (>= 1:1.1.4)
+Filename: xenial/./libfreetype6_2.6.1-0.1ubuntu2.4_amd64.deb
+Size: 315480
+MD5sum: a7c80cab945424bef3f262c6b10b33ae
+SHA1: e1982903a51eb3990f908f598bc8e71491339c65
+SHA256: 3e1ca8e411da68aaefaeb0a934d3e1ce2bbdfdaae9ea38fd831807834256c83c
+SHA512: c540cfe016802c4f784747b816039edff1ff316cdabf1f66111aec1d68d2ef53dbdc1e0dfa1a67a7fa8f9899d352ad31e1a4298e67d54cf8f7d3de8e4e3d40dc
+Homepage: http://www.freetype.org
+Description: FreeType 2 font engine, shared library files
+ The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on bringing small,
+ efficient and ubiquitous products.
+ .
+ The FreeType 2 library is their new software font engine.  It has been
+ designed to provide the following important features:
+  * A universal and simple API to manage font files
+  * Support for several font formats through loadable modules
+  * High-quality anti-aliasing
+  * High portability & performance
+ .
+ Supported font formats include:
+  * TrueType files (.ttf) and collections (.ttc)
+  * Type 1 font files both in ASCII (.pfa) or binary (.pfb) format
+  * Type 1 Multiple Master fonts.  The FreeType 2 API also provides
+    routines to manage design instances easily
+  * Type 1 CID-keyed fonts
+  * OpenType/CFF (.otf) fonts
+  * CFF/Type 2 fonts
+  * Adobe CEF fonts (.cef), used to embed fonts in SVG documents with
+    the Adobe SVG viewer plugin.
+  * Windows FNT/FON bitmap fonts
+ .
+ This package contains the files needed to run programs that use the
+ FreeType 2 library.
+ .
+  Home Page: http://www.freetype.org/
+  Authors: David Turner   <david.turner@freetype.org>
+           Robert Wilhelm <robert.wilhelm@freetype.org>
+           Werner Lemberg <werner.lemberg@freetype.org>
+
+Package: mongodb-org-mongos
+Architecture: amd64
+Version: 4.2.3
+Priority: optional
+Section: database
+Source: mongodb-org
+Maintainer: Ernie Hershey <ernie.hershey@mongodb.com>
+Installed-Size: 39236
+Depends: libc6 (>= 2.18), libcurl3 (>= 7.16.2), libgcc1 (>= 1:4.2), libssl1.0.0 (>= 1.0.1), tzdata
+Conflicts: mongo-10gen, mongo-10gen-enterprise, mongo-10gen-enterprise-server, mongo-10gen-server, mongo-10gen-unstable, mongo-10gen-unstable-enterprise, mongo-10gen-unstable-enterprise-mongos, mongo-10gen-unstable-enterprise-server, mongo-10gen-unstable-enterprise-shell, mongo-10gen-unstable-enterprise-tools, mongo-10gen-unstable-mongos, mongo-10gen-unstable-server, mongo-10gen-unstable-shell, mongo-10gen-unstable-tools, mongo18-10gen, mongo18-10gen-server, mongo20-10gen, mongo20-10gen-server, mongodb, mongodb-10gen, mongodb-10gen-enterprise, mongodb-10gen-unstable, mongodb-10gen-unstable-enterprise, mongodb-10gen-unstable-enterprise-mongos, mongodb-10gen-unstable-enterprise-server, mongodb-10gen-unstable-enterprise-shell, mongodb-10gen-unstable-enterprise-tools, mongodb-10gen-unstable-mongos, mongodb-10gen-unstable-server, mongodb-10gen-unstable-shell, mongodb-10gen-unstable-tools, mongodb-clients, mongodb-dev, mongodb-enterprise, mongodb-enterprise-mongos, mongodb-enterprise-server, mongodb-enterprise-shell, mongodb-enterprise-tools, mongodb-enterprise-unstable, mongodb-enterprise-unstable-mongos, mongodb-enterprise-unstable-server, mongodb-enterprise-unstable-shell, mongodb-enterprise-unstable-tools, mongodb-nightly, mongodb-org-unstable, mongodb-org-unstable-mongos, mongodb-org-unstable-server, mongodb-org-unstable-shell, mongodb-org-unstable-tools, mongodb-server, mongodb-stable, mongodb18-10gen, mongodb20-10gen
+Filename: xenial/./mongodb-org-mongos_4.2.3_amd64.deb
+Size: 10076706
+MD5sum: dc6fe06373b272044f19960532f90214
+SHA1: 5b40fcd29493480ba2d9bb23850e5c071f57073b
+SHA256: 79d9f0ace9b8e69b906f6d7fbafda3be2c3575756292b30b976e5aaadb89e248
+SHA512: b0646180bfd9718a35325478e3ad66e711a270642887d43fdc9d13357bbeef4d4e852abc55337a973c5f696903efd3889adb9824cc82663c3d19db632c6b23fa
+Homepage: http://www.mongodb.org
+Description: MongoDB sharded cluster query router
+ MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility.
+ .
+ MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.
+ .
+ MongoDB has a rich client ecosystem including hadoop integration, officially supported drivers for 10 programming languages and environments, as well as 40 drivers supported by the user community.
+ .
+ MongoDB features:
+ * JSON Data Model with Dynamic Schemas
+ * Auto-Sharding for Horizontal Scalability
+ * Built-In Replication for High Availability
+ * Rich Secondary Indexes, including geospatial
+ * TTL indexes
+ * Text Search
+ * Aggregation Framework & Native MapReduce
+ .
+ This package contains mongos, the MongoDB sharded cluster query router.
+
 Package: libmpx0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -995,6 +1189,41 @@ SHA512: bb4c9941c64f01b280fe9aab35fa2fc91c3f4861d852b0ed24ac4e343c0e3309c59dd0bf
 Homepage: https://git.kernel.org/cgit/utils/dtc/dtc.git
 Description: Flat Device Trees manipulation library
  This is a library containing functions for manipulating Flat Device Trees.
+
+Package: libsasl2-2
+Architecture: amd64
+Version: 2.1.26.dfsg1-14ubuntu0.2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: cyrus-sasl2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
+Installed-Size: 147
+Depends: libc6 (>= 2.15), libsasl2-modules-db (>= 2.1.26.dfsg1-14ubuntu0.2)
+Recommends: libsasl2-modules (>= 2.1.26.dfsg1-14ubuntu0.2)
+Breaks: postfix (<= 2.8.3-1), slapd (<= 2.4.25-3)
+Replaces: libsasl2
+Filename: xenial/./libsasl2-2_2.1.26.dfsg1-14ubuntu0.2_amd64.deb
+Size: 48706
+MD5sum: ca1f644f7679b06947d099b8bbb8ae74
+SHA1: 24fec0792db05a09698bef17628c6d3ea50b3064
+SHA256: c957ca2468ae4770ce6c171af112c616cfea3c26f279cbc605b78bc998b3f78f
+SHA512: 38bf40d1d46456682456d38faccec8705474bbce864fd35d97f67ea4e34a14ca670049cefecbdd1e6cfdf686c2ecc64fe2c45a819f32377d59c3d66ceada755d
+Homepage: http://www.cyrusimap.org/
+Description: Cyrus SASL - authentication abstraction library
+ This is the Cyrus SASL API implementation, version 2.1.
+ .
+ SASL is the Simple Authentication and Security Layer, a method for
+ adding authentication support to connection-based protocols. To use
+ SASL, a protocol includes a command for identifying and
+ authenticating a user to a server and for optionally negotiating
+ protection of subsequent protocol interactions. If its use is
+ negotiated, a security layer is inserted between the protocol and the
+ connection. See RFC 2222 for more information.
+ .
+ Any of: ANONYMOUS, CRAM-MD5, DIGEST-MD5, GSSAPI (MIT or Heimdal
+ Kerberos 5), NTLM, OTP, PLAIN, or LOGIN can be used.
 
 Package: libxenstore3.0
 Architecture: amd64
@@ -1902,6 +2131,26 @@ Description: GNU TLS library - main runtime library
  .
  This package contains the main runtime library.
 
+Package: libjpeg-dev
+Architecture: amd64
+Version: 8c-2ubuntu8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libjpeg8-empty
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 26
+Depends: libjpeg8-dev
+Filename: xenial/./libjpeg-dev_8c-2ubuntu8_amd64.deb
+Size: 1546
+MD5sum: 48308774ecc38ee2cd8f9cf358c63ea4
+SHA1: ab630ff891f59f96fba702c062f70a923f1b151e
+SHA256: 5a676a4f0e5cf95124957e1935c2fdbae0841774b9760edbc49f5a438d153b16
+SHA512: 1a00b0a06be25e16dbf630e768cb4635ddca806226bf9adf6d2a3c945af817b9df7fad0977ad0d34e93df87bf202d2d64c39781b1348cd7067f662d2877b795e
+Description: Independent JPEG Group's JPEG runtime library (dependency package)
+ This package will always depend on the current default JPEG library
+ development package version.
+
 Package: libncursesw5
 Architecture: amd64
 Version: 6.0+20160213-1ubuntu1
@@ -2206,6 +2455,32 @@ Description: header files and a static library for Python (default)
  This package is a dependency package, which depends on Debian's default
  Python version (currently v2.7).
 
+Package: tzdata
+Architecture: all
+Version: 2019c-0ubuntu0.16.04
+Multi-Arch: foreign
+Priority: required
+Section: localization
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 2800
+Provides: tzdata-stretch
+Depends: debconf (>= 0.5) | debconf-2.0
+Replaces: libc0.1, libc0.3, libc6, libc6.1
+Filename: xenial/./tzdata_2019c-0ubuntu0.16.04_all.deb
+Size: 168130
+MD5sum: a657082f3d2e54ed28436664d46aab15
+SHA1: 9d722de45df490fe5fcb91180ba093f12ba3b730
+SHA256: a47396c639b688d80cf79fea5f5f5d871d282f47619d930e12801227261ab5db
+SHA512: 444c764bf9e4a58909b8cdc3094ecd6cc865b9e50373a87ef0cf3c49e3904213aaf7b2f660c8137d69e3f78ddda55e11983f417481009c830b0622f6c5789435
+Homepage: http://www.iana.org/time-zones
+Description: time zone and daylight-saving time data
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+
 Package: libcacard0
 Architecture: amd64
 Version: 1:2.5.0-2
@@ -2262,6 +2537,36 @@ Description: simple interprocess messaging system (Python 3 interface)
  This package provides a Python 3 interface to D-Bus.
  .
  See the dbus description for more information about D-Bus in general.
+
+Package: libxml2-dev
+Architecture: amd64
+Version: 2.9.3+dfsg1-1ubuntu0.7
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxml2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 3436
+Depends: libxml2 (= 2.9.3+dfsg1-1ubuntu0.7), libicu-dev
+Suggests: pkg-config
+Filename: xenial/./libxml2-dev_2.9.3+dfsg1-1ubuntu0.7_amd64.deb
+Size: 744278
+MD5sum: 449ea2fd5fdc78486ab49cd2b6a6bf23
+SHA1: 218787ad5b169fa5de392b48b8679249343c9e18
+SHA256: d3e2e218dc97f6f5fbcc84eecf898d87b3f5ff3a0c22884bc68bbfced9475f85
+SHA512: 9f479acfa688c2a6dca6850ca7fa52329feba71eb1a53ba659fb9ff02848348b33de1df91687c818b10cba1a3188b4e876e6d1185bd5e4537057e1cca9ae28a0
+Homepage: http://xmlsoft.org/
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
 
 Package: liblz4-1
 Architecture: amd64
@@ -2613,6 +2918,31 @@ Description: Heimdal Kerberos - roken support library
  compatible with MIT Kerberos.
  .
  This package contains the library for roken support.
+
+Package: libcomerr2
+Architecture: amd64
+Version: 1.42.13-1ubuntu1.2
+Multi-Arch: same
+Priority: required
+Section: libs
+Source: e2fsprogs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Installed-Size: 86
+Provides: libcomerr-kth-compat
+Depends: libc6 (>= 2.17)
+Replaces: e2fsprogs (<< 1.34-1)
+Filename: xenial/./libcomerr2_1.42.13-1ubuntu1.2_amd64.deb
+Size: 65844
+MD5sum: 185bd22cfc271f5d778f8f5cb0be0258
+SHA1: 8056f47131949e73be86e15cfd2d9d571ae9bd7d
+SHA256: 3079cfbf642ea0e89e7af080135f98350bc4ce8a882ab63a9844f5e74eae2767
+SHA512: 4ece57f23a616bd896f465754fe5211e4d7e8e995de990699f0920f2c888ed6972385a2a23de175a4332ebe34bdb85ba478a40d50c1bc921a9e294ca51ac87e2
+Homepage: http://e2fsprogs.sourceforge.net
+Description: common error description library
+ libcomerr is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
 
 Package: libx11-data
 Architecture: all
@@ -3083,6 +3413,28 @@ Description: curses-based PIN or pass-phrase entry dialog for GnuPG
  necessary because the sibling packages automatically fall back to
  text mode if X is not active.
 
+Package: libdb5.3
+Architecture: amd64
+Version: 5.3.28-11ubuntu0.2
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: db5.3
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Berkeley DB Group <pkg-db-devel@lists.alioth.debian.org>
+Installed-Size: 1745
+Depends: libc6 (>= 2.17)
+Filename: xenial/./libdb5.3_5.3.28-11ubuntu0.2_amd64.deb
+Size: 670114
+MD5sum: 52e4bfea939e97c287ef0e8dcfe2cc74
+SHA1: 651f4642389d332983c88ff18c2bb75863c29b79
+SHA256: c9dc6eaefb9a2d3a0fd1b41479fda696aec66a402deab41eb1b5c8c5e9bde43e
+SHA512: b0f01936e05a2dc9cfed5c569b611ba91f4955770d85a776a6dcb4d97df68ccf284865c95566d790eedcfc8d55db0d5f14c3da4c1b18e5ae06780f9fafde161b
+Homepage: http://www.oracle.com/technetwork/database/database-technologies/berkeleydb/overview/index.html
+Description: Berkeley v5.3 Database Libraries [runtime]
+ This is the runtime package for programs that use the v5.3 Berkeley
+ database library.
+
 Package: libexpat1-dev
 Architecture: amd64
 Version: 2.1.0-7ubuntu0.16.04.5
@@ -3166,6 +3518,29 @@ Description: Apply a diff file to an original
  of difference listing produced by the diff program and apply
  those differences to an original file, producing a patched
  version.
+
+Package: libtiff5
+Architecture: amd64
+Version: 4.0.6-1ubuntu0.7
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: tiff
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Ondřej Surý <ondrej@debian.org>
+Installed-Size: 509
+Depends: libc6 (>= 2.14), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.1.4)
+Filename: xenial/./libtiff5_4.0.6-1ubuntu0.7_amd64.deb
+Size: 149030
+MD5sum: 2deb34f2bb051e6882efbb89f56acb4f
+SHA1: bdafc49a60a007249834059948c221a47255006d
+SHA256: d0634877ddbd00e54d8799db0b97e8364d2a63e41c81e54bec4cb1062b377f30
+SHA512: 98c02ead59885fe37a13a3cd1b996654900cd58a00770956dc4f80902b303a0646091cc82831c434f183441fb957823813c0e4e181ad0e221690650161e7d7bf
+Homepage: http://libtiff.maptools.org
+Description: Tag Image File Format (TIFF) library
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
 
 Package: libxen-4.6
 Architecture: amd64
@@ -3431,6 +3806,27 @@ Description: Erlang/OTP virtual machine and base applications
   sasl - the system architecture support libraries application;
   stdlib - modules for manipulating lists, strings, files etc.
 
+Package: libluajit-5.1-common
+Architecture: all
+Version: 2.0.4+dfsg-1
+Multi-Arch: foreign
+Priority: optional
+Section: interpreters
+Source: luajit
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Enrico Tassi <gareuselesinge@debian.org>
+Installed-Size: 155
+Filename: xenial/./libluajit-5.1-common_2.0.4+dfsg-1_all.deb
+Size: 35322
+MD5sum: 8f4a69cb2665b0681a1bb805320cc981
+SHA1: be679e14c0dd170d31aaee85e4bb51f9cad42727
+SHA256: ee5c4400ecca37f94dc89f31baf88e0163165ecaf1ae7b08503a9fbda725280c
+SHA512: baafbab59092d46f34a4c60dd4eadec0dd3bcf640d54dfb474e920c7fcc7593a8ae0a0f6b6e56a9364d6edf8340f0cba50b62e1fe430142a866c8a4b997cc474
+Homepage: http://luajit.org
+Description: Just in time compiler for Lua - common files
+ This package contains files needed by the LuaJIT interpreter/jitter as well
+ by its embeddable (i.e. library) version.
+
 Package: nginx-light
 Architecture: amd64
 Version: 1.10.3-0ubuntu0.16.04.3
@@ -3467,6 +3863,30 @@ Description: nginx web/proxy server (basic version)
  Headers, Index, Log, Real IP, SSL, Stub Status, Upstream.
  .
  THIRD PARTY MODULES: Echo.
+
+Package: libicu-dev
+Architecture: amd64
+Version: 55.1-7ubuntu0.4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: icu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 39967
+Depends: libicu55 (= 55.1-7ubuntu0.4), icu-devtools (>= 55.1-7ubuntu0.4), libc6-dev | libc-dev, libstdc++-5-dev (>= 5.2.1-10)
+Suggests: icu-doc
+Filename: xenial/./libicu-dev_55.1-7ubuntu0.4_amd64.deb
+Size: 8566202
+MD5sum: 0f441590604c9ab3deca553b23e0170d
+SHA1: d40e174b8fa0d92f1479e46f703828602bbb7360
+SHA256: 010abd4e201d0537710daad1bee4928c158a61c067ddb202280c2192aa2fbf3c
+SHA512: f77b7bad074f472ce8d6a04680d95cd02aaff155eec72825aa008c62be9755d84471cb5717166cab300722df6bd7bc829d917665b2781dd0222afddb1df006f8
+Homepage: http://www.icu-project.org
+Description: Development files for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support.  This package contains the development
+ files for ICU.
 
 Package: libaio1
 Architecture: amd64
@@ -3650,6 +4070,50 @@ Description: GNU C preprocessor
  This package has been separated from gcc for the benefit of those who
  require the preprocessor but not the compiler.
 
+Package: nginx-full
+Architecture: amd64
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: optional
+Section: httpd
+Source: nginx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 1316
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.3-0ubuntu0.16.04.5), libc6 (>= 2.14), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpam0g (>= 0.99.7.1), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.3-0ubuntu0.16.04.5)
+Conflicts: nginx-core, nginx-extras, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Filename: xenial/./nginx-full_1.10.3-0ubuntu0.16.04.5_amd64.deb
+Size: 453778
+MD5sum: a0f32bf25d001ee7e57a4f5649b96bea
+SHA1: a5598d2008156b624c57b1d8a84226a291686ea0
+SHA256: 8e96b57c64ee726438e01902f6dc62704f63b3db58f3c5daf5e682d170afd92f
+SHA512: 9043cf9e55ea0c1e3376f47fa0fc99d82f64e8c6bef21b21c1a91ee0d70579a9cf3b90d95c9be30a43ccced38b2f9973bc71324a37fb6aa6ed4fb777b07e2004
+Homepage: http://nginx.net
+Description: nginx web/proxy server (standard version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extra).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log, Real IP,
+ SSI, SSL, Stream, Stub Status, Substitution, Thread Pool, Upstream, User ID,
+ XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitutions, Upstream
+ Fair Queue.
+
 Package: aptitude-common
 Architecture: all
 Version: 0.7.4-2ubuntu2
@@ -3801,6 +4265,30 @@ Description: Header files and a static library for Python (v2.7)
  This package contains development files. It is normally not
  used on it's own, but as a dependency of python2.7-dev.
 
+Package: nginx
+Architecture: all
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: optional
+Section: httpd
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 38
+Depends: nginx-core (>= 1.10.3-0ubuntu0.16.04.5) | nginx-full (>= 1.10.3-0ubuntu0.16.04.5) | nginx-light (>= 1.10.3-0ubuntu0.16.04.5) | nginx-extras (>= 1.10.3-0ubuntu0.16.04.5), nginx-core (<< 1.10.3-0ubuntu0.16.04.5.1~) | nginx-full (<< 1.10.3-0ubuntu0.16.04.5.1~) | nginx-light (<< 1.10.3-0ubuntu0.16.04.5.1~) | nginx-extras (<< 1.10.3-0ubuntu0.16.04.5.1~)
+Filename: xenial/./nginx_1.10.3-0ubuntu0.16.04.5_all.deb
+Size: 3494
+MD5sum: 78588d081edd1fad393f6686b42227df
+SHA1: 94a234630ec5c54892966a87df89b9a6f69b35e3
+SHA256: 7a56da8a29b76344042875f194f0e8fd82722b4103fe414c76bf8519d7bf8f3f
+SHA512: 7ce493fc952bc33bdf5766e406d9bf0dcbf8efdc1138b76a5cfc9b246ed82d804f247ca719200d79ad7bd922d3cc1e24f01ba5523cfff55d84555f96c8d10e4f
+Homepage: http://nginx.net
+Description: small, powerful, scalable web/proxy server
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This is a dependency package to install either nginx-core (by default),
+ nginx-full, nginx-light, or nginx-extras.
+
 Package: sqlite3
 Architecture: amd64
 Version: 3.11.0-1ubuntu1.1
@@ -3823,6 +4311,39 @@ Description: Command line interface for SQLite 3
  SQLite is a C library that implements an SQL database engine.
  Programs that link with the SQLite library can have SQL database
  access without running a separate RDBMS process.
+
+Package: libkrb5-3
+Architecture: amd64
+Version: 1.13.2+dfsg-5ubuntu2.1
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: krb5
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 991
+Depends: libc6 (>= 2.16), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1 (>= 1.5.9), libkrb5support0 (= 1.13.2+dfsg-5ubuntu2.1)
+Recommends: krb5-locales
+Suggests: krb5-doc, krb5-user
+Conflicts: libkrb53
+Breaks: libsmbclient (<= 2:3.6.1-2), sssd (<= 1.2.1-4.3)
+Filename: xenial/./libkrb5-3_1.13.2+dfsg-5ubuntu2.1_amd64.deb
+Size: 272740
+MD5sum: 6855e1819e1e12f7c6af7639497f94d4
+SHA1: 75d05b95ae48ba8be94d3799b2a7009e5facf71c
+SHA256: 35d44c4b07ff78f27dce4955e3b4e5b8051345148b6712c578e76348f7d53db8
+SHA512: b02a517edfe4d1b1148e2bc2391f1a61735f83b8419f60995e3a2ba0c9db246a75683862f7fdb180ef4c68e75801af3d558eeb604419b039e28f3ac860a5f669
+Homepage: http://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library for the main Kerberos v5 API
+ used by applications and Kerberos clients.
 
 Package: ca-certificates
 Architecture: all
@@ -4230,6 +4751,41 @@ Description: GNU privacy guard - cryptographic agent
  secret key material for OpenPGP and S/MIME use.  The agent also
  provides a passphrase cache, which is used by pre-2.1 versions of
  GnuPG for OpenPGP operations.
+
+Package: libcurl3
+Architecture: amd64
+Version: 7.47.0-1ubuntu2.14
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: curl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 552
+Depends: libc6 (>= 2.17), libgssapi-krb5-2 (>= 1.10+dfsg~), libidn11 (>= 1.13), libldap-2.4-2 (>= 2.4.7), librtmp1 (>= 2.4+20131018.git79459a2-3~), libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4)
+Recommends: ca-certificates
+Filename: xenial/./libcurl3_7.47.0-1ubuntu2.14_amd64.deb
+Size: 186066
+MD5sum: 22ebe0f789a1a195e54795e1631bb927
+SHA1: ee81e977d09a27e1bff6f9fe6420a8a59137e70c
+SHA256: 3f1e7502ac9e94eb00c98f21c028c8842f071a367f9a9f027f12c532dbfb9b01
+SHA512: 7b4e48f8a516fb4c292277c0471cce5e7c8c19bd46da76158e2aebe0a339129d4b7517dc4dca581054f8d71e07daaa66e1d45aa5475728014e4509085e281cef
+Homepage: http://curl.haxx.se
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by OpenSSL.
 
 Package: libcilkrts5
 Architecture: amd64
@@ -5299,6 +5855,41 @@ Description: alternative Python package installer
  installs, can save package state for replaying, can install from non-egg
  sources, and can install from version control repositories.
 
+Package: mongodb-org-shell
+Architecture: amd64
+Version: 4.2.3
+Priority: optional
+Section: database
+Source: mongodb-org
+Maintainer: Ernie Hershey <ernie.hershey@mongodb.com>
+Installed-Size: 46642
+Depends: libc6 (>= 2.18), libcurl3 (>= 7.16.2), libgcc1 (>= 1:4.2), libssl1.0.0 (>= 1.0.1)
+Conflicts: mongo-10gen, mongo-10gen-enterprise, mongo-10gen-enterprise-server, mongo-10gen-server, mongo-10gen-unstable, mongo-10gen-unstable-enterprise, mongo-10gen-unstable-enterprise-mongos, mongo-10gen-unstable-enterprise-server, mongo-10gen-unstable-enterprise-shell, mongo-10gen-unstable-enterprise-tools, mongo-10gen-unstable-mongos, mongo-10gen-unstable-server, mongo-10gen-unstable-shell, mongo-10gen-unstable-tools, mongo18-10gen, mongo18-10gen-server, mongo20-10gen, mongo20-10gen-server, mongodb, mongodb-10gen, mongodb-10gen-enterprise, mongodb-10gen-unstable, mongodb-10gen-unstable-enterprise, mongodb-10gen-unstable-enterprise-mongos, mongodb-10gen-unstable-enterprise-server, mongodb-10gen-unstable-enterprise-shell, mongodb-10gen-unstable-enterprise-tools, mongodb-10gen-unstable-mongos, mongodb-10gen-unstable-server, mongodb-10gen-unstable-shell, mongodb-10gen-unstable-tools, mongodb-clients, mongodb-dev, mongodb-enterprise, mongodb-enterprise-mongos, mongodb-enterprise-server, mongodb-enterprise-shell, mongodb-enterprise-tools, mongodb-enterprise-unstable, mongodb-enterprise-unstable-mongos, mongodb-enterprise-unstable-server, mongodb-enterprise-unstable-shell, mongodb-enterprise-unstable-tools, mongodb-nightly, mongodb-org-unstable, mongodb-org-unstable-mongos, mongodb-org-unstable-server, mongodb-org-unstable-shell, mongodb-org-unstable-tools, mongodb-server, mongodb-stable, mongodb18-10gen, mongodb20-10gen
+Filename: xenial/./mongodb-org-shell_4.2.3_amd64.deb
+Size: 11970118
+MD5sum: ef3842c231e25d522d79506f250a5f86
+SHA1: 675bde5292012fe14585724b11c525d8fea551e4
+SHA256: d43e5cc532a2dbed752af0acf42d13bd65bb61935d46ad07c05bc414a0ed88c2
+SHA512: 0676d0c6fe23d4ee28d5c34ab49fb71634fda15b409e9bc46821b709cbec1b688d67ee0081405afa71dc441dbc0ea2db2189bacdfce5f0061e4c429042ee8e40
+Homepage: http://www.mongodb.org
+Description: MongoDB shell client
+ MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility.
+ .
+ MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.
+ .
+ MongoDB has a rich client ecosystem including hadoop integration, officially supported drivers for 10 programming languages and environments, as well as 40 drivers supported by the user community.
+ .
+ MongoDB features:
+ * JSON Data Model with Dynamic Schemas
+ * Auto-Sharding for Horizontal Scalability
+ * Built-In Replication for High Availability
+ * Rich Secondary Indexes, including geospatial
+ * TTL indexes
+ * Text Search
+ * Aggregation Framework & Native MapReduce
+ .
+ This package contains the mongo shell.
+
 Package: libpam0g
 Architecture: amd64
 Version: 1.1.8-3.2ubuntu2.1
@@ -5376,6 +5967,33 @@ Description: UBSan -- undefined behaviour sanitizer (runtime)
  Various computations will be instrumented to detect undefined behavior
  at runtime. Available for C and C++.
 
+Package: libxslt1.1
+Architecture: amd64
+Version: 1.1.28-2.1ubuntu0.3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxslt
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 467
+Depends: libc6 (>= 2.17), libgcrypt20 (>= 1.6.0), libxml2 (>= 2.9.0)
+Filename: xenial/./libxslt1.1_1.1.28-2.1ubuntu0.3_amd64.deb
+Size: 145664
+MD5sum: e461b4e73db792b6c714a18655a35cd1
+SHA1: 4a079ea43921ca73b2a93f3adefef4f6e10d04de
+SHA256: 2d42161e57a11bd97d9352b879c68bc26799d2e7084149698bd3d657702e7c16
+SHA512: 95ac5d7fa3dba73e2015004b51ccc0216ebba64a167fb563be646503a86e3281ab5591514ed2c65b9bd0706daa33db6b037aafb99edb1f464271b1acfcd173b2
+Homepage: http://xmlsoft.org/xslt/
+Description: XSLT 1.0 processing library - runtime library
+ XSLT is an XML language for defining transformations of XML files from
+ XML to some other arbitrary format, such as XML, HTML, plain text, etc.
+ using standard XSLT stylesheets. libxslt is a C library which
+ implements XSLT version 1.0.
+ .
+ This package contains the libxslt library used by applications for XSLT
+ transformations.
+
 Package: libnuma1
 Architecture: amd64
 Version: 2.0.11-1ubuntu1.1
@@ -5396,6 +6014,34 @@ SHA512: f502e6577e593d589817ba02fb47a5ef82287281f381be0c186a626818f848b5311adc23
 Description: Libraries for controlling NUMA policy
  Library to control specific NUMA (Non-Uniform Memory Architecture)
  scheduling or memory placement policies.
+
+Package: libjpeg-turbo8
+Architecture: amd64
+Version: 1.4.2-0ubuntu3.3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libjpeg-turbo
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 386
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14)
+Breaks: libjpeg8 (<< 8c-2ubuntu5)
+Replaces: libjpeg8 (<< 8c-2ubuntu5)
+Filename: xenial/./libjpeg-turbo8_1.4.2-0ubuntu3.3_amd64.deb
+Size: 110750
+MD5sum: f1fc4c0b9752d904d8d756787b599b53
+SHA1: d8da9e246e8c0429e018144ec81f93a04cb9ee20
+SHA256: 5084d014f6028af47993790cb96d8f1ecd557f148d05afb7953da2458baef557
+SHA512: 9be2fe5e05e8f0b3fa0d8a1b729cb757b4b56555f99f26b86d8173aab22bbdb85b244b947da33e7294c59bb171a602d64e8ca4c0a2e9b28ec3366267600d32d4
+Homepage: http://libjpeg-turbo.virtualgl.org/
+Description: IJG JPEG compliant runtime library.
+ Runtime library supporting the Independent JPEG Group's standard
+ for JPEG files.
+ .
+ This package contains the shared library which is a drop in
+ replacement for libjpeg8, which has better performance than
+ standard libjpeg by use of SIMD and other optimizations.
 
 Package: erlang-odbc
 Architecture: amd64
@@ -5452,6 +6098,34 @@ Description: fast, scalable, distributed revision control system (manual pages)
  This package provides reference documentation for use by the 'man'
  utility and the 'git help' command.
 
+Package: nginx-common
+Architecture: all
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: optional
+Section: httpd
+Source: nginx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 166
+Depends: lsb-base (>= 4.1+Debian11ubuntu7), debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.18~)
+Suggests: fcgiwrap, nginx-doc, ssl-cert
+Breaks: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Replaces: nginx (<< 0.8.54-4), nginx-extras (<< 0.8.54-4), nginx-full (<< 0.8.54-4), nginx-light (<< 0.8.54-4)
+Filename: xenial/./nginx-common_1.10.3-0ubuntu0.16.04.5_all.deb
+Size: 26892
+MD5sum: 0d0a194df7979637a42341a2cfd1c089
+SHA1: 4cca70d5a93959f64dc578ee0733a5b5d5b6d38e
+SHA256: 3bf2f72178678d67f4487c88e914a70e6e7d21d023bef814fc1fe488e972a318
+SHA512: 1da973ab510182d45d8c450b0d13a44f65bc79cd5277bf4bdda04fa716a142caaac006a17bc845191c18af131d7522c8b9bd79b1ef9606ea18c9ddfc6c44a1c3
+Homepage: http://nginx.net
+Description: small, powerful, scalable web/proxy server - common files
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package contains base configuration files used by all versions of
+ nginx.
+
 Package: libxau6
 Architecture: amd64
 Version: 1:1.0.8-1
@@ -5480,6 +6154,33 @@ Description: X11 authorisation library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXau
+
+Package: libkeyutils1
+Architecture: amd64
+Version: 1.5.9-8ubuntu1
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: keyutils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Christian Kastner <ckk@debian.org>
+Installed-Size: 36
+Depends: libc6 (>= 2.14)
+Filename: xenial/./libkeyutils1_1.5.9-8ubuntu1_amd64.deb
+Size: 9904
+MD5sum: da9626da2accf307ec0094874fa32fe9
+SHA1: ee101412f83098ecb44cccdbb5cd16cf1e3548e1
+SHA256: af30c86bb2e2444c50c14cc3a4f47725616ecc96e30f27928e83cff1158b13b8
+SHA512: 11c715e73729e660ef61a295fa34b86a2810cfef6be54f241b7fb969368dd7d8d165874437394297d914f152aaba0ca2bba8b3a3d7fe86272d7af110572c94f5
+Homepage: http://people.redhat.com/~dhowells/keyutils/
+Description: Linux Key Management Utilities (library)
+ Keyutils is a set of utilities for managing the key retention facility in the
+ kernel, which can be used by filesystems, block devices and more to gain and
+ retain the authorization and encryption keys required to perform secure
+ operations.
+ .
+ This package provides a wrapper library for the key management facility system
+ calls.
 
 Package: libglib2.0-0
 Architecture: amd64
@@ -5662,6 +6363,35 @@ Description: Tag Image File Format (TIFF) library
  libtiff is a library providing support for the Tag Image File Format
  (TIFF), a widely used format for storing image data.  This package
  includes the shared library.
+
+Package: python-libxml2
+Architecture: amd64
+Version: 2.9.3+dfsg1-1ubuntu0.7
+Priority: optional
+Section: python
+Source: libxml2
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 966
+Provides: python2.7-libxml2
+Depends: libc6 (>= 2.14), libpython2.7 (>= 2.7), libxml2 (>= 2.9.1), python (>= 2.7), python (<< 2.8)
+Filename: xenial/./python-libxml2_2.9.3+dfsg1-1ubuntu0.7_amd64.deb
+Size: 140324
+MD5sum: e2140947292f4c41af7cfd974b40da68
+SHA1: 700ea784a3522724ccfe6ba39bb36298e1e056ae
+SHA256: 563ab1e10cc4fd652a742b314e6d6794f2b8a978005a18b41a13901cbc59e086
+SHA512: b8f683a029d67d39a44d547acab36e218a4cfa07210a7c28ae4e14e5a6285526557dc4f79333e3940ccf3e7cf64c78b144af49ae1dacf31a208aace9cc61a067
+Homepage: http://xmlsoft.org/
+Description: Python bindings for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package contains the files needed to use the GNOME XML library
+ in Python programs.
 
 Package: libjpeg-turbo8
 Architecture: amd64
@@ -6086,6 +6816,37 @@ Description: X Window System (X.Org) infrastructure
  Debian is derived from the version released by the X.Org Foundation, and
  is thus often also referred to as "X.Org".  All of the preceding quoted
  terms are functionally interchangeable in an Debian system.
+
+Package: libkrb5support0
+Architecture: amd64
+Version: 1.13.2+dfsg-5ubuntu2.1
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: krb5
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 150
+Depends: libc6 (>= 2.14)
+Conflicts: libkrb53
+Breaks: libgssapi-krb5-2 (<< 1.13~alpha1-1), libk5crypto3 (<< 1.13~alpha1-1), libkadm5clnt-mit9 (<< 1.13~alpha1-1), libkadm5srv-mit9 (<< 1.13~alpha1-1), libkdb5-7 (<< 1.13~alpha1-1)
+Filename: xenial/./libkrb5support0_1.13.2+dfsg-5ubuntu2.1_amd64.deb
+Size: 31158
+MD5sum: 136382d2b1188c4158d5cd96b6dea7a5
+SHA1: c3343232cb9ba4f3db581683e39e680793fad69d
+SHA256: e3876177288cb8689bbec21fdce0f6eeb1a669ac024b5e7d584450479ebfcac6
+SHA512: da207964bbf3c21db2dd4a552e9346454e8b8e640d3715c1155785fb78b432afe38940723f287c1050488576d8dd94bb32ad0c84406fbc490d59ee1ce3954a2f
+Homepage: http://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - Support library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an internal runtime support library used by other
+ Kerberos libraries.
 
 Package: erlang-snmp
 Architecture: amd64
@@ -6577,6 +7338,70 @@ Description: Manage ASN.1 structures (runtime)
    * no limits for INTEGER and ENUMERATED values
  .
  This package contains runtime libraries.
+
+Package: nginx-light
+Architecture: amd64
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: extra
+Section: httpd
+Source: nginx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 868
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.3-0ubuntu0.16.04.5), libc6 (>= 2.14), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.3-0ubuntu0.16.04.5)
+Conflicts: nginx-core, nginx-extras, nginx-full
+Breaks: nginx (<< 1.4.5-1)
+Filename: xenial/./nginx-light_1.10.3-0ubuntu0.16.04.5_amd64.deb
+Size: 314974
+MD5sum: 88f474ab55c32b61c33dbd16c3ba33e3
+SHA1: 420177860516369e3578bf12dfbabfb0e7142867
+SHA256: f274d82243465f284d1d8de6235b342a5949d5fc966f6d9f6bb4a018f049dba6
+SHA512: f9dc0b111fa4e1a6256ac29e6a3e46db01e3faea60ad77bfddf2be7f1fc5689943b29e47cedb575c022192b3858957b03826e285707a5eeed8fb6e3d8b7cbe00
+Homepage: http://nginx.net
+Description: nginx web/proxy server (basic version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a very light version of nginx with only the
+ minimal set of features and modules.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Empty GIF,
+ FastCGI, Map, Proxy, Rewrite.
+ .
+ OPTIONAL HTTP MODULES: Auth Request, Charset, Gzip, Gzip Precompression,
+ Headers, Index, Log, Real IP, SSL, Stub Status, Upstream.
+ .
+ THIRD PARTY MODULES: Echo.
+
+Package: redis-tools
+Architecture: amd64
+Version: 2:3.0.6-1ubuntu0.4
+Priority: optional
+Section: database
+Source: redis
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 338
+Depends: libc6 (>= 2.14), libjemalloc1 (>= 2.1.1)
+Suggests: ruby-redis
+Breaks: redis-server (<< 2:2.6.16-1)
+Replaces: redis-server (<< 2:2.6.16-1)
+Filename: xenial/./redis-tools_2%3a3.0.6-1ubuntu0.4_amd64.deb
+Size: 95524
+MD5sum: c6dc77c948390ceade0d6f3894304cb0
+SHA1: 502351bca479948244e2d57259d74e0bdcef2400
+SHA256: 4b39fef006fbfaa1152793ec9b9011e8fc2db0a369d2e8c13a5e4a2855622a04
+SHA512: 10d2aec8ca1fe68a57df985725bb4b88a444f85734a28bd93328d4130336ef42c51999e0f13e25e2a29de00dfd1c36f82e40cbe8c18bf329f568853de47a8afb
+Homepage: http://redis.io/
+Description: Persistent key-value database with network interface (client)
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ This package contains the command line client and other tools.
 
 Package: libp11-kit0
 Architecture: amd64
@@ -7244,6 +8069,32 @@ Description: IP lookup command line tools that use the GeoIP library
  This package contains the command line utilities to resolve the IP numbers
  using the GeoIP library.
 
+Package: libsqlite3-dev
+Architecture: amd64
+Version: 3.11.0-1ubuntu1.3
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: sqlite3
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 1668
+Depends: libsqlite3-0 (= 3.11.0-1ubuntu1.3), libc6-dev
+Suggests: sqlite3-doc
+Filename: xenial/./libsqlite3-dev_3.11.0-1ubuntu1.3_amd64.deb
+Size: 508902
+MD5sum: 076dfc025d49e9afa221303aa1820fa7
+SHA1: 1b105e7da70480e35ba39275a9c114fbef0d1dcd
+SHA256: d206df2d3439277dcf0a477837b4ceace0dbb5c312b1a00f5f1de6f0b4b20966
+SHA512: 0f8a49204ebda7977630090dfe9f0428a412361f8d31425c2cefe417fac254744edc2f934c990e3d025c796d49299780606c2bbbc3036cdb145e89013711bed6
+Homepage: http://www.sqlite.org/
+Description: SQLite 3 development files
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+ .
+ This package contains the development files (headers, static libraries)
+
 Package: libmpx0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.11
@@ -7418,6 +8269,35 @@ Description: Linux Standard Base version reporting utility
  be useful for programmatically distinguishing between a pure Debian
  installation and derived distributions.
 
+Package: libxml2
+Architecture: amd64
+Version: 2.9.3+dfsg1-1ubuntu0.7
+Multi-Arch: same
+Priority: standard
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2130
+Depends: libc6 (>= 2.15), libicu55 (>= 55.1-1~), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Recommends: xml-core
+Filename: xenial/./libxml2_2.9.3+dfsg1-1ubuntu0.7_amd64.deb
+Size: 697634
+MD5sum: 76fcddc9904953f49401cfe85b4c36dd
+SHA1: 95dd70e81be3828ede6bb0dcdf9fbfc0e66a8ef1
+SHA256: 2a29a734f81933bc64ed06d3953622af232cff7ce5fe041621003e7fc362de1b
+SHA512: 49208dd63a544b08a1fca6333c0e6201dceb93bf8405a495c59227060d6d3126a55f94173a57c1a0ec028baedef2291e3601fd27606368f4a38225b4e020ffb3
+Homepage: http://xmlsoft.org/
+Description: GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ This package provides a library providing an extensive API to handle
+ such XML data files.
+
 Package: supervisor
 Architecture: all
 Version: 3.2.0-2ubuntu0.2
@@ -7519,6 +8399,32 @@ Description: manage the repositories that you install software from (common)
  This package contains the common files for software-properties like the
  D-Bus backend.
 
+Package: libjpeg-turbo8-dev
+Architecture: amd64
+Version: 1.4.2-0ubuntu3.3
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libjpeg-turbo
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 1385
+Provides: libjpeg-dev
+Depends: libc-dev, libjpeg-turbo8 (= 1.4.2-0ubuntu3.3)
+Conflicts: libjpeg62-dev, libjpeg7-dev
+Replaces: libjpeg62-dev, libjpeg7-dev, libjpeg8-dev (<< 8c-2ubuntu5)
+Filename: xenial/./libjpeg-turbo8-dev_1.4.2-0ubuntu3.3_amd64.deb
+Size: 254574
+MD5sum: 551c03cacdde7d4f79ffd0200e2368f2
+SHA1: c5809c2f7d837e7d609b7f8fcb316d6037579b12
+SHA256: da151526ddc1508353003be75cbdeb44cec560a94aa00918e8a09833d8e317f4
+SHA512: a41e7637d668792d2928be7c2c5d04ae9af029c5ee2cf52a20b4db79789e017b496f1cc0a57242aeac9782679b04f319c3b0bc89a7b151f6d86e1ff7c442b0a7
+Homepage: http://libjpeg-turbo.virtualgl.org/
+Description: Development files for the IJG JPEG library
+ The Independent JPEG Group's JPEG library is a library for handling
+ JPEG files.
+ .
+ This package contains the static library, headers and documentation.
+
 Package: libffi6
 Architecture: amd64
 Version: 3.2.1-4
@@ -7565,6 +8471,33 @@ Description: XML parsing C library - runtime library
  library for parsing XML. Expat is a stream-oriented parser in
  which an application registers handlers for things the parser
  might find in the XML document (like start tags).
+
+Package: libxslt1-dev
+Architecture: amd64
+Version: 1.1.28-2.1ubuntu0.3
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxslt
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 2397
+Provides: libxslt-dev
+Depends: libxslt1.1 (= 1.1.28-2.1ubuntu0.3), libxml2-dev (>= 2.6.26)
+Filename: xenial/./libxslt1-dev_1.1.28-2.1ubuntu0.3_amd64.deb
+Size: 406132
+MD5sum: 53cac6da9d38ff7196f04ab5b6185d6c
+SHA1: 79659d897fc5da23a695d886cd8efa2ec204a711
+SHA256: c6fbce29938e25e528fbfb43e8ffb97666dba4ee9af97b65ce6ca9974345e374
+SHA512: 490747b43c73db3ed8890f72ef14c38a51c53abfb4473cffd870692636606f2c1d401bca5d3a1e32a2fdd112e07837611376d1f08fc0b8a5ff11d29dfda970bb
+Homepage: http://xmlsoft.org/xslt/
+Description: XSLT 1.0 processing library - development kit
+ XSLT is an XML language for defining transformations of XML files from
+ XML to some other arbitrary format, such as XML, HTML, plain text, etc.
+ using standard XSLT stylesheets. libxslt is a C library which
+ implements XSLT version 1.0.
+ .
+ This package contains the development files for libxslt.
 
 Package: libpython2.7
 Architecture: amd64
@@ -7852,6 +8785,25 @@ Description: Erlang/OTP documentation stylesheets
  The erl_docgen package includes XSLT stylesheets and document type
  definitions used for Erlang/OTP documentation. They allow one to
  transform documentation to manpage, HTML, and PDF formats.
+
+Package: libjpeg8-dev
+Architecture: amd64
+Version: 8c-2ubuntu8
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libjpeg8-empty
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Installed-Size: 26
+Depends: libjpeg-turbo8-dev (>= 1.1.90+svn722-1ubuntu6), libjpeg8 (= 8c-2ubuntu8)
+Filename: xenial/./libjpeg8-dev_8c-2ubuntu8_amd64.deb
+Size: 1552
+MD5sum: 208d3e0f1f38074dbf23a28751951c9d
+SHA1: 6d7eb8aa863f689a2c0edba83391e34f1b93aa72
+SHA256: 6b7409c61e8af2c2e74840644534b2af984582f5de56836212f78d18054a3d57
+SHA512: 412e5f40b531532fe3c851a07984e30035c938e77f2d6d8e660c15b92e483f53b94d33ce9b859eaed5a01f6c2bedb9c37b4b6f5e069b2109c3143a5d9f656e61
+Description: Independent JPEG Group's JPEG runtime library (dependency package)
+ libjpeg8-dev dependency package, depending on libjpeg-turbo8-dev.
 
 Package: libsqlite3-dev
 Architecture: amd64
@@ -8494,6 +9446,33 @@ Description: Larry Wall's Practical Extraction and Report Language
  integration, networking protocols, and encryption. Perl provides
  interfaces to C and C++ for custom extension development.
 
+Package: libgdbm3
+Architecture: amd64
+Version: 1.8.3-13.1
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: gdbm
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 75
+Pre-Depends: multiarch-support
+Depends: libc6 (>= 2.14), dpkg (>= 1.15.4) | install-info
+Filename: xenial/./libgdbm3_1.8.3-13.1_amd64.deb
+Size: 16926
+MD5sum: b2001800d7c61d4b0b12b077a0af2b5a
+SHA1: e87f12aa88d130612bec3a127ced49e2df6d53a7
+SHA256: cc0e7891be7139555f243e329b8c154ed051bfa9ba3a0b1bb9e0b6ed5d41bbed
+SHA512: 4f0811167ce82adaa12ad986df81e630839f0a18946944d127b7795e7a8d4474159246d1bb0152edce3f1799781277f534e5de036db8071138955fbb74477078
+Homepage: http://directory.fsf.org/project/gdbm/
+Description: GNU dbm database routines (runtime version)
+ GNU dbm ('gdbm') is a library of database functions that use extendible
+ hashing and works similarly to the standard UNIX 'dbm' functions.
+ .
+ The basic use of 'gdbm' is to store key/data pairs in a data file, thus
+ providing a persistent version of the 'dictionary' Abstract Data Type
+ ('hash' to perl programmers).
+
 Package: erlang-xmerl
 Architecture: amd64
 Version: 1:18.3-dfsg-1ubuntu3.1
@@ -8515,6 +9494,40 @@ SHA512: 129cc9321d8e54ebe31988ebe25b4bfaadd4ba3e731d44ffd750cb8f7fcd0f1669ca921f
 Homepage: http://www.erlang.org/
 Description: Erlang/OTP XML tools
  The xmerl application contains modules for processing XML.
+
+Package: mongodb-org
+Architecture: amd64
+Version: 4.2.3
+Priority: optional
+Section: database
+Maintainer: Ernie Hershey <ernie.hershey@mongodb.com>
+Installed-Size: 13
+Depends: mongodb-org-shell, mongodb-org-server, mongodb-org-mongos, mongodb-org-tools
+Conflicts: mongo-10gen, mongo-10gen-enterprise, mongo-10gen-enterprise-server, mongo-10gen-server, mongo-10gen-unstable, mongo-10gen-unstable-enterprise, mongo-10gen-unstable-enterprise-mongos, mongo-10gen-unstable-enterprise-server, mongo-10gen-unstable-enterprise-shell, mongo-10gen-unstable-enterprise-tools, mongo-10gen-unstable-mongos, mongo-10gen-unstable-server, mongo-10gen-unstable-shell, mongo-10gen-unstable-tools, mongo18-10gen, mongo18-10gen-server, mongo20-10gen, mongo20-10gen-server, mongodb, mongodb-10gen, mongodb-10gen-enterprise, mongodb-10gen-unstable, mongodb-10gen-unstable-enterprise, mongodb-10gen-unstable-enterprise-mongos, mongodb-10gen-unstable-enterprise-server, mongodb-10gen-unstable-enterprise-shell, mongodb-10gen-unstable-enterprise-tools, mongodb-10gen-unstable-mongos, mongodb-10gen-unstable-server, mongodb-10gen-unstable-shell, mongodb-10gen-unstable-tools, mongodb-clients, mongodb-dev, mongodb-enterprise, mongodb-enterprise-mongos, mongodb-enterprise-server, mongodb-enterprise-shell, mongodb-enterprise-tools, mongodb-enterprise-unstable, mongodb-enterprise-unstable-mongos, mongodb-enterprise-unstable-server, mongodb-enterprise-unstable-shell, mongodb-enterprise-unstable-tools, mongodb-nightly, mongodb-org-unstable, mongodb-org-unstable-mongos, mongodb-org-unstable-server, mongodb-org-unstable-shell, mongodb-org-unstable-tools, mongodb-server, mongodb-stable, mongodb18-10gen, mongodb20-10gen
+Filename: xenial/./mongodb-org_4.2.3_amd64.deb
+Size: 3524
+MD5sum: cfb1b4f808f46c4271efaf6759df8675
+SHA1: 9adf59d7eab40789b6b9e46aa840e92988e2a906
+SHA256: 177ad534e9125d34864a7266ec79c9bcad2bf01fd21bb28ea2f80807ea1b4bf9
+SHA512: fcc73b44633f43a420ea56fb919926584cc984557560b43546d7a9ff1a52e93d4d73ae69b5dcef72e846b03f963ac1dd8e04778177bd832b5db6d7b392aff508
+Homepage: http://www.mongodb.org
+Description: MongoDB open source document-oriented database system (metapackage)
+ MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility.
+ .
+ MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.
+ .
+ MongoDB has a rich client ecosystem including hadoop integration, officially supported drivers for 10 programming languages and environments, as well as 40 drivers supported by the user community.
+ .
+ MongoDB features:
+ * JSON Data Model with Dynamic Schemas
+ * Auto-Sharding for Horizontal Scalability
+ * Built-In Replication for High Availability
+ * Rich Secondary Indexes, including geospatial
+ * TTL indexes
+ * Text Search
+ * Aggregation Framework & Native MapReduce
+ .
+ This metapackage will install the mongo shell, import/export tools, other client utilities, server software, default configuration, and init.d scripts.
 
 Package: zlib1g
 Architecture: amd64
@@ -8683,6 +9696,51 @@ Homepage: http://gcc.gnu.org/
 Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
  ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
  The Linux and Mac versions are based on Valgrind.
+
+Package: nginx-extras
+Architecture: amd64
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: extra
+Section: httpd
+Source: nginx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 1847
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.3-0ubuntu0.16.04.5), perl (>= 5.22.1-9ubuntu0.6), perlapi-5.22.1, libc6 (>= 2.14), libexpat1 (>= 2.0.1), libgd3 (>= 2.1.0~alpha~), libgeoip1, libluajit-5.1-2, libpam0g (>= 0.99.7.1), libpcre3, libperl5.22 (>= 5.22.1), libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.3-0ubuntu0.16.04.5)
+Conflicts: nginx-core, nginx-full, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Filename: xenial/./nginx-extras_1.10.3-0ubuntu0.16.04.5_amd64.deb
+Size: 630848
+MD5sum: cb78c02fe077c597f3700db86307c9fe
+SHA1: bbb336e9e68eaf16b32da42837f48399460cf914
+SHA256: b4b4cbff9464bd9b820f5824bb1691f7ee7c16654db7babf713240b35d351283
+SHA512: e78215ada6b026e103cd071f1c509ded828d2cdcd3a7f7a96d5f47f1c1fbc01a693ccd6a3b64c1fc8c9a3acce05237e514e31b6c904b108af7ac5e12aab191e3
+Homepage: http://nginx.net
+Description: nginx web/proxy server (extended version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the standard modules, plus
+ extra features and modules such as the Perl module, which allows the
+ addition of Perl in configuration files.
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, FLV, GeoIP,
+ Gunzip, Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log,
+ MP4, Embedded Perl, Random Index, Real IP, Secure Link, SSI, SSL, Stream,
+ Stub Status, Substitution, Thread Pool, Upstream, User ID, XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ THIRD PARTY MODULES: Auth PAM, Cache Purge, DAV Ext, Echo, Fancy Index,
+ Headers More, Embedded Lua, HTTP Push, HTTP Substitutions, Upload Progress,
+ Upstream Fair Queue.
 
 Package: mime-support
 Architecture: all
@@ -8860,6 +9918,73 @@ Description: GNU Standard C++ Library v3 (development files)
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
 
+Package: mongodb-org-server
+Architecture: amd64
+Version: 4.2.3
+Priority: optional
+Section: database
+Source: mongodb-org
+Maintainer: Ernie Hershey <ernie.hershey@mongodb.com>
+Installed-Size: 70711
+Depends: libc6 (>= 2.18), libcurl3 (>= 7.16.2), libgcc1 (>= 1:4.2), libssl1.0.0 (>= 1.0.1), adduser, tzdata
+Conflicts: mongo-10gen, mongo-10gen-enterprise, mongo-10gen-enterprise-server, mongo-10gen-server, mongo-10gen-unstable, mongo-10gen-unstable-enterprise, mongo-10gen-unstable-enterprise-mongos, mongo-10gen-unstable-enterprise-server, mongo-10gen-unstable-enterprise-shell, mongo-10gen-unstable-enterprise-tools, mongo-10gen-unstable-mongos, mongo-10gen-unstable-server, mongo-10gen-unstable-shell, mongo-10gen-unstable-tools, mongo18-10gen, mongo18-10gen-server, mongo20-10gen, mongo20-10gen-server, mongodb, mongodb-10gen, mongodb-10gen-enterprise, mongodb-10gen-unstable, mongodb-10gen-unstable-enterprise, mongodb-10gen-unstable-enterprise-mongos, mongodb-10gen-unstable-enterprise-server, mongodb-10gen-unstable-enterprise-shell, mongodb-10gen-unstable-enterprise-tools, mongodb-10gen-unstable-mongos, mongodb-10gen-unstable-server, mongodb-10gen-unstable-shell, mongodb-10gen-unstable-tools, mongodb-clients, mongodb-dev, mongodb-enterprise, mongodb-enterprise-mongos, mongodb-enterprise-server, mongodb-enterprise-shell, mongodb-enterprise-tools, mongodb-enterprise-unstable, mongodb-enterprise-unstable-mongos, mongodb-enterprise-unstable-server, mongodb-enterprise-unstable-shell, mongodb-enterprise-unstable-tools, mongodb-nightly, mongodb-org-unstable, mongodb-org-unstable-mongos, mongodb-org-unstable-server, mongodb-org-unstable-shell, mongodb-org-unstable-tools, mongodb-server, mongodb-stable, mongodb18-10gen, mongodb20-10gen
+Filename: xenial/./mongodb-org-server_4.2.3_amd64.deb
+Size: 18305358
+MD5sum: bb885c3e408670dd0b24a35e4e8ec74d
+SHA1: 5e9fc802566b6e8a062e1d866c8b762156a8fe01
+SHA256: 887366d41446daf8c5af57af4a5b458d5e82930e07bf2fd11bb8e394ce0acbaf
+SHA512: be2e44fd043ee0c06dbf34c17f931762fee41c3904b82c462299404cdc93d2858deb65ab3fe7622a23977c36c0910913f9c893986ab9311fa602e4764bc057fb
+Homepage: http://www.mongodb.org
+Description: MongoDB database server
+ MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility.
+ .
+ MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.
+ .
+ MongoDB has a rich client ecosystem including hadoop integration, officially supported drivers for 10 programming languages and environments, as well as 40 drivers supported by the user community.
+ .
+ MongoDB features:
+ * JSON Data Model with Dynamic Schemas
+ * Auto-Sharding for Horizontal Scalability
+ * Built-In Replication for High Availability
+ * Rich Secondary Indexes, including geospatial
+ * TTL indexes
+ * Text Search
+ * Aggregation Framework & Native MapReduce
+ .
+ This package contains the MongoDB server software, default configuration files, and init.d scripts.
+
+Package: libk5crypto3
+Architecture: amd64
+Version: 1.13.2+dfsg-5ubuntu2.1
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: krb5
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Sam Hartman <hartmans@debian.org>
+Installed-Size: 290
+Depends: libc6 (>= 2.14), libkrb5support0 (>= 1.13~alpha1+dfsg)
+Suggests: krb5-doc, krb5-user
+Conflicts: libkrb53
+Breaks: libgssapi-krb5-2 (<= 1.10+dfsg~alpha1), libkrb5-3 (<= 1.8~aa)
+Filename: xenial/./libk5crypto3_1.13.2+dfsg-5ubuntu2.1_amd64.deb
+Size: 81258
+MD5sum: 9b4d1b801c5b09845b5c7c259b120f81
+SHA1: 26e93f867dea4040c62bf8d3a68672b521eec5c3
+SHA256: 8d00cc648d129bc7f4c190397bc909ab06d19f91bffd83b40e991d678d5874be
+SHA512: c563c106ee722647fff6b949d3b23389caa0115b83438ba960a68ef9285399b4becd48d74e1e7452cc86748f20cf6b837bef2ba79f2e8f6be6efb9ede575e077
+Homepage: http://web.mit.edu/kerberos/
+Description: MIT Kerberos runtime libraries - Crypto Library
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime cryptography libraries used by
+ applications and Kerberos clients.
+
 Package: erlang-ic
 Architecture: amd64
 Version: 1:18.3-dfsg-1ubuntu3.1
@@ -8960,6 +10085,50 @@ Description: utility for directing compilation
  corresponding input is newer --- it is not limited to building
  computer programs. Indeed, Make is a general purpose dependency
  solver.
+
+Package: nginx-core
+Architecture: amd64
+Version: 1.10.3-0ubuntu0.16.04.5
+Priority: optional
+Section: httpd
+Source: nginx
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Kartik Mistry <kartik@debian.org>
+Installed-Size: 1246
+Provides: httpd, httpd-cgi, nginx
+Depends: nginx-common (= 1.10.3-0ubuntu0.16.04.5), libc6 (>= 2.14), libgd3 (>= 2.1.0~alpha~), libgeoip1, libpcre3, libssl1.0.0 (>= 1.0.2~beta3), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), zlib1g (>= 1:1.1.4)
+Suggests: nginx-doc (= 1.10.3-0ubuntu0.16.04.5)
+Conflicts: nginx-extras, nginx-full, nginx-light
+Breaks: nginx (<< 1.4.5-1)
+Filename: xenial/./nginx-core_1.10.3-0ubuntu0.16.04.5_amd64.deb
+Size: 429480
+MD5sum: cd2a7af6b818a6af210d9570d912f0af
+SHA1: 977452f7bb5cffc97594c48794f036592c692182
+SHA256: a5e76f91024e05080ab58f676fff3daef78a1cf28d7ad324387d90176da398a7
+SHA512: d8b40f2eb46fe58aed495cfb982d66c013822e5ae56bcb3d15fb873153828b70753b2cbfdbafd073ecb180c75b8cad1b3362d0e6fbbe66abb272b0c13d1032dd
+Homepage: http://nginx.net
+Description: nginx web/proxy server (core version)
+ Nginx ("engine X") is a high-performance web and reverse proxy server
+ created by Igor Sysoev. It can be used both as a standalone web server
+ and as a proxy to reduce the load on back-end HTTP or mail servers.
+ .
+ This package provides a version of nginx with the complete set of
+ standard modules included (but omitting some of those included in
+ nginx-extras).
+ .
+ STANDARD HTTP MODULES: Core, Access, Auth Basic, Auto Index, Browser, Empty
+ GIF, FastCGI, Geo, Limit Connections, Limit Requests, Map, Memcached, Proxy,
+ Referer, Rewrite, SCGI, Split Clients, UWSGI.
+ .
+ OPTIONAL HTTP MODULES: Addition, Auth Request, Charset, WebDAV, GeoIP, Gunzip,
+ Gzip, Gzip Precompression, Headers, HTTP/2, Image Filter, Index, Log, Real IP,
+ SSI, SSL, Stream, Stub Status, Substitution, Thread Pool, Upstream, User ID,
+ XSLT.
+ .
+ MAIL MODULES: Mail Core, Auth HTTP, Proxy, SSL, IMAP, POP3, SMTP.
+ .
+ NOTE: This is identical to the -full build, but without any third party
+ modules built in.
 
 Package: liblzma5
 Architecture: amd64
@@ -9314,6 +10483,30 @@ Description: SELinux runtime shared libraries
  API. libselinux may use the shared libsepol to manipulate the binary
  policy if necessary (e.g. to downgrade the policy format to an older
  version supported by the kernel) when loading policy.
+
+Package: redis-server
+Architecture: amd64
+Version: 2:3.0.6-1ubuntu0.4
+Priority: optional
+Section: database
+Source: redis
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Chris Lamb <lamby@debian.org>
+Installed-Size: 897
+Depends: adduser, redis-tools (= 2:3.0.6-1ubuntu0.4), init-system-helpers (>= 1.18~), libc6 (>= 2.14), libjemalloc1 (>= 2.1.1)
+Filename: xenial/./redis-server_2%3a3.0.6-1ubuntu0.4_amd64.deb
+Size: 344118
+MD5sum: b5df6ebd74a56c5b2b0151d48c6af898
+SHA1: 48459cffc057f3f6a1445ee7ff4cced8b6a5f653
+SHA256: f955dec576fa3cf5beb5354aed586f9c0f59fd159eab9631454a1198cac012e2
+SHA512: 24f939178cc792fd27a25109f18d9c988df8c98c503d110afe948c90dc204a094ef3b5eb8bcff87d00e6862fcb56c340fa67fe12e0b4209e6720896b5fcf1f3e
+Homepage: http://redis.io/
+Description: Persistent key-value database with network interface
+ Redis is a key-value database in a similar vein to memcache but the dataset
+ is non-volatile. Redis additionally provides native support for atomically
+ manipulating and querying data structures such as lists and sets.
+ .
+ The dataset is stored entirely in memory and periodically flushed to disk.
 
 Package: libjbig0
 Architecture: amd64
@@ -9718,6 +10911,33 @@ Description: GCC support library (development files)
  This package contains the headers and static library files necessary for
  building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
 
+Package: python-libxslt1
+Architecture: amd64
+Version: 1.1.28-2.1ubuntu0.3
+Priority: optional
+Section: python
+Source: libxslt
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 274
+Provides: python2.7-libxslt1
+Depends: libc6 (>= 2.4), libpython2.7 (>= 2.7), libxslt1.1 (>= 1.1.27), python (>= 2.7), python (<< 2.8), python-libxml2
+Filename: xenial/./python-libxslt1_1.1.28-2.1ubuntu0.3_amd64.deb
+Size: 33514
+MD5sum: d8ab2d249ac866dd34aed869a8ba877c
+SHA1: 6355457059edf69a47b97eb5b5c50397cab3fe27
+SHA256: 4b0bd43fcb16ff2b31da18be6e17b80904d49735cd10c499604230846a574fbb
+SHA512: f12d57cd0100bdf87f709f9d06711b9e22cd08cda0a86dbf63fdbabe5e8f609fab2941dbb3531d3a274c220dc10308765320e70829eced35ff465a1a02bb8d3a
+Homepage: http://xmlsoft.org/xslt/
+Description: Python bindings for libxslt1
+ XSLT is an XML language for defining transformations of XML files from
+ XML to some other arbitrary format, such as XML, HTML, plain text, etc.
+ using standard XSLT stylesheets. libxslt is a C library which
+ implements XSLT version 1.0.
+ .
+ This package contains Python bindings for libxslt, needed to use
+ libxslt in Python programs.
+
 Package: liblsan0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.11
@@ -9798,6 +11018,41 @@ Description: Python 3 interface to libapt-pkg
  The included 'aptsources' Python interface provides an abstraction of
  the sources.list configuration on the repository and the distro level.
 
+Package: mongodb-org-tools
+Architecture: amd64
+Version: 4.2.3
+Priority: optional
+Section: database
+Source: mongodb-org
+Maintainer: Ernie Hershey <ernie.hershey@mongodb.com>
+Installed-Size: 130759
+Depends: libc6 (>= 2.14)
+Conflicts: mongo-10gen, mongo-10gen-enterprise, mongo-10gen-enterprise-server, mongo-10gen-server, mongo-10gen-unstable, mongo-10gen-unstable-enterprise, mongo-10gen-unstable-enterprise-mongos, mongo-10gen-unstable-enterprise-server, mongo-10gen-unstable-enterprise-shell, mongo-10gen-unstable-enterprise-tools, mongo-10gen-unstable-mongos, mongo-10gen-unstable-server, mongo-10gen-unstable-shell, mongo-10gen-unstable-tools, mongo18-10gen, mongo18-10gen-server, mongo20-10gen, mongo20-10gen-server, mongodb, mongodb-10gen, mongodb-10gen-enterprise, mongodb-10gen-unstable, mongodb-10gen-unstable-enterprise, mongodb-10gen-unstable-enterprise-mongos, mongodb-10gen-unstable-enterprise-server, mongodb-10gen-unstable-enterprise-shell, mongodb-10gen-unstable-enterprise-tools, mongodb-10gen-unstable-mongos, mongodb-10gen-unstable-server, mongodb-10gen-unstable-shell, mongodb-10gen-unstable-tools, mongodb-clients, mongodb-dev, mongodb-enterprise, mongodb-enterprise-mongos, mongodb-enterprise-server, mongodb-enterprise-shell, mongodb-enterprise-tools, mongodb-enterprise-unstable, mongodb-enterprise-unstable-mongos, mongodb-enterprise-unstable-server, mongodb-enterprise-unstable-shell, mongodb-enterprise-unstable-tools, mongodb-nightly, mongodb-org-unstable, mongodb-org-unstable-mongos, mongodb-org-unstable-server, mongodb-org-unstable-shell, mongodb-org-unstable-tools, mongodb-server, mongodb-stable, mongodb18-10gen, mongodb20-10gen
+Filename: xenial/./mongodb-org-tools_4.2.3_amd64.deb
+Size: 56876488
+MD5sum: b319b4aadfd26d7ed5c6c2690a353383
+SHA1: 8359ab9e0ebaa648a98d88d5ad85c6d879962afb
+SHA256: 0b5dd307fba86f3cef6a24100fdff6957e59339f6e74527fab6c7c36b667311b
+SHA512: b964370f95f9744eb462928ce34de07d7f7d52dab451d241dac2c065a1e3f247404e6221efe7188a91d0912e666b89e73b490d29484e7c4ca72bf11014f424e2
+Homepage: http://www.mongodb.org
+Description: MongoDB tools
+ MongoDB is built for scalability, performance and high availability, scaling from single server deployments to large, complex multi-site architectures. By leveraging in-memory computing, MongoDB provides high performance for both reads and writes. MongoDB’s native replication and automated failover enable enterprise-grade reliability and operational flexibility.
+ .
+ MongoDB is an open-source database used by companies of all sizes, across all industries and for a wide variety of applications. It is an agile database that allows schemas to change quickly as applications evolve, while still providing the functionality developers expect from traditional databases, such as secondary indexes, a full query language and strict consistency.
+ .
+ MongoDB has a rich client ecosystem including hadoop integration, officially supported drivers for 10 programming languages and environments, as well as 40 drivers supported by the user community.
+ .
+ MongoDB features:
+ * JSON Data Model with Dynamic Schemas
+ * Auto-Sharding for Horizontal Scalability
+ * Built-In Replication for High Availability
+ * Rich Secondary Indexes, including geospatial
+ * TTL indexes
+ * Text Search
+ * Aggregation Framework & Native MapReduce
+ .
+ This package contains standard utilities for interacting with MongoDB.
+
 Package: gcc-6-base
 Architecture: amd64
 Version: 6.0.1-0ubuntu1
@@ -9819,6 +11074,32 @@ Homepage: http://gcc.gnu.org/
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
  contained in the GNU Compiler Collection (GCC).
+
+Package: icu-devtools
+Architecture: amd64
+Version: 55.1-7ubuntu0.4
+Multi-Arch: foreign
+Priority: optional
+Section: libdevel
+Source: icu
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 533
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libicu55 (>= 55.1-1~), libstdc++6 (>= 4.9)
+Breaks: icu-tools (<< 55.1-1~), libicu-dev (<< 55.1-7ubuntu0.4)
+Replaces: icu-tools (<< 55.1-1~), libicu-dev (<< 55.1-7ubuntu0.4)
+Filename: xenial/./icu-devtools_55.1-7ubuntu0.4_amd64.deb
+Size: 165998
+MD5sum: edca5bb67c5084df89bbd8e07c5f9b55
+SHA1: 183231d8e3f7693f1415fb7860af01c3d8652387
+SHA256: 9996cd2a39d5d578836c5aa1fb89499f5f3d6d565cd0ebb9492c626e1837d3e9
+SHA512: b84804e43f8c9a189b06a6c2f06af0315ab419b54b4512ededead0bedc2319b059dd6622faaf757459e835706e54366b2af6eedbc2a6beb11a7a9839271a56c8
+Homepage: http://www.icu-project.org
+Description: Development utilities for International Components for Unicode
+ ICU is a C++ and C library that provides robust and full-featured
+ Unicode and locale support. This package contains programs used to
+ manipulate data files found in the ICU sources and is a dependency of
+ libicu-dev.  End users would generally not need to install this package.
 
 Package: libapt-pkg5.0
 Architecture: amd64
