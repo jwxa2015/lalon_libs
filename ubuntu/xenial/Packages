@@ -621,6 +621,34 @@ Description: asynchronous event notification library (extra)
  If you're writing software that uses libevent's protocol support, you
  need to link libevent_core and libevent_extra as well.
 
+Package: libpython2.7-stdlib
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: same
+Priority: standard
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 8727
+Provides: python-argparse, python2.7-argparse, python2.7-celementtree, python2.7-cjkcodecs, python2.7-ctypes, python2.7-elementtree, python2.7-profiler, python2.7-wsgiref
+Depends: libpython2.7-minimal (= 2.7.12-1ubuntu0~16.04.9), mime-support, libbz2-1.0, libc6 (>= 2.15), libdb5.3, libexpat1 (>= 2.1~beta3), libffi6 (>= 3.0.4), libncursesw5 (>= 6), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.5.9), libssl1.0.0 (>= 1.0.2~beta3), libtinfo5 (>= 6)
+Breaks: python-urllib3 (<< 1.9.1-3)
+Replaces: python2.7 (<< 2.7.5-0~)
+Filename: xenial/./libpython2.7-stdlib_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 1884162
+MD5sum: 35765397e774278e9a1b1e7160507f4d
+SHA1: 8bd799270e96e5d298129cb800fb9c022b319b55
+SHA256: 01fa7e069b5c8630f596f299d6b0069dc33ac0131dcd3c0f2c339c06ca6816a9
+SHA512: 766c63d6515c10b8d0d89fa96e2cf4a41e4dc48b7e4095455b147073c074d256eb4099f926f6cab831e0149ce39cf17784c3ff393746f9ef67c8ae2be514423b
+Description: Interactive high-level object-oriented language (standard library, version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 2.7's standard library. It is normally not
+ used on its own, but as a dependency of python2.7.
+
 Package: libattr1
 Architecture: amd64
 Version: 1:2.4.47-2
@@ -4428,6 +4456,34 @@ Description: Wietse Venema's TCP wrappers library
   - access control per host, domain and/or service;
   - detection of host name spoofing or host address spoofing;
   - booby traps to implement an early-warning system.
+
+Package: python2.7-minimal
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: allowed
+Priority: standard
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 3533
+Pre-Depends: libc6 (>= 2.15)
+Depends: libpython2.7-minimal (= 2.7.12-1ubuntu0~16.04.9), zlib1g (>= 1:1.2.0)
+Recommends: python2.7
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Replaces: python2.7 (<< 2.7.8-7~)
+Filename: xenial/./python2.7-minimal_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 1261510
+MD5sum: 5902168f2592598d06eec3a35a414f3e
+SHA1: 575bd53eaff9b95d3d8919b38855c36df2bafebc
+SHA256: 1ca113e8eef3b6c2c99a77080930df38b2b3098c04023f9f787996bc73a47eb3
+SHA512: 6badf7b2bab42cac891459b4cb286343ba21ac24a9c01b5b4930bc3d2bd3b547de5c604c90fcb8d613550205b76472525d04efd3b00545aef42f28c15f94c8e3
+Description: Minimal subset of the Python language (version 2.7)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
+ contained in this package.
 
 Package: fonts-freefont-ttf
 Architecture: all
