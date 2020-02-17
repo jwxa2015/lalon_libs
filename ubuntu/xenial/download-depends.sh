@@ -1,7 +1,7 @@
 function getDepends()
 {
    # use tr to del < >
-   ret=`apt-cache depends $1|grep Depends |cut -d: -f2 |tr -d "<>"`
+   ret=`apt-cache depends $1|grep 依赖 |cut -d: -f2 |tr -d "<>"`
    echo $ret
 }
 
@@ -24,7 +24,8 @@ do
       echo "$j depended $added"
       newlist="$newlist $added"
       echo "download $j"
-      apt-get download $j 
+      apt download $j
+#      apt-get download $j 
     done
 
     libs=$newlist

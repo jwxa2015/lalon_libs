@@ -684,6 +684,30 @@ Description: Erlang/OTP modules for ASN.1 support
  The Asn1 application contains modules with compile-time and run-time
  support for ASN.1 in Erlang/OTP.
 
+Package: libmpx0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 42
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.17)
+Filename: xenial/./libmpx0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 9762
+MD5sum: 188a13829db46d1a0ed3ba5d7853c63f
+SHA1: 90c4c22762687ed6a983781325a6ccdf459c958e
+SHA256: 88cd8b781d9e1eb8e6b90fab037a8215c7f94bb7478fc90513d681fef5d5469a
+SHA512: 06d8791dcb56186d10ee22784b35d7aa9295bb7b38b2fba70c475cae607fc0ed764f3821e807d21335e9753e7c0abe9791b3dd98a85fb4c73b42b18a2cc7981f
+Homepage: http://gcc.gnu.org/
+Description: Intel memory protection extensions (runtime)
+ Intel MPX is a set of processor features which, with compiler,
+ runtime library and OS support, brings increased robustness to
+ software by checking pointer references whose compile time normal
+ intentions are usurped at runtime due to buffer overflow.
+
 Package: libfontconfig1
 Architecture: amd64
 Version: 2.11.94-0ubuntu1.1
@@ -2282,6 +2306,28 @@ SHA512: a5540593a3e4bb5ea6105161e1ff0f3747f8b03a52624d5a87c2b262177a4394edb1292d
 Homepage: https://containerd.io
 Description: An open and reliable container runtime
 
+Package: libasan2
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1059
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.23), libgcc1 (>= 1:3.3)
+Filename: xenial/./libasan2_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 264664
+MD5sum: d2dc257dd40792136803c5f4a3b43680
+SHA1: a9fdbdbede49faee8ba898db6030e89624b623c9
+SHA256: 75b9ab48d9f22d094cedb0e56ab6880fbef66fc92d3e596e7fbeec138c54242e
+SHA512: 1567f5215704339d05af5cf7a587391ff3b4b3870efed1740384f5585876db480aed98c6c9ce97dd6f91d5d0886e025cd8b9c874991e498ead6c2724cf7a3cfa
+Homepage: http://gcc.gnu.org/
+Description: AddressSanitizer -- a fast memory error detector
+ AddressSanitizer (ASan) is a fast memory error detector.  It finds
+ use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+
 Package: libroken18-heimdal
 Architecture: amd64
 Version: 1.7~git20150920+dfsg-4ubuntu1.16.04.1
@@ -2685,6 +2731,31 @@ Description: Manual pages about using GNU/Linux for development
   3 = Library calls (note that a more comprehensive source of information
       may be found in the glibc-doc and glibc-doc-reference packages).
 
+Package: libboost-iostreams1.58.0
+Architecture: amd64
+Version: 1.58.0+dfsg-5ubuntu3.1
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: boost1.58
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
+Installed-Size: 142
+Depends: libbz2-1.0, libc6 (>= 2.14), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: xenial/./libboost-iostreams1.58.0_1.58.0+dfsg-5ubuntu3.1_amd64.deb
+Size: 28954
+MD5sum: 6f938f436adabb8e01cf4382f1d89876
+SHA1: 72c57fbe577a0cf6dd52268637e20e319da77a49
+SHA256: eda530d9fd7fca2c0bf4056426e762c1ad0c39a126c823f16c0df8d9a67376fc
+SHA512: 3d4a45b57eb97d4a3c0866349d0586d691788f77eb73c4ae166496b40600ba72beb216d73a6530cd8f32c328e60044f02863a66c7e8c54d6f58c3f9508432ca2
+Homepage: http://www.boost.org/libs/iostreams/
+Description: Boost.Iostreams Library
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ Boost.Iostreams are a collection of concepts and a set of templates
+ which turn models of these concepts into C++ standard library streams
+ and stream buffers.
+
 Package: libpulse0
 Architecture: amd64
 Version: 1:8.0-0ubuntu3.10
@@ -2801,6 +2872,29 @@ SHA512: 8a9df605bd520b278e5151c54da24f872e31986dbc8309d6738b4428c506817af651d21d
 Description: Public libs for Xen
  This package contains the shared toolstack libraries for Xen.
 
+Package: libsqlite3-0
+Architecture: amd64
+Version: 3.11.0-1ubuntu1.3
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: sqlite3
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 952
+Depends: libc6 (>= 2.14)
+Filename: xenial/./libsqlite3-0_3.11.0-1ubuntu1.3_amd64.deb
+Size: 397236
+MD5sum: a7f887f2c64473b10d22c48400f48013
+SHA1: e21288d22541af8a52b43e7184bb4196c75613d5
+SHA256: db4ddb70836ff127cebeb6b56a9675e8a929f736b71e268b6290a0af950e7ff5
+SHA512: 1cc086b9772f2a883d4599018733f0d1a4f18b1790a4d77e62228c0d4f1ad894cf44ea7c98d1a0ac1506764794b9c8abc60dcc3d6e95537f34af674fcffeb42b
+Homepage: http://www.sqlite.org/
+Description: SQLite 3 shared library
+ SQLite is a C library that implements an SQL database engine.
+ Programs that link with the SQLite library can have SQL database
+ access without running a separate RDBMS process.
+
 Package: libstdc++6
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -2873,6 +2967,35 @@ Description: nginx web/proxy server (standard version)
  .
  THIRD PARTY MODULES: Auth PAM, DAV Ext, Echo, HTTP Substitutions, Upstream
  Fair Queue.
+
+Package: aptitude
+Architecture: amd64
+Version: 0.7.4-2ubuntu2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
+Installed-Size: 4106
+Depends: aptitude-common (= 0.7.4-2ubuntu2), libapt-pkg5.0 (>= 1.1), libboost-iostreams1.58.0, libc6 (>= 2.14), libcwidget3v5, libgcc1 (>= 1:3.0), libncursesw5 (>= 6), libsigc++-2.0-0v5 (>= 2.6.1), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 5.2), libtinfo5 (>= 6), libxapian22v5
+Recommends: libparse-debianchangelog-perl, sensible-utils
+Suggests: apt-xapian-index, aptitude-doc-en | aptitude-doc, debtags, tasksel
+Filename: xenial/./aptitude_0.7.4-2ubuntu2_amd64.deb
+Size: 1305852
+MD5sum: b8ebe7ea9893372ebfc8699cb79b398c
+SHA1: 8834a4d2b5d02b1c1199cb149e73b1273a9efa56
+SHA256: 2c3730508eeaf7e12b267c5218ed844555bf6c5a2145268814b2b2f9bce087ed
+SHA512: 7a8506d6678549f9558da124892f5976eb044fcd87a44de55364270408a53bd877b0e69a2428d8c8cd1e812644456f3b9e8ada58a310d94417c4ef49ef12f6db
+Homepage: http://aptitude.alioth.debian.org/
+Description: terminal-based package manager
+ aptitude is a package manager with a number of useful features,
+ including: a mutt-like syntax for matching packages in a flexible
+ manner, dselect-like persistence of user actions, the ability to
+ retrieve and display the Debian changelog of most packages, and a
+ command-line mode similar to that of apt-get.
+ .
+ aptitude is also Y2K-compliant, non-fattening, naturally cleansing,
+ and housebroken.
 
 Package: erlang-os-mon
 Architecture: amd64
@@ -3149,6 +3272,62 @@ Homepage: https://pypi.python.org/pypi/setuptools
 Description: Python Distutils Enhancements
  Extensions to the python-distutils for large or complex distributions.
 
+Package: cpp-5
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Priority: optional
+Section: interpreters
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 21389
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.14), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), zlib1g (>= 1:1.1.4)
+Suggests: gcc-5-locales (>= 5.2.1-23)
+Replaces: gccgo-5 (<< 5.4.0-6ubuntu1~16.04.12)
+Filename: xenial/./cpp-5_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 7783348
+MD5sum: 2dc31ff7826469fcbef0ae7f19dab59a
+SHA1: ddce6c425619208a043e8244aa7bf62af1ef3545
+SHA256: 46f3acb6c4542b20ab8af9dd971adf1cd47bf428544170e7a0b776b7c52a610d
+SHA512: e8d86beb77b29a7eef8d065b1e051fb6424dcde8766f46e220f8c023509657f341179cf2bf8d05e482ffdaa23c0df4add7893b4a70c5520f3bb0271ea69c1247
+Homepage: http://gcc.gnu.org/
+Description: GNU C preprocessor
+ A macro processor that is used automatically by the GNU C compiler
+ to transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+
+Package: aptitude-common
+Architecture: all
+Version: 0.7.4-2ubuntu2
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Source: aptitude
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
+Installed-Size: 4472
+Recommends: aptitude
+Breaks: aptitude (<< 0.6.8-1)
+Replaces: aptitude (<< 0.6.8-1)
+Filename: xenial/./aptitude-common_0.7.4-2ubuntu2_all.deb
+Size: 747112
+MD5sum: e793d5d435ce361954426e6c4404d1ef
+SHA1: 0488ccb5ce6bf54404324ca3660513a26bd1ea9b
+SHA256: 71a6c20b62ee43555291e521b9d017b87f4c79a4489c831a0e1c369a4cd39600
+SHA512: 12c64473584fa0b8bea7b94c66ba67f99b8e0113816ca47b0f44233d32ba3fd0afcefcb01cf8a035701e87b41340301b3302629070788a717bec2ecf1dac2fac
+Homepage: http://aptitude.alioth.debian.org/
+Description: architecture independent files for the aptitude package manager
+ aptitude is a package manager with a number of useful features,
+ including: a mutt-like syntax for matching packages in a flexible
+ manner, dselect-like persistence of user actions, the ability to
+ retrieve and display the Debian changelog of most packages, and a
+ command-line mode similar to that of apt-get.
+ .
+ This package contains the data files and translations used by
+ aptitude.
+
 Package: python3-software-properties
 Architecture: all
 Version: 0.96.20.9
@@ -3192,6 +3371,29 @@ Description: GNU Transactional Memory Library
  GNU Transactional Memory Library (libitm) provides transaction support for
  accesses to the memory of a process, enabling easy-to-use synchronization of
  accesses to shared memory by several threads.
+
+Package: libgomp1
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 156
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.17)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: xenial/./libgomp1_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 55194
+MD5sum: ece7349a4b3a791cf9224f12da5f3b54
+SHA1: 02a0e803a3d945a0c473ba5ffebcad2d394b07a2
+SHA256: 2c809bd98020328e513d2786707962d74436cf3768c49d8565f55ea4c1486251
+SHA512: 8b8f43639866eb3c60fbd717c1de0525201fd2d4c497d6d43f52a79f2ce8bc99e13a2dad08f8bcd6aa54fa7988bf6038386e852a15b6c192845896a2774b9e4b
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
 
 Package: libvpx3
 Architecture: amd64
@@ -3481,6 +3683,29 @@ Description: Apply a diff file to an original
  those differences to an original file, producing a patched
  version.
 
+Package: libquadmath0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 265
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.23)
+Filename: xenial/./libquadmath0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 131370
+MD5sum: 07d88294d7569c1ffbecf0e7adcc5028
+SHA1: 75ae2bfa32aadfa4d87fca944d2078121c3ed6b7
+SHA256: 3dafa31e3187f070b78a38cf526aec02e9c0403f6768d630afff9258fdfbc2c2
+SHA512: 45d423ed9f88f9b237fae2df288260380f621efa36add3820bba9e4ae89e2c42aec01096d912448b997029eda4bbcf2aec4a54d3dba3a2d9168e3a5c15a33599
+Homepage: http://gcc.gnu.org/
+Description: GCC Quad-Precision Math Library
+ A library, which provides quad-precision mathematical functions on targets
+ supporting the __float128 datatype. The library is used to provide on such
+ targets the REAL(16) type in the GNU Fortran compiler.
+
 Package: libbrlapi0.6
 Architecture: amd64
 Version: 5.3.1-2ubuntu2.1
@@ -3531,6 +3756,28 @@ Homepage: http://www.erlang.org/
 Description: Erlang/OTP XML tools
  The xmerl application contains modules for processing XML.
 
+Package: liblsan0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 275
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.4), libgcc1 (>= 1:3.3)
+Filename: xenial/./liblsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 104884
+MD5sum: f7facc0c05882e681d6afb1069f37f73
+SHA1: 55459e4e608be3e7d3ad7c56e00b09b45e15dfbe
+SHA256: d3138b0eae3112d13993dc79ffaa570d9507160fb7a237ed0be01c166c81a5ed
+SHA512: 354852791b089acd27ea11f941d22d202769060d08cc7837d1d2a146802e079e04183637a378f55fd7e6a7d30e69e17047846d47ccb359945a40180117e51d0f
+Homepage: http://gcc.gnu.org/
+Description: LeakSanitizer -- a memory leak detector (runtime)
+ LeakSanitizer (Lsan) is a memory leak detector which is integrated
+ into AddressSanitizer.
+
 Package: gnupg-agent
 Architecture: amd64
 Version: 2.1.11-6ubuntu2.1
@@ -3563,6 +3810,28 @@ Description: GNU privacy guard - cryptographic agent
  secret key material for OpenPGP and S/MIME use.  The agent also
  provides a passphrase cache, which is used by pre-2.1 versions of
  GnuPG for OpenPGP operations.
+
+Package: libcilkrts5
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 139
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.14), libgcc1 (>= 1:4.8), libstdc++6 (>= 4.1.1)
+Filename: xenial/./libcilkrts5_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 40036
+MD5sum: 97f833c1ca92dc6ca0f84c4241eb3783
+SHA1: 5589702a615c82bda01b5ed54c3db544c139437f
+SHA256: 66a97aff69d03619bebef6d1c4f9d3fbab356c3892bd9a1f5f5de4d755c48495
+SHA512: 4d29d4611aa11aa7bd4fa71bd770aa653fe5eae32f8c3eb5f08c68d984e1202a72afbd074d02849e218c6a3828387824bca1e7db3ae348c86a138de32b41d832
+Homepage: http://gcc.gnu.org/
+Description: Intel Cilk Plus language extensions (runtime)
+ Intel Cilk Plus is an extension to the C and C++ languages to support
+ data and task parallelism.
 
 Package: mongodb-org-server
 Architecture: amd64
@@ -3841,6 +4110,35 @@ Description: SELinux policy management library
  based on the concepts of Type Enforcement, Role-based Access
  Control, and Multi-level Security.
 
+Package: libsigc++-2.0-0v5
+Architecture: amd64
+Version: 2.6.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libsigc++-2.0
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Installed-Size: 49
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)
+Conflicts: libsigc++-2.0-0c2a
+Replaces: libsigc++-2.0-0c2a
+Filename: xenial/./libsigc++-2.0-0v5_2.6.2-1_amd64.deb
+Size: 11066
+MD5sum: df2d1c9390344c43ebb93daa72b4ca1e
+SHA1: 18a8d55b9ff48a85238d6227d0674ac7a34c9a6d
+SHA256: a8e8b64685429180c6cb22907641b977cb7512ab29232b4ebfc9660034ce6a2e
+SHA512: 255856ed6f6f3652f894b537a696e10616ea15463d6184ad97c92134d86f14e4f5eeb11d532dc42bda5c3ea0194b900696167af8af6378bfc2c8db210b8c7403
+Description: type-safe Signal Framework for C++ - runtime
+ This library implements a full callback system for use in widget
+ libraries, abstract interfaces, and general programming. It provides
+ the ability to connect an abstract callback to a class method,
+ function, or function object, and contains adaptor classes for the
+ connection of dissimilar callbacks.
+ .
+ These are the runtime files for libsigc++, needed only if you wish to
+ run software which depends on it.
+
 Package: python2.7-minimal
 Architecture: amd64
 Version: 2.7.12-1ubuntu0~16.04.4
@@ -4099,6 +4397,27 @@ Description: common error description library
  manipulate the most common form of error code in a fashion that does not
  have the problems identified with mechanisms commonly in use.
 
+Package: libcc1-0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 103
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2)
+Filename: xenial/./libcc1-0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 38802
+MD5sum: c1a203b8aa0000f3ef2a4d468afb4fca
+SHA1: 6e3a93b36f1760522ae3b4d98db5aec5dbaadeaa
+SHA256: b28583d3d96d6c30be4668da166284338969b59ccd648f4d3734d172507e21d6
+SHA512: dff85e92ad5e5e5b4a84d54a24d78cf8f4e1983c233767f99ed9ec846070469b7a766aba0a1fbbf353340096a86a6a3ef9affe0ad75964a3b3c622fb98f02bd1
+Homepage: http://gcc.gnu.org/
+Description: GCC cc1 plugin for GDB
+ libcc1 is a plugin for GDB.
+
 Package: libdpkg-perl
 Architecture: all
 Version: 1.18.4ubuntu1.5
@@ -4220,27 +4539,28 @@ Description: GNU readline and history libraries, common files
  The GNU history library provides a consistent user interface for
  recalling lines of previously typed input.
 
-Package: gcc-5-base
+Package: libitm1
 Architecture: amd64
-Version: 5.4.0-6ubuntu1~16.04.11
+Version: 5.4.0-6ubuntu1~16.04.12
 Multi-Arch: same
-Priority: required
+Priority: optional
 Section: libs
 Source: gcc-5
 Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
 Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 66
-Breaks: gcc-4.4-base (<< 4.4.7), gcc-4.7-base (<< 4.7.3), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
-Filename: xenial/./gcc-5-base_5.4.0-6ubuntu1~16.04.11_amd64.deb
-Size: 17320
-MD5sum: d77f81c2e0301ddc4deaad45b3a18292
-SHA1: 4a0137251999c7d81b459f448806da5d1a6cc0bb
-SHA256: 7e5805b73671a3d7a94c92e6614ebbe6d693bf08290ab2696a111d725977f202
-SHA512: d432cb1c9251b1aa6ba4331530264c50ef74fdfdea5e70b2987c0f2566ea4490608146260b8ef26e788f972f0b3712b39d4365001820af0de3364e4cf5a97cd4
+Installed-Size: 126
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.14)
+Filename: xenial/./libitm1_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 27430
+MD5sum: 2f2cf722f8fd64f11f33034b8447d591
+SHA1: b6be74525f9657c782542f65d53e132671031a48
+SHA256: d3a1a58329f75631864de9d02f1d50ece54ca6af4ae953b041682c33b94c70a2
+SHA512: f024464a1d01780485f98e2c77998f6048e5b3ebbe7d1e698790d9459c7fb45ada098b6776c3dd9005c855fe79a8f6c04eb1e12036632a116e763cf2152bccdd
 Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU Compiler Collection (base package)
- This package contains files common to all languages and libraries
- contained in the GNU Compiler Collection (GCC).
+Description: GNU Transactional Memory Library
+ GNU Transactional Memory Library (libitm) provides transaction support for
+ accesses to the memory of a process, enabling easy-to-use synchronization of
+ accesses to shared memory by several threads.
 
 Package: libldap-2.4-2
 Architecture: amd64
@@ -4290,6 +4610,29 @@ Description: Interactive high-level object-oriented language (version 2.7)
  Python is a high-level, interactive, object-oriented language. Its 2.7 version
  includes an extensive class library with lots of goodies for
  network programming, system administration, sounds and graphics.
+
+Package: gcc-5
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Priority: optional
+Section: devel
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 23648
+Provides: c-compiler
+Depends: cpp-5 (= 5.4.0-6ubuntu1~16.04.12), gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libcc1-0 (>= 5.4.0-6ubuntu1~16.04.12), binutils (>= 2.26.1), libgcc-5-dev (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Suggests: gcc-5-multilib, gcc-5-doc (>= 5.2.1-23), gcc-5-locales (>= 5.2.1-23), libgcc1-dbg (>= 1:5.4.0-6ubuntu1~16.04.12), libgomp1-dbg (>= 5.4.0-6ubuntu1~16.04.12), libitm1-dbg (>= 5.4.0-6ubuntu1~16.04.12), libatomic1-dbg (>= 5.4.0-6ubuntu1~16.04.12), libasan2-dbg (>= 5.4.0-6ubuntu1~16.04.12), liblsan0-dbg (>= 5.4.0-6ubuntu1~16.04.12), libtsan0-dbg (>= 5.4.0-6ubuntu1~16.04.12), libubsan0-dbg (>= 5.4.0-6ubuntu1~16.04.12), libcilkrts5-dbg (>= 5.4.0-6ubuntu1~16.04.12), libmpx0-dbg (>= 5.4.0-6ubuntu1~16.04.12), libquadmath0-dbg (>= 5.4.0-6ubuntu1~16.04.12)
+Replaces: gcc-5-base (<< 5-20150329-1), gcc-5-plugin-dev (<< 5-20150321-1), gccgo-5 (<< 5.4.0-6ubuntu1~16.04.12)
+Filename: xenial/./gcc-5_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 8612306
+MD5sum: 834d3b09e44dadecdecac684376298ea
+SHA1: 92c6e5b528d16b2079896cd3a07f38c0156e89c0
+SHA256: 3abc0fb5bb783e484e874650030f6db5d0c6356eea7f51519f45750496c8aa19
+SHA512: b6ec25f6027e6f681abab4796bfe164300627385167d6bdcab84d22eab6f70d6f72de7c6a3cbca3ccc0845ee2c1ba94f4f1f2553281c9d951ab5e04346c9827f
+Homepage: http://gcc.gnu.org/
+Description: GNU C compiler
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
 
 Package: libxpm4
 Architecture: amd64
@@ -4708,6 +5051,35 @@ Description: userspace USB programming library
  This package contains what you need to run programs that use this
  library.
 
+Package: libcwidget3v5
+Architecture: amd64
+Version: 0.5.17-4ubuntu2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: cwidget
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Manuel A. Fernandez Montecelo <mafm@debian.org>
+Installed-Size: 1056
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libncursesw5 (>= 6), libsigc++-2.0-0v5 (>= 2.6.1), libstdc++6 (>= 5.2), libtinfo5 (>= 6)
+Suggests: libcwidget-dev
+Conflicts: libcwidget3
+Replaces: libcwidget3
+Filename: xenial/./libcwidget3v5_0.5.17-4ubuntu2_amd64.deb
+Size: 291580
+MD5sum: fc088c2bfaa56439c9893f8c0d2e35f4
+SHA1: ac2002a4cedf2d3f039a8bc040ad62bdefdd251a
+SHA256: ae6d4d29f875aaa1e3a9e6132bbc5b80cae7bc13b372365c2a88654f9df78315
+SHA512: e57464b889ca5e5eb84782b6f74a9c5f86e332e8dfa9abdf403f5eac73eecdc1e26365301d7a40558409acb3961df8df057c072d1a6b9c3cf702b0cde6c6fa85
+Homepage: http://cwidget.alioth.debian.org
+Description: high-level terminal interface library for C++ (runtime files)
+ libcwidget is a modern user interface library modeled on GTK+ and Qt,
+ but using curses as its display layer and with widgets that are
+ tailored to a terminal environment.
+ .
+ This package contains the files that are required to run programs
+ compiled against libcwidget.
+
 Package: libtiff5
 Architecture: amd64
 Version: 4.0.6-1ubuntu0.6
@@ -4867,6 +5239,34 @@ Description: Linux Kernel Device Mapper userspace library
  This package contains the (user-space) shared library for accessing the
  device-mapper; it allows usage of the device-mapper through a clean,
  consistent interface (as opposed to through kernel ioctls).
+
+Package: libuuid1
+Architecture: amd64
+Version: 2.27.1-6ubuntu3.10
+Multi-Arch: same
+Priority: required
+Section: libs
+Source: util-linux
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian util-linux Maintainers <ah-util-linux@debian.org>
+Installed-Size: 114
+Depends: passwd, libc6 (>= 2.4)
+Recommends: uuid-runtime
+Replaces: e2fsprogs (<< 1.34-1)
+Filename: xenial/./libuuid1_2.27.1-6ubuntu3.10_amd64.deb
+Size: 14458
+MD5sum: da27b09be8faeaa777128ada7e6c9329
+SHA1: 7f7b7ed5939c7d8e3d729eaf4ea72b12b7d7e0f7
+SHA256: 2448657baae15d88d964022bd3827e9274129928ae8a9f04556866b26cf8a4dd
+SHA512: 7077c7f9e5873aef5a3df4fcb2e31384415c06cf9f42d81db786058da884e3a63be3b633d32d0f8a206a6db6b7c45a8d871b89b1098ee3680fff3d0047bdf4d0
+Description: Universally Unique ID library
+ The libuuid library generates and parses 128-bit Universally Unique
+ IDs (UUIDs). A UUID is an identifier that is unique within the space
+ of all such identifiers across both space and time. It can be used for
+ multiple purposes, from tagging objects with an extremely short lifetime
+ to reliably identifying very persistent objects across a network.
+ .
+ See RFC 4122 for more information.
 
 Package: libc6
 Architecture: amd64
@@ -5120,6 +5520,30 @@ Description: Header files and a static library for Python (v2.7)
  .
  This package contains development files. It is normally not
  used on it's own, but as a dependency of python2.7-dev.
+
+Package: libgcc-5-dev
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 12193
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libgcc1 (>= 1:5.4.0-6ubuntu1~16.04.12), libgomp1 (>= 5.4.0-6ubuntu1~16.04.12), libitm1 (>= 5.4.0-6ubuntu1~16.04.12), libatomic1 (>= 5.4.0-6ubuntu1~16.04.12), libasan2 (>= 5.4.0-6ubuntu1~16.04.12), liblsan0 (>= 5.4.0-6ubuntu1~16.04.12), libtsan0 (>= 5.4.0-6ubuntu1~16.04.12), libubsan0 (>= 5.4.0-6ubuntu1~16.04.12), libcilkrts5 (>= 5.4.0-6ubuntu1~16.04.12), libmpx0 (>= 5.4.0-6ubuntu1~16.04.12), libquadmath0 (>= 5.4.0-6ubuntu1~16.04.12)
+Recommends: libc6-dev (>= 2.13-0ubuntu6)
+Replaces: gccgo-5 (<< 5.4.0-6ubuntu1~16.04.12)
+Filename: xenial/./libgcc-5-dev_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 2238978
+MD5sum: c284a3e768cfc6f477db8eb13f05e3e5
+SHA1: d91af08af3326d700bff14b32e9d5b84a1a7e3e8
+SHA256: 9fcd5a457cc7f001c62767720953ee8f133744db48b73be2008573768034a684
+SHA512: efc0c432be88431d077d4a24efb2f733df534126f5b2a69cdbc53f096ef45de3a48f8c5667e101c4781af24f2bbd6491ba4ae8a4cff6511cdcf68beea74f7213
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
 
 Package: mongodb-org-shell
 Architecture: amd64
@@ -5610,6 +6034,28 @@ Description: Log rotation utility
  monthly or when the log file gets to a certain size.  Normally, logrotate
  runs as a daily cron job.
 
+Package: libatomic1
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 41
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.14)
+Filename: xenial/./libatomic1_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 8892
+MD5sum: 5e30377f926bc82b257628262cf486de
+SHA1: 0c857e4d5ea19e13390db49aa9390e72d2f2001f
+SHA256: bfd89e318928537e49e4ea94de9a867772cc5ad43e4f09a3960220f43367c92f
+SHA512: 2efafcb8efe617a55b561c345314ecd6a832b5709ace9785aba9d992ca188259d969bd3ed03cedeea66b25a7145693ecab847d1b969fdd8fa3c57e3266e50535
+Homepage: http://gcc.gnu.org/
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+
 Package: dpkg-dev
 Architecture: all
 Version: 1.18.4ubuntu1.5
@@ -5752,6 +6198,38 @@ Description: QEMU full system emulation binaries (x86)
  .
  On x86 host hardware this package also enables KVM kernel virtual machine
  usage on systems which supports it.
+
+Package: libxapian22v5
+Architecture: amd64
+Version: 1.2.22-2
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: xapian-core
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Olly Betts <olly@survex.com>
+Installed-Size: 2430
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libstdc++6 (>= 5.2), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Suggests: xapian-tools
+Conflicts: libxapian22
+Replaces: libxapian22
+Filename: xenial/./libxapian22v5_1.2.22-2_amd64.deb
+Size: 588996
+MD5sum: d4e4bb3ee4c8a9a02295891aebed2372
+SHA1: 7e0ba4aa5fa682a0d6574fcfa2cb490e115560a3
+SHA256: 5770250f0a08799bad36a45fde049033ad136a3d2553e9b8c8fb939fa5b42e77
+SHA512: 3a90b091d17678ce9ccb23ca7fa1e767f4e4e56993994bb4927e41d78a658baed35ec25bafcf97bc9695cbde1c6f7cd82fb99a5248c94726df18f3b821df9b4b
+Homepage: https://xapian.org/
+Description: Search engine library
+ This package contains the core Xapian runtime library.
+ .
+ The Xapian search engine library is a highly adaptable toolkit which allows
+ developers to easily add advanced indexing and search facilities to their own
+ applications.  It implements the probabilistic model of information retrieval,
+ and provides facilities for performing ranked free-text searches, relevance
+ feedback, phrase searching, boolean searching, stemming, and simultaneous
+ update and searching.  It is highly scalable, and is capable of working with
+ collections containing hundreds of millions of documents.
 
 Package: libsasl2-modules-db
 Architecture: amd64
@@ -7250,6 +7728,31 @@ Homepage: http://www.erlang.org/
 Description: Erlang/OTP XML tools
  The xmerl application contains modules for processing XML.
 
+Package: zlib1g
+Architecture: amd64
+Version: 1:1.2.8.dfsg-2ubuntu4.3
+Multi-Arch: same
+Priority: required
+Section: libs
+Source: zlib
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Mark Brown <broonie@debian.org>
+Installed-Size: 156
+Provides: libz1
+Depends: libc6 (>= 2.14)
+Conflicts: zlib1 (<= 1:1.0.4-7)
+Breaks: libxml2 (<< 2.7.6.dfsg-2), texlive-binaries (<< 2009-12)
+Filename: xenial/./zlib1g_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb
+Size: 51170
+MD5sum: d154a31d8232510776213a1f5e86f4f7
+SHA1: b8e03302a8147782f6545d8275d3c11cae2c4862
+SHA256: 7dc32cfa3794ee7e4ffc3698c1f7236a0b24704bc38185ef4aa5449f672bfb0f
+SHA512: 577162040c1b89691ebcc4ebfee2e595719b7dd4b519ee42a70b92258fff824d97cb2a0f205b8f07560503af2330de7eca11ae974f7ec263d56e5b44aee058a0
+Homepage: http://zlib.net/
+Description: compression library - runtime
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the shared library.
+
 Package: adduser
 Architecture: all
 Version: 3.113+nmu3ubuntu4
@@ -7314,29 +7817,6 @@ Description: Erlang/OTP helper for web-based tools
  WebTool provides an easy way to use web-based tools with Erlang/OTP.
  It configures and starts a web server as well as all available tools.
 
-Package: gcc-5
-Architecture: amd64
-Version: 5.4.0-6ubuntu1~16.04.11
-Priority: optional
-Section: devel
-Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 23652
-Provides: c-compiler
-Depends: cpp-5 (= 5.4.0-6ubuntu1~16.04.11), gcc-5-base (= 5.4.0-6ubuntu1~16.04.11), libcc1-0 (>= 5.4.0-6ubuntu1~16.04.11), binutils (>= 2.26.1), libgcc-5-dev (= 5.4.0-6ubuntu1~16.04.11), libc6 (>= 2.15), libgcc1 (>= 1:3.0), libgmp10 (>= 2:5.0.1~), libisl15 (>= 0.15), libmpc3, libmpfr4 (>= 3.1.3), libstdc++6 (>= 4.1.1), zlib1g (>= 1:1.1.4)
-Recommends: libc6-dev (>= 2.13-0ubuntu6)
-Suggests: gcc-5-multilib, gcc-5-doc (>= 5.2.1-23), gcc-5-locales (>= 5.2.1-23), libgcc1-dbg (>= 1:5.4.0-6ubuntu1~16.04.11), libgomp1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libitm1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libatomic1-dbg (>= 5.4.0-6ubuntu1~16.04.11), libasan2-dbg (>= 5.4.0-6ubuntu1~16.04.11), liblsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libtsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libubsan0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libcilkrts5-dbg (>= 5.4.0-6ubuntu1~16.04.11), libmpx0-dbg (>= 5.4.0-6ubuntu1~16.04.11), libquadmath0-dbg (>= 5.4.0-6ubuntu1~16.04.11)
-Replaces: gcc-5-base (<< 5-20150329-1), gcc-5-plugin-dev (<< 5-20150321-1), gccgo-5 (<< 5.4.0-6ubuntu1~16.04.11)
-Filename: xenial/./gcc-5_5.4.0-6ubuntu1~16.04.11_amd64.deb
-Size: 8416814
-MD5sum: bdadc08ea21b2cf4ac3df668f6fd96a5
-SHA1: 624147ed61b224df85d70f2c97f2a45d15a5db6f
-SHA256: 487dcaad687710118c0402df3f1599f822e6b437fbdf546968436bc5eb1a85ee
-SHA512: 650500b93dc41aede1531a6b98a922b22522e08b6a8a40662cc4bc36d113df3a9d00511967b926a56396008610294732fe08da69eeab9ca9a449c02d892a681c
-Homepage: http://gcc.gnu.org/
-Description: GNU C compiler
- This is the GNU C compiler, a fairly portable optimizing compiler for C.
-
 Package: gnupg
 Architecture: amd64
 Version: 1.4.20-1ubuntu3.3
@@ -7393,6 +7873,28 @@ Description: Persistent key-value database with network interface
  manipulating and querying data structures such as lists and sets.
  .
  The dataset is stored entirely in memory and periodically flushed to disk.
+
+Package: libtsan0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 863
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.23), libgcc1 (>= 1:3.3)
+Filename: xenial/./libtsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 243844
+MD5sum: b9bf6e34792d0e5af22abfea05ff3da2
+SHA1: 8dee1d20c1fb61d05476a4b0bdb719153e7a3183
+SHA256: 89a52dbdc91172ea2210de68bd4756789367565dda5e27701eeb18e87262a078
+SHA512: adcc1696f69d32e0a5f45a790481e820a257c65aa75217d3a065efa218be93b3d5f2c42eef24e85533b876886971e24cac261b3edf5adc4a524fa6015bf2753e
+Homepage: http://gcc.gnu.org/
+Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
+ ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
+ The Linux and Mac versions are based on Valgrind.
 
 Package: mime-support
 Architecture: all
@@ -7699,6 +8201,33 @@ Description: XZ-format compression library
  streams and the older LZMA format used by lzma. (For 7-Zip's related
  format, use the p7zip package instead.)
 
+Package: libgcrypt20
+Architecture: amd64
+Version: 1.6.5-2ubuntu0.6
+Multi-Arch: same
+Priority: standard
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 968
+Depends: libc6 (>= 2.15), libgpg-error0 (>= 1.14)
+Suggests: rng-tools
+Filename: xenial/./libgcrypt20_1.6.5-2ubuntu0.6_amd64.deb
+Size: 336106
+MD5sum: c830f94c2d8d6e1c6bf9e2ca9e9a94cd
+SHA1: 075a9a2bfc6e708b2ebecfa0c1ceb951520ca83f
+SHA256: 9285aa307b00e73e266b4dfda5e4d7fe10c5336c6aa6032ce2917981407e8b3c
+SHA512: 56d7f590474abd6137f171aaa840674132da8fb77e1b7a44444f5b8383557f232300d4eae62ae60c7f47e1c151467005a550f3aa03abaf0e9a04b4d1add36025
+Homepage: http://directory.fsf.org/project/libgcrypt/
+Description: LGPL Crypto library - runtime library
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ .
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, IDEA, Salsa, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512,
+ Tiger, Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+
 Package: libusbredirparser1
 Architecture: amd64
 Version: 0.7.1-1
@@ -7937,6 +8466,27 @@ Homepage: http://www.oracle.com/technetwork/database/database-technologies/berke
 Description: Berkeley v5.3 Database Libraries [runtime]
  This is the runtime package for programs that use the v5.3 Berkeley
  database library.
+
+Package: libsystemd0
+Architecture: amd64
+Version: 229-4ubuntu21.27
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: systemd
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 622
+Pre-Depends: libc6 (>= 2.17), libgcrypt20 (>= 1.6.1), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32)
+Filename: xenial/./libsystemd0_229-4ubuntu21.27_amd64.deb
+Size: 204830
+MD5sum: 092a6e0a66b4d0b1c9e46779110bebdc
+SHA1: 3a34d15fbdf74953127f5b4b15ed13b90d7a7754
+SHA256: 34d152b347b7275161369f1987d0ece1d0245d4d30f9401b71d360c1a5df3101
+SHA512: b9410523b231e3e37a4d0da2d00ca13db785800b4be515c731b7ea58d2523b1bcd98cc910667876cafb85ce1190c756b0d4a03ee4b4b5bfc9ab72ca8efcf54ef
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Description: systemd utility library
+ The libsystemd0 library provides interfaces to various systemd components.
 
 Package: libselinux1
 Architecture: amd64
@@ -8375,6 +8925,29 @@ Homepage: http://gcc.gnu.org/
 Description: LeakSanitizer -- a memory leak detector (runtime)
  LeakSanitizer (Lsan) is a memory leak detector which is integrated
  into AddressSanitizer.
+
+Package: libubsan0
+Architecture: amd64
+Version: 5.4.0-6ubuntu1~16.04.12
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-5
+Maintainer: Ubuntu Core developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 255
+Depends: gcc-5-base (= 5.4.0-6ubuntu1~16.04.12), libc6 (>= 2.4), libgcc1 (>= 1:3.3), libstdc++6 (>= 4.1.1)
+Filename: xenial/./libubsan0_5.4.0-6ubuntu1~16.04.12_amd64.deb
+Size: 95296
+MD5sum: 07e1308783841f13febacf69526d92b8
+SHA1: 99892915ba51d8ac185841a068c57eb225f33e50
+SHA256: c4f8647513f2698d36d41668c46b84048dbf57cdc1d9fd42670a2a9bb17b57a7
+SHA512: 6c3904f7ce2bf56f558b44fb307753051b937b34829a7b1648171ad8413de4ec9b968c17e102617c1ea3837c366e2f4857fa301d233ce6ad03d7efa299921e7f
+Homepage: http://gcc.gnu.org/
+Description: UBSan -- undefined behaviour sanitizer (runtime)
+ UndefinedBehaviorSanitizer can be enabled via -fsanitize=undefined.
+ Various computations will be instrumented to detect undefined behavior
+ at runtime. Available for C and C++.
 
 Package: python3-apt
 Architecture: amd64
