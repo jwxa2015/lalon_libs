@@ -395,6 +395,32 @@ Description: helper tools for all init systems
  specific to systemd at all. Maintainers of other init systems are welcome to
  include their helpers in this package.
 
+Package: unzip
+Architecture: amd64
+Version: 6.0-20ubuntu1
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 518
+Depends: libbz2-1.0, libc6 (>= 2.14)
+Suggests: zip
+Filename: xenial/./unzip_6.0-20ubuntu1_amd64.deb
+Size: 158434
+MD5sum: 059c9f15163425d4c5f818e2ad599597
+SHA1: 57ae2bb6ded1fdf91b6d518294134df1ff13fcca
+SHA256: 84c1bc11cfc46b373bc01a7b4cd710e8ca3099bf6999f5ab973a3562443e99f0
+SHA512: 51ab81cb88b3fdb6d26c02dc0b4ebc0b7035110ad0cb68dbc7c435841954adbbcdf87775fe4e8ba468dfa66d7200dfcf61ca39b7afaee5f2b5db799821732fe6
+Homepage: http://www.info-zip.org/UnZip.html
+Description: De-archiver for .zip files
+ InfoZIP's unzip program. With the exception of multi-volume archives
+ (ie, .ZIP files that are split across several disks using PKZIP's /& option),
+ this can handle any file produced either by PKZIP, or the corresponding
+ InfoZIP zip program.
+ .
+ This version supports encryption.
+
 Package: fonts-dejavu-core
 Architecture: all
 Version: 2.35-1
@@ -1687,6 +1713,32 @@ Homepage: http://pam.sourceforge.net/
 Description: Pluggable Authentication Modules for PAM
  This package completes the set of modules for PAM. It includes the
   pam_unix.so module as well as some specialty modules.
+
+Package: zip
+Architecture: amd64
+Version: 3.0-11
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 573
+Depends: libbz2-1.0, libc6 (>= 2.14)
+Recommends: unzip
+Filename: xenial/./zip_3.0-11_amd64.deb
+Size: 158164
+MD5sum: 863c44a05d3ba30c77285b8f53927913
+SHA1: 126640d92008017a0e67e23ad797195d5390fc51
+SHA256: c257ccc2c1c3e7616c303b610e5668e2cbf0e6f9ab65c1fae691a848e1de6894
+SHA512: ecb560de5c3a4e1932b8919f740c8551c8ff688ab9ad65908df5febbd96903228494761fd70c02e1c13c8cc2d581718e34379b1151c3e233f43f431348664a90
+Homepage: http://www.info-zip.org/Zip.html
+Description: Archiver for .zip files
+ This is InfoZIP's zip program. It produces files that are fully
+ compatible with the popular PKZIP program; however, the command line
+ options are not identical. In other words, the end result is the same,
+ but the methods differ. :-)
+ .
+ This version supports encryption.
 
 Package: libluajit-5.1-2
 Architecture: amd64
