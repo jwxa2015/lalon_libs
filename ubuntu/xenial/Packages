@@ -421,6 +421,94 @@ Description: De-archiver for .zip files
  .
  This version supports encryption.
 
+Package: libdpkg-perl
+Architecture: all
+Version: 1.18.4ubuntu1.6
+Multi-Arch: foreign
+Priority: optional
+Section: perl
+Source: dpkg
+Origin: debian
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Bugs: debbugs://bugs.debian.org
+Installed-Size: 1780
+Depends: dpkg (>= 1.16.3), perl
+Recommends: libfile-fcntllock-perl, bzip2, xz-utils
+Suggests: debian-keyring, gnupg | gnupg2, gpgv | gpgv2, gcc | c-compiler, binutils, patch
+Breaks: dpkg-dev (<< 1.15.6), patch (<< 2.7)
+Replaces: dpkg (<< 1.15.8), dpkg-dev (<< 1.15.6)
+Filename: xenial/./libdpkg-perl_1.18.4ubuntu1.6_all.deb
+Size: 195154
+MD5sum: ec71b6a3429d608f10a9ec6b2890ed45
+SHA1: 5e94f7f42ccc0059bcd6b7ddbeaa11b43b0c6df2
+SHA256: 01260e3577d64124be06dcc1fcba0fa6b2410a8e129967cd634f40b5fce3ca68
+SHA512: b5c61d6a80d630363b3d51a74793f5c0c3e9d8ecc6db41736e00e086a9489ac1afcfc3b6768b6360cb94f5f29b8b41b518aa87f30a4abbb045a7765e9ff73ea1
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Description: Dpkg perl modules
+ This package provides the perl modules used by the scripts
+ in dpkg-dev. They cover a wide range of functionality. Among them
+ there are the following public modules:
+ .
+  - Dpkg: core variables
+  - Dpkg::Arch: architecture handling functions
+  - Dpkg::BuildFlags: set, modify and query compilation build flags
+  - Dpkg::BuildOptions: parse and manipulate DEB_BUILD_OPTIONS
+  - Dpkg::BuildProfile: parse and manipulate build profiles
+  - Dpkg::Changelog: parse changelogs
+  - Dpkg::Changelog::Entry: represents a changelog entry
+  - Dpkg::Changelog::Parse: generic changelog parser for dpkg-parsechangelog
+  - Dpkg::Checksums: generate and parse checksums
+  - Dpkg::Compression: simple database of available compression methods
+  - Dpkg::Compression::Process: wrapper around compression tools
+  - Dpkg::Compression::FileHandle: transparently (de)compress files
+  - Dpkg::Conf: parse dpkg configuration files
+  - Dpkg::Control: parse and manipulate Debian control information
+    (.dsc, .changes, Packages/Sources entries, etc.)
+  - Dpkg::Control::Changelog: represent fields output by dpkg-parsechangelog
+  - Dpkg::Control::Fields: manage (list of known) control fields
+  - Dpkg::Control::Hash: parse and manipulate a block of RFC822-like fields
+  - Dpkg::Control::Info: parse files like debian/control
+  - Dpkg::Deps: parse and manipulate dependencies
+  - Dpkg::Exit: push, pop and run exit handlers
+  - Dpkg::Gettext: wrapper around Locale::gettext
+  - Dpkg::IPC: spawn sub-processes and feed/retrieve data
+  - Dpkg::Index: collections of Dpkg::Control (Packages/Sources files for
+    example)
+  - Dpkg::Interface::Storable: base object serializer
+  - Dpkg::Path: common path handling functions
+  - Dpkg::Source::Package: extract Debian source packages
+  - Dpkg::Substvars: substitute variables in strings
+  - Dpkg::Vendor: identify current distribution vendor
+  - Dpkg::Version: parse and manipulate Debian package versions
+ .
+ All the packages listed in Suggests or Recommends are used by some of the
+ modules.
+
+Package: linux-libc-dev
+Architecture: amd64
+Version: 4.4.0-173.203
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 4551
+Provides: linux-kernel-headers
+Conflicts: linux-kernel-headers
+Replaces: linux-kernel-headers
+Filename: xenial/./linux-libc-dev_4.4.0-173.203_amd64.deb
+Size: 855214
+MD5sum: 7fe7858736cd3d2566a4634afbd42f0b
+SHA1: da9daef5b40e90f69a496809519457410b4fed6c
+SHA256: ddc409e5eaaa1363ecdc6a591816b02ab4f7d071ed4291dcbb00587df7cc8dff
+SHA512: 4aac2e4737a39ceed6ff760836d5d46b5a7b556f9f18697094f1950a793f2dcb8ccebf46f2fd3cadeea03fc3d3b55d4168224335f2f862600e8d72f57e7625f8
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+
 Package: fonts-dejavu-core
 Architecture: all
 Version: 2.35-1
@@ -500,6 +588,38 @@ SHA512: 9fc13deb70f4e9cbc597cf628b2850b521d50d606c3b2493256103881d024d1e81ce260a
 Homepage: http://www.erlang.org/
 Description: Erlang/OTP implementation of SSL
  The SSL application provides secure communication over sockets.
+
+Package: libevent-extra-1.4-2
+Architecture: amd64
+Version: 1.4.14b-stable-0ubuntu1
+Priority: optional
+Section: libs
+Source: libevent1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 136
+Depends: libc6 (>= 2.4), libevent-core-1.4-2 (= 1.4.14b-stable-0ubuntu1)
+Filename: xenial/./libevent-extra-1.4-2_1.4.14b-stable-0ubuntu1_amd64.deb
+Size: 41584
+MD5sum: eee6877db0f956ca19b335ca829d857b
+SHA1: faa314c987ef1918c76df9d75ecfc1cd7c1e8327
+SHA256: 892ed57a25ce77a7653dc6ac10d7e07d692f4507770832fe96396baad3bd03e9
+SHA512: 62fc51193d1f5c6eb0be3d1c7addadd30317e88b7de485756154ed698858ad1ca643f4a0db465578cf20b020d9e55993d51d428816161f56674b8736d04561dd
+Homepage: http://www.monkey.org/~provos/libevent/
+Description: asynchronous event notification library (extra)
+ The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached.
+ .
+ libevent is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ The libevent_extra library includes code for HTTP, DNS, RPC, and so
+ on.
+ .
+ If you're writing software that uses libevent's protocol support, you
+ need to link libevent_core and libevent_extra as well.
 
 Package: libattr1
 Architecture: amd64
@@ -601,6 +721,32 @@ Description: X11 font rasterisation library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXfont
 
+Package: libevent1-dev
+Architecture: amd64
+Version: 1.4.14b-stable-0ubuntu1
+Priority: optional
+Section: libdevel
+Source: libevent1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 584
+Depends: libevent-1.4-2 (= 1.4.14b-stable-0ubuntu1), libevent-core-1.4-2 (= 1.4.14b-stable-0ubuntu1), libevent-extra-1.4-2 (= 1.4.14b-stable-0ubuntu1)
+Conflicts: libevent-dev
+Filename: xenial/./libevent1-dev_1.4.14b-stable-0ubuntu1_amd64.deb
+Size: 110550
+MD5sum: c19031d989b5f169e7d6a87a9e60a0e5
+SHA1: 102f2ba6e9534e86fdb20a24cbfd9bb11032e6aa
+SHA256: f06208c7d580d5d99bafdf9ddb8587cf77c755db8f49bcf0106e64f57e6b5d56
+SHA512: 412c9551f18b8a16b0f67b0e0031f5111e9a8f390a0027dd7a557d49f6232949a0069578c2ca76598e273ce1fa207abbdd2b395a3f453ae1d378899856731732
+Homepage: http://www.monkey.org/~provos/libevent/
+Description: development libraries, header files and docs for libevent
+ Contains the header files, documentation, examples and static libraries
+ for use in developing applications that use the libevent library.
+ .
+ The libevent library is an asynchronous event notification library
+ that provides a mechanish to execute a callback function when a specific
+ event occurs on a file descriptor or after a timeout has been reached.
+
 Package: libdbus-1-3
 Architecture: amd64
 Version: 1.10.6-1ubuntu3.4
@@ -684,6 +830,40 @@ Description: Erlang/OTP modules for ASN.1 support
  The Asn1 application contains modules with compile-time and run-time
  support for ASN.1 in Erlang/OTP.
 
+Package: bzip2
+Architecture: amd64
+Version: 1.0.6-8ubuntu0.2
+Multi-Arch: foreign
+Priority: standard
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 166
+Depends: libbz2-1.0 (= 1.0.6-8ubuntu0.2), libc6 (>= 2.14)
+Suggests: bzip2-doc
+Replaces: libbz2 (<< 0.9.5d-3)
+Filename: xenial/./bzip2_1.0.6-8ubuntu0.2_amd64.deb
+Size: 32532
+MD5sum: 00a1bd19c17460a01af54596b0698cba
+SHA1: 82832d8e7a8be4c2e9fa43f076fc65878cbed55e
+SHA256: 0e9dd674f3290adca8e586479dde44ce12e3fcf551ca566ac36982d83419d3aa
+SHA512: 9148b9133f14f96ad26cb3f483273cad0d959484979dfc2cc90b72e9a0f73a0f86440352a999915c66bbd0d697df9630040de749b2f336d6bf16a9f59dd1f976
+Homepage: http://www.bzip.org/
+Description: high-quality block-sorting file compressor - utilities
+ bzip2 is a freely available, patent free, high-quality data compressor.
+ It typically compresses files to within 10% to 15% of the best available
+ techniques, whilst being around twice as fast at compression and six
+ times faster at decompression.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+
 Package: libmpx0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -734,6 +914,38 @@ Description: generic font configuration library - runtime
  .
  This package contains the runtime library needed to launch applications
  using fontconfig.
+
+Package: libevent-core-1.4-2
+Architecture: amd64
+Version: 1.4.14b-stable-0ubuntu1
+Priority: optional
+Section: libs
+Source: libevent1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 92
+Depends: libc6 (>= 2.4)
+Filename: xenial/./libevent-core-1.4-2_1.4.14b-stable-0ubuntu1_amd64.deb
+Size: 24636
+MD5sum: 14b999532adc65c920555009d10ce772
+SHA1: 2570504724ea4c14020513235781dbf690ee5836
+SHA256: 9c7e6d5e3cf7693b080ab50583ae69c2e7642a77ad5abef587e4b87322a27286
+SHA512: 6745586acf8ea98b25221f2bbc53b78cd87d9650f5d4a949264e95aa17170d88e9bcdcaa9b5dd5b63b7fa88a668843eabcf1b7868a21ae61649dad57908ed303
+Homepage: http://www.monkey.org/~provos/libevent/
+Description: asynchronous event notification library (core)
+ The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached.
+ .
+ libevent is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ The libevent_core library includes event loops, timers, buffer code,
+ and various small compatibility functions.
+ .
+ If you're writing software that only uses libevent's event loop, you
+ should link against only the libevent_core library.
 
 Package: libfdt1
 Architecture: amd64
@@ -2843,6 +3055,35 @@ Description: curses-based PIN or pass-phrase entry dialog for GnuPG
  necessary because the sibling packages automatically fall back to
  text mode if X is not active.
 
+Package: libexpat1-dev
+Architecture: amd64
+Version: 2.1.0-7ubuntu0.16.04.5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: expat
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 882
+Provides: libexpat-dev
+Depends: libexpat1 (= 2.1.0-7ubuntu0.16.04.5), libc6-dev | libc-dev
+Conflicts: libexpat-dev
+Filename: xenial/./libexpat1-dev_2.1.0-7ubuntu0.16.04.5_amd64.deb
+Size: 115146
+MD5sum: 5b0420b7da877585a03d311d0ee83030
+SHA1: db24384a1d8e2558beb295d45f2b9e2b74abd4bc
+SHA256: bb60709e1902cb213beae366a6a32be57c14979f9881dc528bcc3bf4f17ad264
+SHA512: e74dc7933c48f7cdfe434c4cfd6ac3e3f5bc7305dd2509526cfc1b5ab01b1041edb410917e8e40d17805756f9dee656667e1abbba649439aff5a57717098a4ff
+Homepage: http://expat.sourceforge.net
+Description: XML parsing C library - development kit
+ This package contains the header file and development libraries of
+ expat, the C library for parsing XML.  Expat is a stream oriented XML
+ parser.  This means that you register handlers with the parser prior
+ to starting the parse.  These handlers are called when the parser
+ discovers the associated structures in the document being parsed.  A
+ start tag is an example of the kind of structures for which you may
+ register handlers.
+
 Package: libmpc3
 Architecture: amd64
 Version: 1.0.3-1
@@ -2873,6 +3114,30 @@ Description: multiple precision complex floating-point library
  C99 standard.
  .
  It builds upon the GNU MP and the MPFR libraries.
+
+Package: patch
+Architecture: amd64
+Version: 2.7.5-1ubuntu0.16.04.2
+Multi-Arch: foreign
+Priority: standard
+Section: vcs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 211
+Depends: libc6 (>= 2.17)
+Suggests: ed, diffutils-doc
+Filename: xenial/./patch_2.7.5-1ubuntu0.16.04.2_amd64.deb
+Size: 90766
+MD5sum: 1bfd9331a3dab21cfa2c259e5372223f
+SHA1: 3f8263871f26b229466502c99e4a88ecaa3e4a08
+SHA256: c4bf81ecccf989c6b301aa062b4d9b5753156fe71f17fc040f3607504079b8f1
+SHA512: 4a2f54631041bce0c9c018dcf235ccc873d88404ab4e30c51e006b01456dd9143ef84a458c60c340e7e741d031e174ed56315a1b9a28a4f6d7bc5666fc47bb01
+Homepage: http://savannah.gnu.org/projects/patch/
+Description: Apply a diff file to an original
+ Patch will take a patch file containing any of the four forms
+ of difference listing produced by the diff program and apply
+ those differences to an original file, producing a patched
+ version.
 
 Package: libxen-4.6
 Architecture: amd64
@@ -3226,6 +3491,43 @@ Description: Erlang/OTP modules for handling abstract Erlang syntax trees
  includes a module merger and renamer called Igor, as well as an
  automatic code-cleaner.
 
+Package: git
+Architecture: amd64
+Version: 1:2.7.4-0ubuntu1.7
+Multi-Arch: foreign
+Priority: optional
+Section: vcs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+Installed-Size: 23560
+Provides: git-completion, git-core
+Depends: libc6 (>= 2.16), libcurl3-gnutls (>= 7.16.2), libexpat1 (>= 2.0.1), libpcre3, zlib1g (>= 1:1.2.0), perl-modules, liberror-perl, git-man (>> 1:2.7.4), git-man (<< 1:2.7.4-.)
+Recommends: patch, less, rsync, ssh-client
+Suggests: gettext-base, git-daemon-run | git-daemon-sysvinit, git-doc, git-el, git-email, git-gui, gitk, gitweb, git-arch, git-cvs, git-mediawiki, git-svn
+Breaks: bash-completion (<< 1:1.90-1), cogito (<= 0.18.2+), git-buildpackage (<< 0.6.5), git-core (<< 1:1.7.0.4-1.), gitosis (<< 0.2+20090917-7), gitpkg (<< 0.15), gitweb (<< 1:1.7.4~rc1), guilt (<< 0.33), stgit (<< 0.15), stgit-contrib (<< 0.15)
+Replaces: git-core (<< 1:1.7.0.4-1.), gitweb (<< 1:1.7.4~rc1)
+Filename: xenial/./git_1%3a2.7.4-0ubuntu1.7_amd64.deb
+Size: 3160452
+MD5sum: 5121504a3d98614dc3a738022b532edd
+SHA1: 8b19328a6223c8a13e0289c3794cd4b77af6f776
+SHA256: b544c193699fe1b3c8943010e443f8bc258b8fef33fff7309a5e2c8f2804d785
+SHA512: 42435eb3438965d089c7b8f419ddb114a655f0568f3b36160b3a2f1ad8c47ebb115b8fc6ca88b925770b1ff1edbba64d7534c41263dcbf461a9184a9e0fbc5fb
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides the git main components with minimal dependencies.
+ Additional functionality, e.g. a graphical user interface and revision
+ tree visualizer, tools for interoperating with other VCS's, or a web
+ interface, is provided as separate git* packages.
+
 Package: erlang-ssh
 Architecture: amd64
 Version: 1:18.3-dfsg-1ubuntu3.1
@@ -3442,6 +3744,35 @@ Description: VP8 and VP9 video codec (shared library)
  .
  This package contains the shared libraries.
 
+Package: libpython2.7-dev
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 39832
+Depends: libpython2.7-stdlib (= 2.7.12-1ubuntu0~16.04.9), libpython2.7 (= 2.7.12-1ubuntu0~16.04.9), libexpat1-dev
+Recommends: libc6-dev | libc-dev
+Replaces: python2.7 (<< 2.7-3), python2.7-dev (<< 2.7.3-10), python2.7-minimal (<< 2.7.3-10)
+Filename: xenial/./libpython2.7-dev_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 27799878
+MD5sum: 61cc64bde4f33eb2463b9bd8765df10f
+SHA1: 1e50307e8077685a44170d01e75db5eb8aabda70
+SHA256: ec2557af6ce5652a59d2cd6d5a4ba7af7f137163f31a608de0223f5d7c6c2c4e
+SHA512: c62152216ce636d21a42edfb5deedeac81ab01369dd484337b9d2448ff6224c88e692acd7d60fdf1a5c7a5af32b0f64fd84027568fbcc320e69b9dcd6b1e081d
+Description: Header files and a static library for Python (v2.7)
+ Header files, a static library and development tools for building
+ Python (v2.7) modules, extending the Python interpreter or embedding
+ Python (v2.7) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+ .
+ This package contains development files. It is normally not
+ used on it's own, but as a dependency of python2.7-dev.
+
 Package: sqlite3
 Architecture: amd64
 Version: 3.11.0-1ubuntu1.1
@@ -3550,6 +3881,45 @@ Description: XML parsing C library - development kit
  discovers the associated structures in the document being parsed.  A
  start tag is an example of the kind of structures for which you may
  register handlers.
+
+Package: libgnutls30
+Architecture: amd64
+Version: 3.4.10-4ubuntu1.7
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: gnutls28
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Installed-Size: 1468
+Depends: libc6 (>= 2.17), libgmp10 (>= 2:6), libhogweed4, libidn11 (>= 1.13), libnettle6, libp11-kit0 (>= 0.23.1), libtasn1-6 (>= 4.5), zlib1g (>= 1:1.1.4)
+Suggests: gnutls-bin
+Conflicts: libhogweed2, libnettle4
+Filename: xenial/./libgnutls30_3.4.10-4ubuntu1.7_amd64.deb
+Size: 548180
+MD5sum: 1df8f40a07fbc5d185348bcda5aed7b5
+SHA1: 27164aa041203315f95b75ac67c9375195bc2903
+SHA256: bef29635dd092063196dcaa3f33d332dcce751f9a034b6819b1a5c5b42d60aaf
+SHA512: 4a6ee5928435935f9d26655a64aef7a9f7cc24dd9566a93eab07e30e6282e63978720146b0d163feff02149a6738ab1de7ae8ab55df06fd89926645144707df8
+Homepage: http://www.gnutls.org/
+Description: GNU TLS library - main runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 and Datagram
+ Transport Layer Security (DTLS 1.0, 1.2) protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the main runtime library.
 
 Package: coreutils
 Architecture: amd64
@@ -3889,6 +4259,35 @@ Description: MongoDB database server
  * Aggregation Framework & Native MapReduce
  .
  This package contains the MongoDB server software, default configuration files, and init.d scripts.
+
+Package: libev4
+Architecture: amd64
+Version: 1:4.22-1
+Priority: optional
+Section: libs
+Source: libev
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jérémy Lal <kapouer@melix.org>
+Installed-Size: 74
+Depends: libc6 (>= 2.17)
+Filename: xenial/./libev4_1%3a4.22-1_amd64.deb
+Size: 26312
+MD5sum: ac29b7c6c2a527c29af0ba95585ac8f3
+SHA1: 0f27c963db0f257c536201c8cc1e9945f1296917
+SHA256: dc0ebc4a4a86ed0abf27f60b216547e23e0ac1798930eda9222eaa4badc178e9
+SHA512: 16c502b3c131fd8f24ce985268543e25f1dcbd069da58484c4358b8e7c0b8a76917ca3b9b5fd3ec48abe97d3c55aa21c25fdfbfeb71327943ede285272c90cd9
+Homepage: http://libev.schmorp.de/
+Description: high-performance event loop library modelled after libevent
+ libev provides a full-featured and high-performance event loop that is
+ loosely modelled after libevent. It includes relative timers, absolute
+ timers with customized rescheduling, synchronous signals, process status
+ change events, event watchers dealing with the event loop itself, file
+ watchers, and even limited support for fork events. It uses a priority
+ queue to manage timers and uses arrays as fundamental data structure. It
+ has no artificial limitations on the number of watchers waiting for the
+ same event.
+ .
+ libev supports select, poll, epoll, kqueue, and inotify.
 
 Package: python3-gi
 Architecture: amd64
@@ -4394,6 +4793,31 @@ Description: Perl module for error/exception handling in an OO-ish way
  Errors in the class "Error" should not be thrown directly, but the
  user should throw errors from a sub-class of "Error".
 
+Package: zlib1g-dev
+Architecture: amd64
+Version: 1:1.2.8.dfsg-2ubuntu4.3
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: zlib
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Mark Brown <broonie@debian.org>
+Installed-Size: 414
+Provides: libz-dev
+Depends: zlib1g (= 1:1.2.8.dfsg-2ubuntu4.3), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Filename: xenial/./zlib1g-dev_1%3a1.2.8.dfsg-2ubuntu4.3_amd64.deb
+Size: 166802
+MD5sum: e263a640e0688092a974a3814103bbb6
+SHA1: f1edfcbdb7ada7d59e50ff565820859a693a5b7d
+SHA256: 68c0076f9107f4aefc0ddda61ca1c1f867fd05400774d68419e25fcfe17c3b23
+SHA512: 71074ad7a04c0e0704bab720f5ad1f33b0bcc68bade28242dfd0c910cc62662f2a4a3f7c2571c3fccc3b9ab04377309578659a6dde07aa68bfd326d0834944be
+Homepage: http://zlib.net/
+Description: compression library - development
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the development support
+ files.
+
 Package: libcomerr2
 Architecture: amd64
 Version: 1.42.13-1ubuntu1
@@ -4847,6 +5271,32 @@ Description: Pluggable Authentication Modules library
  One may entirely upgrade the local authentication system without touching
  the applications themselves.
 
+Package: python2.7-dev
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 284
+Depends: python2.7 (= 2.7.12-1ubuntu0~16.04.9), libpython2.7-dev (= 2.7.12-1ubuntu0~16.04.9), libpython2.7 (= 2.7.12-1ubuntu0~16.04.9), libexpat1-dev
+Recommends: libc6-dev | libc-dev
+Replaces: python2.7 (<< 2.7-3)
+Filename: xenial/./python2.7-dev_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 275688
+MD5sum: 025cf2f26e8209abedd5c67d2ca38a28
+SHA1: 29cc73e9434c510f47406d586767baa70b31a615
+SHA256: dce32a5bc7b4fb80eaa539124931a5c26c14afad29da5e97eb2872f89a3158f0
+SHA512: 76d040d649278ea325d24a7b15562224c230f86b6e4334027e9523563d34acafb5a1c648290c2e8efc454a3cb4eef975c6271dfc6084c4473b2f0f0fb6ce247c
+Description: Header files and a static library for Python (v2.7)
+ Header files, a static library and development tools for building
+ Python (v2.7) modules, extending the Python interpreter or embedding
+ Python (v2.7) in applications.
+ .
+ Maintainers of Python packages should read README.maintainers.
+
 Package: libubsan0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.11
@@ -4913,6 +5363,38 @@ Homepage: http://www.erlang.org/
 Description: Erlang/OTP interface to SQL databases
  The Erlang ODBC application provides an interface for accessing
  relational SQL databases from Erlang.
+
+Package: git-man
+Architecture: all
+Version: 1:2.7.4-0ubuntu1.7
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: git
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Gerrit Pape <pape@smarden.org>
+Installed-Size: 1421
+Breaks: git (<< 1:1.7.4~rc1)
+Replaces: git (<< 1:1.7.4~rc1), git-core (<< 1:1.7.0.4-1.)
+Filename: xenial/./git-man_1%3a2.7.4-0ubuntu1.7_all.deb
+Size: 736500
+MD5sum: 67c057fe11bb03f0ed20d2954093b614
+SHA1: 651fac3155f3bf3dde3c9e7ae56df95ba6169693
+SHA256: 4883b0d157a26fc654f2c59138122afbc78fcb680940bdb7b35ffd12d8cf5045
+SHA512: c5d51e817a516b92ebf406c9db0daf5076c1b1acf3eb6df545c9c82e50e9f6f58cf6bda597f49439cefe17128e21ca1b126df42403fc75f86f7e4c72e371878e
+Homepage: https://git-scm.com/
+Description: fast, scalable, distributed revision control system (manual pages)
+ Git is popular version control system designed to handle very large
+ projects with speed and efficiency; it is used for many high profile
+ open source projects, most notably the Linux kernel.
+ .
+ Git falls in the category of distributed source code management tools.
+ Every Git working directory is a full-fledged repository with full
+ revision tracking capabilities, not dependent on network access or a
+ central server.
+ .
+ This package provides reference documentation for use by the 'man'
+ utility and the 'git help' command.
 
 Package: libxau6
 Architecture: amd64
@@ -5318,6 +5800,36 @@ Description: GNU C Library: Shared libraries
 
 Package: dpkg
 Architecture: amd64
+Version: 1.18.4ubuntu1.6
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Origin: debian
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Bugs: debbugs://bugs.debian.org
+Installed-Size: 6656
+Pre-Depends: libbz2-1.0, libc6 (>= 2.14), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 2.3), zlib1g (>= 1:1.1.4), tar (>= 1.23)
+Suggests: apt
+Conflicts: ada-reference-manual (<< 20021112web-4~), asn1-mode (<< 2.7-7~), bogosort (<< 0.4.2-3~), cl-yacc (<< 0.3-3~), cpp-4.1-doc (<< 4.1.2.nf2-4~), cpp-4.2-doc (<< 4.2.4.nf1-4~), gcc-4.1-doc (<< 4.1.2.nf2-4~), gcc-4.2-doc (<< 4.2.4.nf1-4~), gcj-4.1-doc (<< 4.1.2.nf2-4~), gcj-4.2-doc (<< 4.2.4.nf1-4~), gfortran-4.1-doc (<< 4.1.2.nf2-4~), gfortran-4.2-doc (<< 4.2.4.nf1-4~), ggz-docs (<< 0.0.14.1-2~), glame (<< 2.0.1-6~), gnat-4.1-doc (<< 4.1.2.nf2-4~), gnat-4.2-doc (<< 4.2.4.nf1-4~), gtalk (<< 0.99.10-16~), libalogg-dev (<< 1.3.7-2~), libgtk1.2-doc (<< 1.2.10-19~), libnettle-dev (<< 2~), liborbit-dev (<< 0.5.17-12~), libreadline5-dev (<< 5.2-8~), librep-doc (<< 0.90~), mmucl (<< 1.5.2-3~), nxml-mode (<< 20041004-9~), octave3.0-info (<< 1:3.0.5-7+rm), octave3.2-info (<< 3.2.4-12+rm), polgen-doc (<< 1.3-3+rm), r6rs-doc (<< 1.0-2~), serveez-doc (<< 0.1.5-3~), slat (<< 2.0-6~), texlive-base-bin-doc (<< 2007.dfsg.2-9~), ttcn-el (<< 0.6.9-2~), ulog-acctd (<< 0.4.3-3~), xconq-doc (<< 7.4.1-5~), zenirc (<< 2.112.dfsg-1~)
+Breaks: apt (<< 0.7.7~), apt-cudf (<< 3.3~beta1-3~), aptitude (<< 0.4.7-1~), auctex (<< 11.87-3+deb8u1~), ccache (<< 3.1.10-1~), cups (<< 1.7.5-10~), dbus (<< 1.8.12-1ubuntu6~), debian-security-support (<< 2014.10.26~), distcc (<< 3.1-6.1~), doc-base (<< 0.10.5~), dpkg-dev (<< 1.15.8), fontconfig (<< 2.11.1-0ubuntu5~), fusionforge-plugin-mediawiki (<< 5.3.2+20141104-3~), gap-core (<< 4r7p5-2~), gitweb (<< 1:2.1.4-2.1~), grace (<< 1:5.1.24-3~), gxine (<< 0.5.908-3.1~), hoogle (<< 4.2.33-4~), icecc (<< 1.0.1-2~), install-info (<< 5.1.dfsg.1-3~), libapache2-mod-php5 (<< 5.6.4+dfsg-3~), libapache2-mod-php5filter (<< 5.6.4+dfsg-3~), libdpkg-perl (<< 1.15.8), libjs-protoaculous (<< 5~), man-db (<< 2.6.3-6~), mcollective (<< 2.6.0+dfsg-2.1~), php5-fpm (<< 5.6.4+dfsg-3~), pypy (<< 2.4.0+dfsg-3~), readahead-fedora (<< 2:1.5.6-5.2~), software-center (<< 13.10-0ubuntu9~), ufw (<< 0.35-0ubuntu2~), ureadahead (<< 0.100.0-17~), wordpress (<< 4.1+dfsg-1~), xfonts-traditional (<< 1.7~), xine-ui (<< 0.99.9-1.2~)
+Replaces: manpages-it (<< 2.80-4)
+Filename: xenial/./dpkg_1.18.4ubuntu1.6_amd64.deb
+Size: 2084564
+MD5sum: 22fe9e456e052b4a40104e6f5babb8c2
+SHA1: 204abe27ba385d46cbeb79a0c9cccba7ad0871f1
+SHA256: 64e1864e2ed3f201c65564f733e9659608a84da563f9694ee85493c7181c5096
+SHA512: cae21fa10f48b915bd89b43164f1df9cbf453f63f6b5c2558eee8a3e0dbfa1c5128ab47bd0deae734239590181945c13a2e8eb85204a7472707d50003839fc22
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Description: Debian package management system
+ This package provides the low-level infrastructure for handling the
+ installation and removal of Debian software packages.
+ .
+ For Debian package development tools, install dpkg-dev.
+
+Package: dpkg
+Architecture: amd64
 Version: 1.18.4ubuntu1.5
 Multi-Arch: foreign
 Priority: required
@@ -5417,6 +5929,37 @@ Description: nginx web/proxy server (core version)
  .
  NOTE: This is identical to the -full build, but without any third party
  modules built in.
+
+Package: libev-dev
+Architecture: amd64
+Version: 1:4.22-1
+Priority: extra
+Section: libdevel
+Source: libev
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Jérémy Lal <kapouer@melix.org>
+Installed-Size: 221
+Depends: libev4 (= 1:4.22-1)
+Filename: xenial/./libev-dev_1%3a4.22-1_amd64.deb
+Size: 116308
+MD5sum: fa3125f46d41bf3227d600832049ab44
+SHA1: b85600adf7b9fe124a7f2c3f0ac7219be3922ce9
+SHA256: ed351e2c0c4ee3aabd7a6275e063c794e33299ef436c03c069787ffd068594a1
+SHA512: 040fe35fb0decde2b1b5bf1d260c2a4c0f8de9de1876ca0dd89bcfcc685799c103575f6caa781924d1c43296e760d9258a711dd6549a513a4c0dcd24fb782143
+Homepage: http://libev.schmorp.de/
+Description: static library, header files, and docs for libev
+ Static library, header files, and documentation for libev.
+ .
+ libev provides a full-featured and high-performance event loop that is
+ loosely modelled after libevent. It includes relative timers, absolute
+ timers with customized rescheduling, synchronous signals, process status
+ change events, event watchers dealing with the event loop itself, file
+ watchers, and even limited support for fork events. It uses a priority
+ queue to manage timers and uses arrays as fundamental data structure. It
+ has no artificial limitations on the number of watchers waiting for the
+ same event.
+ .
+ libev supports select, poll, epoll, kqueue, and inotify.
 
 Package: erlang-tools
 Architecture: amd64
@@ -6210,6 +6753,62 @@ Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime
  ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
  The Linux and Mac versions are based on Valgrind.
 
+Package: python2.7
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: allowed
+Priority: standard
+Section: python
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 351
+Depends: python2.7-minimal (= 2.7.12-1ubuntu0~16.04.9), libpython2.7-stdlib (= 2.7.12-1ubuntu0~16.04.9), mime-support
+Suggests: python2.7-doc, binutils
+Conflicts: python-profiler (<= 2.7.1-2)
+Breaks: python-virtualenv (<< 1.7.1.2-2~), vim-athena (<< 2:7.3.547-4), vim-gnome (<< 2:7.3.547-4), vim-gtk (<< 2:7.3.547-4), vim-nox (<< 2:7.3.547-4)
+Replaces: python-profiler (<= 2.7.1-2), python2.7-minimal (<< 2.7.3-7~)
+Filename: xenial/./python2.7_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 223598
+MD5sum: 1463823439b41361d9b751e0d7c5fefc
+SHA1: 3d5668781968771b51b80cfc4a5e4c47f89510e9
+SHA256: 770252da35ecfd09f69339b6ec1e23c30e699eb6cbd0d21b49b12e7a8ce82834
+SHA512: 0b4bc7fc45418855dd367dec457a47be49b667cf4e6cc40721e2f16c9f4257c4a7c85b36017125a5ef36eff8f5f21d309d7704d5067194509d1a9e912d4fa43a
+Description: Interactive high-level object-oriented language (version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+
+Package: libevent-1.4-2
+Architecture: amd64
+Version: 1.4.14b-stable-0ubuntu1
+Priority: standard
+Section: libs
+Source: libevent1
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 156
+Depends: libc6 (>= 2.4)
+Filename: xenial/./libevent-1.4-2_1.4.14b-stable-0ubuntu1_amd64.deb
+Size: 53838
+MD5sum: 0f4b9f14474225aee550c2e13d0d75fc
+SHA1: b010cea021c162870095a5fcb048ad3937e5c579
+SHA256: 712a171fa15841a0cdb28b89b992ca9ce1c90b43d4851df8a4d009023cdeffee
+SHA512: dff97b59c77c347868df6894aaa2c8fae7fac651a31d0ddf8f0fc737ab05dafe23eec9ab7d0530f2d9ac9805a6363fc6916f9def8aadf60bd1095d9e5bfd5059
+Homepage: http://www.monkey.org/~provos/libevent/
+Description: asynchronous event notification library
+ The libevent API provides a mechanism to execute a callback function
+ when a specific event occurs on a file descriptor or after a timeout
+ has been reached.
+ .
+ libevent is meant to replace the asynchronous event loop found in
+ event driven network servers. Currently, libevent supports /dev/poll,
+ kqueue(2), event ports, select(2), poll(2) and epoll(4).
+ .
+ For backward compatibility and to transition to libevent_core only or
+ libevent_core and libevent_extra, the libevent source package builds
+ the libevent library that includes everything in libevent_core and
+ libevent_extra.
+
 Package: qemu-system-x86
 Architecture: amd64
 Version: 1:2.5+dfsg-5ubuntu10.42
@@ -6886,6 +7485,57 @@ Description: Foreign Function Interface library runtime
  allows code written in one language to call code written in another
  language.
 
+Package: libexpat1
+Architecture: amd64
+Version: 2.1.0-7ubuntu0.16.04.5
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: expat
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 364
+Depends: libc6 (>= 2.14)
+Conflicts: wink (<= 1.5.1060-4)
+Filename: xenial/./libexpat1_2.1.0-7ubuntu0.16.04.5_amd64.deb
+Size: 71504
+MD5sum: f3956732f52b3f71466729eba344c8ea
+SHA1: 527e6301ca4793a469ea92441f17c9b26272a1ad
+SHA256: 372465554ac8c8ce1674c97f2029ac90960d2e54cee92b24d91fc846e942a4f2
+SHA512: 5905bede611928dbacc3b7897e14a99e6f3336b9e31a38e0393071a018239f942daf498031d45d0490636393918ab8c72f85c0e31fccb4fc86c54f15f5325fa9
+Homepage: http://expat.sourceforge.net
+Description: XML parsing C library - runtime library
+ This package contains the runtime, shared library of expat, the C
+ library for parsing XML. Expat is a stream-oriented parser in
+ which an application registers handlers for things the parser
+ might find in the XML document (like start tags).
+
+Package: libpython2.7
+Architecture: amd64
+Version: 2.7.12-1ubuntu0~16.04.9
+Multi-Arch: same
+Priority: standard
+Section: libs
+Source: python2.7
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 3553
+Depends: libpython2.7-stdlib (= 2.7.12-1ubuntu0~16.04.9), libc6 (>= 2.15), zlib1g (>= 1:1.2.0)
+Replaces: python2.7 (<< 2.6)
+Filename: xenial/./libpython2.7_2.7.12-1ubuntu0~16.04.9_amd64.deb
+Size: 1069916
+MD5sum: c7cbfd2645fe8bbc208c18a1bcd24969
+SHA1: 5d5d1b6e264d3ac2c90d2efdc32a4d418201f6a6
+SHA256: 77ca065281427c393b72abc7f663fe81df15e4a4b6b4e841bb49f2643ef03efb
+SHA512: a3d613c53d27fac42ada60c900a2b5e32e5e5119725795c6591ebf667aa832dde9b66dd554ed7c69571cd3273d4ee507d83cefcb3af85137b7291e7e875a15b8
+Description: Shared Python runtime library (version 2.7)
+ Python is a high-level, interactive, object-oriented language. Its 2.7 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+
 Package: ttf-bitstream-vera
 Architecture: all
 Version: 1.10-8
@@ -6963,6 +7613,37 @@ Description: Header files and a static library for Python (v2.7)
  Python (v2.7) in applications.
  .
  Maintainers of Python packages should read README.maintainers.
+
+Package: dpkg-dev
+Architecture: all
+Version: 1.18.4ubuntu1.6
+Multi-Arch: foreign
+Priority: optional
+Section: utils
+Source: dpkg
+Origin: debian
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Bugs: debbugs://bugs.debian.org
+Installed-Size: 1717
+Depends: libdpkg-perl (= 1.18.4ubuntu1.6), bzip2, xz-utils, patch (>= 2.7), make, binutils, base-files (>= 5.0.0)
+Recommends: gcc | c-compiler, build-essential, fakeroot, gnupg | gnupg2, gpgv | gpgv2, libalgorithm-merge-perl
+Suggests: debian-keyring
+Breaks: devscripts (<< 2.14.10), dpkg-cross (<< 2.0.0)
+Replaces: manpages-it (<< 2.80-4)
+Filename: xenial/./dpkg-dev_1.18.4ubuntu1.6_all.deb
+Size: 584108
+MD5sum: c213ede00648fef8e42aed9cbdabd186
+SHA1: cdaf1ffdb45ea89b549c35e910eaf7d46c9d3490
+SHA256: 67dc5e8ad90943409d5fb7faa1b8758000c31a8eb85e260d70e0a12ba7d20b82
+SHA512: c4e332f99b8be64afbcff869583f11bb3e92f7d32f52408d23bc54120f5598ce3633357a0304d10db3f30fa1eb58fa9a3bfb5e073dd589598edf8a85b3c5c7be
+Homepage: https://wiki.debian.org/Teams/Dpkg
+Description: Debian package development tools
+ This package provides the development tools (including dpkg-source)
+ required to unpack, build and upload Debian source packages.
+ .
+ Most Debian source packages will require additional tools to build;
+ for example, most packages need make and the C compiler gcc.
 
 Package: erlang-parsetools
 Architecture: amd64
@@ -8734,6 +9415,32 @@ Description: Secure Sockets Layer toolkit - shared libraries
  Internet.
  .
  It provides the libssl and libcrypto shared libraries.
+
+Package: base-files
+Architecture: amd64
+Version: 9.4ubuntu4.11
+Multi-Arch: foreign
+Priority: required
+Essential: yes
+Section: admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Santiago Vila <sanvila@debian.org>
+Installed-Size: 326
+Provides: base
+Pre-Depends: awk
+Breaks: initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
+Replaces: base, dpkg (<= 1.15.0), miscutils
+Filename: xenial/./base-files_9.4ubuntu4.11_amd64.deb
+Size: 67482
+MD5sum: 540b44c59b0fb443d62040f04fc11120
+SHA1: 0da64b2a4bce8b6256044f95190b2f50c043a776
+SHA256: 464ce0515a6bd99ff3b862c5a772e51d912863db854bad074bd479815c9b50f8
+SHA512: 795de0025c4030efa28e0b83acb1fb083dae87cb43fe704107016f7dac3c2f26f36b84b682c4965e43f7d88a32f255da652f80747d63ef25b9f9cbdf6c965143
+Description: Debian base system miscellaneous files
+ This package contains the basic filesystem hierarchy of a Debian system, and
+ several important miscellaneous files, such as /etc/debian_version,
+ /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
+ and the text of several common licenses in use on Debian systems.
 
 Package: docker-ce-cli
 Architecture: amd64
