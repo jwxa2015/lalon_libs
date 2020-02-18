@@ -1564,6 +1564,36 @@ Description: Netfilter netlink library
  nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) and their
  respective users and/or management tools in userspace.
 
+Package: libio-socket-ssl-perl
+Architecture: all
+Version: 2.024-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 467
+Depends: libnet-ssleay-perl (>= 1.59), netbase, perl
+Recommends: libnet-libidn-perl | libnet-idn-encode-perl | liburi-perl, perl (>= 5.15.6) | libsocket-perl | libsocket6-perl, perl (>= 5.19.8) | libio-socket-ip-perl (>= 0.20) | libio-socket-inet6-perl
+Suggests: ca-certificates
+Filename: xenial/./libio-socket-ssl-perl_2.024-1_all.deb
+Size: 159060
+MD5sum: 817cdc29f7bdfbddfdf7da46dcbe2ef6
+SHA1: 4f3add2a4bb7b9bc8776cc4b8238ab2c9255efb1
+SHA256: 43f39812a92b65902fde0925966ee803a4236f766f876e58fd7ce75bf27416da
+SHA512: 584f98e92f535af839118270cb4b9b9a5b0badeea9bb078ca4bd695ecf66b28f9d256733667c2b573fea91f61a7757c1f81d970a5292f37b43db7380281feeb7
+Homepage: https://metacpan.org/release/IO-Socket-SSL
+Description: Perl module implementing object oriented interface to SSL sockets
+ This module is a true drop-in replacement for IO::Socket::INET that
+ uses SSL to encrypt data before it is transferred to a remote server
+ or client.  IO::Socket::SSL supports all the extra features that one
+ needs to write a full-featured SSL client or server application:
+ multiple SSL contexts, cipher selection, certificate verification, and
+ SSL version selection.  As an extra bonus, it works perfectly with
+ mod_perl.
+ .
+ IO::Socket::SSL uses IPv6 if libio-socket-ip-perl (>= 0.20) or
+ libio-socket-inet6-perl is installed.
+
 Package: erlang-eldap
 Architecture: amd64
 Version: 1:18.3-dfsg-1ubuntu3.1
@@ -1947,6 +1977,30 @@ Description: X11 font encoding library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libfontenc
 
+Package: libhttp-negotiate-perl
+Architecture: all
+Version: 6.00-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 72
+Depends: perl, libhttp-message-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libhttp-negotiate-perl_6.00-2_all.deb
+Size: 13372
+MD5sum: 702cbbf6e3fea8eac863a0ffa34d4645
+SHA1: 8ee10bd0f92aefe29ff6d9ab12d068cfa1050864
+SHA256: 7819b0b190485629d325eceee5eb47f44a0b389cee34da166c5f0ebacf8d41e2
+SHA512: 0ae5df2310cd49f8cd03c727916c5ca3e5a3596910244f04d41ddff4fb46cd1745b40d370936c9fe45bbbff3d20eddde0d8be553307421ad81ecc6c2e09ae3f8
+Homepage: http://search.cpan.org/dist/HTTP-Negotiate/
+Description: implementation of content negotiation
+ HTTP::Negotiate provides a complete implementation of the HTTP content
+ negotiation algorithm. Content negotiation allows for the selection of a
+ preferred content representation based upon attributes of the negotiable
+ variants and the value of the various Accept* header fields in the request.
+
 Package: gir1.2-glib-2.0
 Architecture: amd64
 Version: 1.46.0-3ubuntu1
@@ -1999,6 +2053,60 @@ Homepage: http://gcc.gnu.org/
 Description: AddressSanitizer -- a fast memory error detector
  AddressSanitizer (ASan) is a fast memory error detector.  It finds
  use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+
+Package: libio-compress-perl
+Architecture: all
+Version: 2.069-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 828
+Provides: libcompress-zlib-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-zlib-perl
+Depends: perl, libcompress-raw-bzip2-perl (>= 2.069), libcompress-raw-zlib-perl (>= 2.069)
+Recommends: libio-compress-lzma-perl (>= 2.069)
+Breaks: libcompress-zlib-perl (<< 2.020-1), libio-compress-base-perl (<< 2.020-1), libio-compress-bzip2-perl (<< 2.020-1), libio-compress-zlib-perl (<< 2.020-1)
+Replaces: libcompress-zlib-perl (<< 2.020-1), libio-compress-base-perl (<< 2.020-1), libio-compress-bzip2-perl (<< 2.020-1), libio-compress-zlib-perl (<< 2.020-1)
+Filename: xenial/./libio-compress-perl_2.069-1_all.deb
+Size: 222982
+MD5sum: 16a14ab2f9fce7858235dc9dd41c8d56
+SHA1: a81cbd06d54ca9f75ba336362a6d208e0466c5bc
+SHA256: bb5d05f0580debd83d17c790a997a9513632c03e03e9e3a4db1acdac1374c1bc
+SHA512: 562eae30e80cc810091ff5520703be3605d2cb1c605c7d8d1751d5e4bc3918565309ccf4da9abb42d4ad230d15ac3ad73770e531edfb85e62c9d6b0595714c8d
+Homepage: https://metacpan.org/release/IO-Compress
+Description: bundle of IO::Compress modules
+ This package contains the following IO::Compress and IO::Uncompress modules:
+ .
+  - Compress::Zlib
+  - IO::Compress::Base
+  - IO::Compress::Bzip2
+  - IO::Compress::Deflate
+  - IO::Compress::Gzip
+  - IO::Compress::RawDeflate
+  - IO::Compress::Zip
+  - IO::Uncompress::Base
+  - IO::Uncompress::Bunzip2
+  - IO::Uncompress::Gunzip
+  - IO::Uncompress::Inflate
+  - IO::Uncompress::RawInflate
+  - IO::Uncompress::Unzip
+ .
+ Compress::Zlib is a Perl external module which provides an interface to
+ the info-zip zlib compression library. zlib is a general purpose
+ compression library.
+ .
+ Some of the features provided by Compress::Zlib include:
+ .
+    * in-memory compression and decompression
+    * read and write gzip (.gz) files directly.
+ .
+ IO::Compress::Bunzip2 and IO::Uncompress::Bunzip2 provide a Perl interface
+ that allows transparent reading and writing bzip2 compressed data to files or
+ buffers.
+ .
+ IO::Compress::Base is the base class for all IO::Compress and IO::Uncompress
+ modules. It is not intended for direct use in application code. Its sole
+ purpose is to be sub-classed by IO::Compress modules.
 
 Package: dh-python
 Architecture: all
@@ -2503,6 +2611,27 @@ Description: time zone and daylight-saving time data
  political bodies to time zone boundaries, UTC offsets, and
  daylight-saving rules.
 
+Package: libhtml-tagset-perl
+Architecture: all
+Version: 3.20-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 76
+Depends: perl (>= 5.6.0-16)
+Filename: xenial/./libhtml-tagset-perl_3.20-2_all.deb
+Size: 13536
+MD5sum: 86862a4ac995db738fcfd012275fc3a7
+SHA1: ade13078d38ffbcd3844cee51a315ef6b53bfdc1
+SHA256: 9d3090fe343a2689704ff6110f61a23b8de9890619e5122199459a6a84b79d4a
+SHA512: 1c713cd377389319b1dde1c4ccbb8bfae1543bb43b95de59346d3e785b8ec01a442f17736f90319e1391f66e9a731dcabac506c175d9334b38f4e3a9b5b2ab4e
+Homepage: http://search.cpan.org/dist/HTML-Tagset/
+Description: Data tables pertaining to HTML
+ HTML-Tagset contains data tables useful in dealing with HTML.  For instance,
+ it provides %HTML::Tagset::emptyElement, which lists all of the HTML elements
+ which cannot have content.  It provides no functions or methods.
+
 Package: libcacard0
 Architecture: amd64
 Version: 1:2.5.0-2
@@ -2641,6 +2770,27 @@ Description: interactive high-level object-oriented language (default python ver
  .
  This package is a dependency package, which depends on Debian's default
  Python version (currently v2.7).
+
+Package: libio-html-perl
+Architecture: all
+Version: 1.001-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 70
+Depends: perl
+Filename: xenial/./libio-html-perl_1.001-1_all.deb
+Size: 14860
+MD5sum: b7b08a166142d14afdde49aca8e0f513
+SHA1: 183c5cdd7c5add3ee015ac515e6e81579c1897fe
+SHA256: 86e541bd06a744ad4969117ccc22448b5c2569c1f878a4904d288e3ca2a53e2e
+SHA512: cba3177d1cf834abf803d95f6ece4972f212f36a4c654b274628cfd2296d555011209930350eb730fc4b4f77d8c1c1c3dcb6fa872687074ac41de110f30ab432
+Homepage: http://search.cpan.org/dist/IO-HTML/
+Description: open an HTML file with automatic charset detection
+ IO::HTML provides an easy way to open a file containing HTML while
+ automatically determining its encoding.  It uses the HTML5 encoding
+ sniffing algorithm specified in section 8.2.2.1 of the draft standard.
 
 Package: traceroute
 Architecture: amd64
@@ -2937,6 +3087,27 @@ Homepage: http://gcc.gnu.org/
 Description: AddressSanitizer -- a fast memory error detector
  AddressSanitizer (ASan) is a fast memory error detector.  It finds
  use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+
+Package: libio-socket-inet6-perl
+Architecture: all
+Version: 2.72-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 71
+Depends: perl, libsocket6-perl
+Filename: xenial/./libio-socket-inet6-perl_2.72-2_all.deb
+Size: 13838
+MD5sum: e432ae4241616f69d12cc3b934b9e0f7
+SHA1: 7eae2495e569124a04c5225f0ef4cd89b4dafbdb
+SHA256: 6e2d811f44a24d8d05b781a7ee11e96d34e54994e2082cb36c5845d881f51e77
+SHA512: dd714fb76873f4823e57aa1fa5f63046f2883773012809c9607d13aba013e88763ee756c27fae5334f7447494f20016ca9dc58450f2b5bd05b370218084d6a01
+Homepage: https://metacpan.org/release/IO-Socket-INET6
+Description: object interface for AF_INET6 domain sockets
+ IO::Socket::INET6 provides an object interface to create and use sockets
+ in the AF_INET6 domain. It is built upon the IO::Socket interface and
+ inherits all the methods defined by IO::Socket.
 
 Package: libroken18-heimdal
 Architecture: amd64
@@ -3413,6 +3584,33 @@ Description: Boost.Iostreams Library
  which turn models of these concepts into C++ standard library streams
  and stream buffers.
 
+Package: libnet-http-perl
+Architecture: all
+Version: 6.09-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 61
+Depends: perl, perl (>= 5.19.8) | libio-socket-ip-perl | libio-socket-inet6-perl, liburi-perl
+Recommends: libio-socket-ssl-perl (>= 1.38)
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libnet-http-perl_6.09-1_all.deb
+Size: 24000
+MD5sum: 0f84dd4638f0186f16d59a26167be687
+SHA1: 0a18dbac692d662dec242eaee26883d7143ac52f
+SHA256: e41b363455b4d01905bc52ddd6e48059d038747ca4291b1c7c05583daeb81ccb
+SHA512: f75c63cb911fd68ff34e49db2440749a3e123059eb3fc43d55f03e2ba87c037c3d8ac7e723c01de61f7fbf2193d1cd7594911847ca1d951045d559a2c4bb5031
+Homepage: https://metacpan.org/release/Net-HTTP
+Description: module providing low-level HTTP connection client
+ The Net::HTTP class is a low-level HTTP client.  An instance of the
+ Net::HTTP class represents a connection to an HTTP server.  The
+ HTTP protocol is described in RFC 2616.  The Net::HTTP class
+ supports HTTP/1.0 and HTTP/1.1. Net::HTTP is a sub-class of IO::Socket::INET.
+ You can mix its methods with reading and writing from the socket directly.
+ This is not necessarily a good idea, unless you know what you are doing.
+
 Package: libpulse0
 Architecture: amd64
 Version: 1:8.0-0ubuntu3.10
@@ -3775,6 +3973,29 @@ Description: Erlang/OTP operating system monitor
  The operating system monitor, OS_Mon, provides services for
  monitoring CPU load, disk usage, memory usage and OS messages.
 
+Package: libhttp-date-perl
+Architecture: all
+Version: 6.02-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 56
+Depends: perl, libtimedate-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libhttp-date-perl_6.02-1_all.deb
+Size: 10392
+MD5sum: 3aee8ce5ae257f3dfea03d2127dfc845
+SHA1: df37894b2fae1e1132a548cb2ef6a3f920927f9d
+SHA256: 57f84eccc965d2d48b561e049d0fe705e1c279857c69ad22f599c612d99f2fd9
+SHA512: 59f5ea089e7b2123fa03aa522d730d265acdd4ef86148560bcf8aabccfbded7367f21ddadd2d283c7882e5f2fa3cdcbb88e359ff98b10a9bcc4f4c3bb53a7c7d
+Homepage: http://search.cpan.org/dist/HTTP-Date/
+Description: module of date conversion routines
+ HTTP::Date provides functions that deal the date formats used by the HTTP
+ protocol (and then some more). Only the first two functions, time2str() and
+ str2time(), are exported by default.
+
 Package: nginx-extras
 Architecture: amd64
 Version: 1.10.3-0ubuntu0.16.04.3
@@ -3820,6 +4041,35 @@ Description: nginx web/proxy server (extended version)
  Headers More, Embedded Lua, HTTP Push, HTTP Substitutions, Upload Progress,
  Upstream Fair Queue.
 
+Package: liburi-perl
+Architecture: all
+Version: 1.71-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 219
+Depends: perl
+Suggests: libwww-perl
+Filename: xenial/./liburi-perl_1.71-1_all.deb
+Size: 76914
+MD5sum: 678ed7bb65c65b03ba474302e61b9c26
+SHA1: 9bd2cbbe9ad14d2efef8df212dc919774a26b37a
+SHA256: fb36ef463601d391f0d1b01962e32ec9388497a2829a3914b049d6a8a578b7a8
+SHA512: 7a19ba789fe2fe68205eb41b50a0bc221ef9da7ba0cfc0355ae0757065b98da51031753878e66cb946bd6c2ff8b45aaaa45610675b399c0af55a2b9f67e3c219
+Homepage: https://metacpan.org/release/URI
+Description: module to manipulate and access URI strings
+ URI is a collection of Perl modules that represent and manipulate Uniform
+ Resource Identifier (URI) references as specified in RFC 2396.
+ .
+ URI objects can be used to access and manipulate the various components
+ that make up these strings.  There are also methods to combine URIs in
+ various ways.
+ .
+ The URI class replaces the URI::URL class that used to be distributed with
+ libwww-perl. This package also includes an emulation of the old URI::URL
+ interface, which implements both the old and the new interface.
+
 Package: rabbitmq-server
 Architecture: all
 Version: 3.8.1-1
@@ -3837,6 +4087,30 @@ SHA512: 7b2d4c73fcabd75960d83e810cd1985a965b9fbaf6e181ea522545dbf21df5a89a4dc509
 Homepage: https://www.rabbitmq.com/
 Description: Multi-protocol messaging broker
  RabbitMQ is an open source multi-protocol messaging broker.
+
+Package: libtext-diff-perl
+Architecture: all
+Version: 1.43-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 70
+Depends: perl, libalgorithm-diff-perl
+Filename: xenial/./libtext-diff-perl_1.43-1_all.deb
+Size: 27458
+MD5sum: 27ec1bb92cec2a23835043fdfa56ca47
+SHA1: 7897438c3c55d0f85e8c45e8767bdb060c49c7d1
+SHA256: f41cab2ba2f758a62747203988d5e16db7ec67e0f0d28fab1d4205dc12d89b23
+SHA512: 1907bd470727407dbd30edcaf42326649502d37b7a612ebe98ad3c4ecac14e5e808bf43fe49199a28c84793e720533f1a43ffa9b5b7d38d50bf66967d767080b
+Homepage: https://metacpan.org/release/Text-Diff
+Description: Perl module to find differences in files and record sets
+ Text::Diff provides a basic functions similar to the GNU diff utility. It is
+ not anywhere near as feature complete as GNU diff, but is better integrated
+ with Perl and available on all platforms. It is often faster than shelling
+ out to a system's diff executable for small files, and generally slower on
+ larger files. While it is not guaranteed to produce the same output as the
+ system diff command, output is often identical.
 
 Package: erlang-base
 Architecture: amd64
@@ -4109,6 +4383,35 @@ Homepage: https://pypi.python.org/pypi/setuptools
 Description: Python Distutils Enhancements
  Extensions to the python-distutils for large or complex distributions.
 
+Package: libhtml-parser-perl
+Architecture: amd64
+Version: 3.72-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 216
+Depends: perl (>= 5.22.1-4), perlapi-5.22.1, libc6 (>= 2.4), libhtml-tagset-perl, liburi-perl
+Recommends: libhttp-message-perl
+Suggests: libdata-dump-perl
+Enhances: libwww-perl
+Filename: xenial/./libhtml-parser-perl_3.72-1_amd64.deb
+Size: 86074
+MD5sum: 4a25b0a4982ecd3c565068092ee05929
+SHA1: f3cfd9326f84787e3e01c32d5817f0507795bb2f
+SHA256: d6dea8cf0c8d6be06f807c3f2c6668c9b19b1f466fde1c621097b6059c2731c7
+SHA512: 2c1ccc6a4155dcb3c4bc7031d71d561f7a24c37d9a0338f0f0c7567de2670cf8474e51c8b9af27b792b162f5fae5565f0fdfae3c5040eea4d3f01829ba90ba0c
+Homepage: https://metacpan.org/release/HTML-Parser
+Description: collection of modules that parse HTML text documents
+ HTML::Parser is a collection of modules useful for handling HTML documents.
+ These modules used to be part of the libwww-perl distribution, but are now
+ unbundled in order to facilitate a separate development track.
+ .
+ Objects of the HTML::Parser class will recognize markup and separate it from
+ content data. As different kinds of markup are recognized, the corresponding
+ event handler is invoked. The document to be parsed may also be supplied in
+ arbitrary chunks, making on-the-fly parsing of network documents possible.
+
 Package: cpp-5
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -4134,6 +4437,27 @@ Description: GNU C preprocessor
  .
  This package has been separated from gcc for the benefit of those who
  require the preprocessor but not the compiler.
+
+Package: libsocket6-perl
+Architecture: amd64
+Version: 0.25-1build2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 68
+Depends: perl (>= 5.22.1-1), perlapi-5.22.1, libc6 (>= 2.4)
+Filename: xenial/./libsocket6-perl_0.25-1build2_amd64.deb
+Size: 22758
+MD5sum: 054a924e1ff4cc918e99117fc36d638d
+SHA1: 453327b7971c6b06e6b14770bc15a67c31a3b83e
+SHA256: f4e32b189a0d8b4fe0ec0df17f39bf597750d7645fa0a39f900c7079a87e8978
+SHA512: c3ca7841ce8fff8e679271a62600aa0289746d8e9b7ef78a4a51025aefa3b74c1b9e5593992ec5a856c1fcf4d1004359adcd38dffb10ea762c0eaf79bdc6331b
+Homepage: https://metacpan.org/release/Socket6
+Description: Perl extensions for IPv6
+ The Socket6 module supports getaddrinfo() and getnameinfo() to intend
+ to enable protocol independent programming. If your environment
+ supports IPv6, IPv6 related defines such as AF_INET6 are included.
 
 Package: nginx-full
 Architecture: amd64
@@ -4399,6 +4723,32 @@ Description: Command line interface for SQLite 3
  SQLite is a C library that implements an SQL database engine.
  Programs that link with the SQLite library can have SQL database
  access without running a separate RDBMS process.
+
+Package: libwww-perl
+Architecture: all
+Version: 6.15-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 362
+Depends: perl, ca-certificates, libencode-locale-perl, libfile-listing-perl, libhtml-parser-perl, libhtml-tagset-perl, libhtml-tree-perl, libhttp-cookies-perl, libhttp-date-perl, libhttp-message-perl, libhttp-negotiate-perl, liblwp-mediatypes-perl, liblwp-protocol-https-perl, libnet-http-perl (>= 6.07), liburi-perl, libwww-robotrules-perl, netbase
+Recommends: libhtml-form-perl, libhtml-format-perl, libhttp-daemon-perl, libmailtools-perl
+Suggests: libauthen-ntlm-perl
+Breaks: fusioninventory-agent (<< 2.1.8-2), gsutil (<< 3.1-1), libfrontier-rpc-perl (<< 0.07b4-6), libhttp-daemon-ssl-perl (<< 1.04-3), libhttp-proxy-perl (<< 0.24-2), libhttp-request-ascgi-perl (<< 1.2-2), libhttp-request-params-perl (<< 1.01-6), libjson-rpc-perl (<< 0.96-3), libpoe-perl (<< 2:1.2990-2), librpc-xml-perl (<< 0.74-2), libsoap-lite-perl (<< 0.7.12-3), libwww-mechanize-formfiller-perl (<< 0.10-2), libwww-mechanize-perl (<< 1.66-2), satutils (<= 0.6), tidy-proxy (<< 0.97-4)
+Filename: xenial/./libwww-perl_6.15-1_all.deb
+Size: 145616
+MD5sum: 756a938a228d370d970b904105f5da72
+SHA1: cd83af0468920c6879209fac114606507afa7e58
+SHA256: 17bed5c1810067e0fc63f29718fa3076a311c78bc10813af00995452ffe9c302
+SHA512: cbe23f643aa3a18d92c48890422cfaad5bb730662e18b2afb5db0b299bf7b9a96b5a7e89a3f4349223d64a518ff373fd93920748bf08bb0a308e28f99e95ef86
+Homepage: https://metacpan.org/release/libwww-perl
+Description: simple and consistent interface to the world-wide web
+ libwww-perl (also known as LWP) is a collection of Perl modules that provide
+ a simple and consistent programming interface (API) to the World-Wide Web.
+ The main focus of the library is to provide classes and functions that allow
+ you to write WWW clients. It also contains general purpose modules, as well
+ as a simple HTTP/1.1-compatible server implementation.
 
 Package: libkrb5-3
 Architecture: amd64
@@ -4817,6 +5167,28 @@ Homepage: http://www.erlang.org/
 Description: Erlang/OTP XML tools
  The xmerl application contains modules for processing XML.
 
+Package: libtest-differences-perl
+Architecture: all
+Version: 0.64-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 39
+Depends: perl (>= 5.13.0), libcapture-tiny-perl (>= 0.24), libtext-diff-perl (>= 1.43)
+Filename: xenial/./libtest-differences-perl_0.64-1_all.deb
+Size: 16200
+MD5sum: 3c53fda8a3985e1c2248e204a763e80a
+SHA1: d8073abc6d068e6d648c7e28081110fb9777832a
+SHA256: 1b869a8c45fe8b74a255571c54edebee097ec271f0107fa45e35b1600bf8e5c4
+SHA512: be034e4d3cabd4a6d3eb3c1a87c2de273a5d42195d05831c41a3f9f09e22119c6516eeba26cc0726ef99fd3a527a57ba824a8cc39b2238a2cd0f19c1b8b69c06
+Homepage: https://metacpan.org/release/Test-Differences
+Description: Perl module to test string and data structure differences
+ CPAN's Test::Differences compares data structures and strings
+ and returns their differences in a UNIX diff fashion if they
+ are "not ok". Useful for comparing large structures easily
+ when running tests.
+
 Package: liblsan0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -4906,6 +5278,33 @@ Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
  successful companies and numerous applications.
  .
  SSL support is provided by OpenSSL.
+
+Package: libtimedate-perl
+Architecture: all
+Version: 2.3000-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 139
+Provides: timedate
+Depends: perl
+Breaks: timedate
+Replaces: timedate
+Filename: xenial/./libtimedate-perl_2.3000-2_all.deb
+Size: 37492
+MD5sum: 709c24baede0981e7f3cfb96e8ee0229
+SHA1: 7fd8db049d7c366c7e58a994bc1500136100444a
+SHA256: c3226c8810579dcf59c8d2a9d24f41efc81c03b758fd462062b1dd5045125632
+SHA512: 1363584cb7551d71ca9d40b5e09655cb55339b3e203a7328797e5160db2d73b7da9bb60cdae978b0b4fb2d11fb418e5eb4d5b47c78e97f830e0eb18d7564e70d
+Homepage: https://metacpan.org/release/TimeDate
+Description: collection of modules to manipulate date/time information
+ TimeDate is a collection of Perl modules useful for manipulating date and
+ time information. Date::Parse can parse absolute date specifications in a
+ wide variety of input formats and many languages (via Date::Language).
+ .
+ This package also includes Date::Format, which can format dates into strings,
+ as well as Time::Zone, which contains miscellaneous time zone functions.
 
 Package: libcilkrts5
 Architecture: amd64
@@ -5591,6 +5990,37 @@ Description: Python bindings to libcurl (Python 3)
  .
  This package contains PyCURL for Python 3.
 
+Package: libhttp-message-perl
+Architecture: all
+Version: 6.11-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 182
+Depends: perl, libencode-locale-perl, libhttp-date-perl, libio-html-perl, liblwp-mediatypes-perl, liburi-perl, perl (>= 5.11) | libio-compress-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libhttp-message-perl_6.11-1_all.deb
+Size: 74276
+MD5sum: 91539b56b83117ec6238c002dc8b1631
+SHA1: 1aadffb02e23ac0fd1211d2732fca9df39a9d468
+SHA256: 000590ed62b7424f71912fae5e0f7e1216105937b9efa1b33e6d7ce6503a23a9
+SHA512: c95c87762c6f5b3bddd8a732bff0f8f542d92f89c00af7130fa133509850ea26b84e57520f9b07039fbe22aecdc103f4c72800e7f0e4ce7e7e6283f18a2c3971
+Homepage: https://metacpan.org/release/HTTP-Message
+Description: perl interface to HTTP style messages
+ The HTTP::Message distribution contains classes useful for representing the
+ messages passed in HTTP style communication. These are classes representing
+ requests, responses and the headers contained within them.
+ .
+ The HTTP::Headers class encapsulates HTTP-style message headers. The headers
+ consist of attribute-value pairs also called fields, which may be repeated,
+ and which are printed in a particular order. The field names are cases
+ insensitive.
+ .
+ Instances of this class are usually created as member variables of the
+ HTTP::Request and HTTP::Response classes, internal to the library.
+
 Package: liberror-perl
 Architecture: all
 Version: 0.17-1.2
@@ -6065,6 +6495,35 @@ Description: alternative Python package installer
  installs, can save package state for replaying, can install from non-egg
  sources, and can install from version control repositories.
 
+Package: libwww-robotrules-perl
+Architecture: all
+Version: 6.01-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 76
+Depends: perl, liburi-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libwww-robotrules-perl_6.01-1_all.deb
+Size: 14074
+MD5sum: 95112b59013c9e643ada5ddddb62d9b8
+SHA1: 39693be3d45fcfd0852e2de9070abc36cb7242a5
+SHA256: 5516cd8881af8032ccbeb1fb678c51d2f4b4f98128eccbb126fc0e07571ed830
+SHA512: 9439131fa0729e213fe76cc5cb02e154aebdaf45239e70bb5d6058a3eaf38280393e2dad76adeb5df789966dce0ba41d5e4a2eb91200281d8058b74f91683413
+Homepage: http://search.cpan.org/dist/WWW-RobotRules/
+Description: database of robots.txt-derived permissions
+ WWW::RobotRules parses /robots.txt files as specified in "A Standard for
+ Robot Exclusion", at <http://www.robotstxt.org/wc/norobots.html>. Webmasters
+ can use the /robots.txt file to forbid conforming robots from accessing parts
+ of their web site.
+ .
+ The parsed files are kept in a WWW::RobotRules object, and this object
+ provides methods to check if access to a given URL is prohibited. The same
+ WWW::RobotRules object can be used for one or more parsed /robots.txt files
+ on any number of hosts.
+
 Package: mongodb-org-shell
 Architecture: amd64
 Version: 4.2.3
@@ -6275,6 +6734,29 @@ Homepage: http://www.erlang.org/
 Description: Erlang/OTP interface to SQL databases
  The Erlang ODBC application provides an interface for accessing
  relational SQL databases from Erlang.
+
+Package: libhtml-tree-perl
+Architecture: all
+Version: 5.03-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 506
+Depends: perl, libhtml-parser-perl, libhtml-tagset-perl
+Recommends: libhtml-format-perl, libwww-perl
+Filename: xenial/./libhtml-tree-perl_5.03-2_all.deb
+Size: 197320
+MD5sum: 845ea98fb15160f707d0de7cc9b379c4
+SHA1: 2f60cb603023a9923e414176a8aad4f55f4305ce
+SHA256: 9eb5a799089547cb401570153f58698a3514a22c7536b0aba6866d4848ab5a06
+SHA512: d4f894085cfb8b6eac5f0d94ed515cdc58fa964faf92ff3b26590f9d9312bfd3014586f2c7d6a67e00ef73aae62f8b46b7ad33a6cf1a52952f17202face1eae0
+Homepage: https://metacpan.org/release/HTML-Tree
+Description: Perl module to represent and create HTML syntax trees
+ HTML::Tree is a collection of modules that represent, create and extract
+ information from HTML syntax trees.  These modules used to be part of
+ the libwww-perl distribution, but are now unbundled in order to
+ facilitate a separate development track.
 
 Package: git-man
 Architecture: all
@@ -7532,6 +8014,32 @@ Description: support library providing __atomic built-in functions
  library providing __atomic built-in functions. When an atomic call cannot
  be turned into lock-free instructions, GCC will make calls into this library.
 
+Package: libalgorithm-diff-perl
+Architecture: all
+Version: 1.19.03-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 136
+Depends: perl
+Recommends: libalgorithm-diff-xs-perl
+Filename: xenial/./libalgorithm-diff-perl_1.19.03-1_all.deb
+Size: 47622
+MD5sum: 3d6f7b46454ff0b8589904fc4f8dd602
+SHA1: 787fadec1dbb5d6775d76126090d502946a1b7fc
+SHA256: e68d641c28c22736068edc4c455afd52a7928ef5cac75d33a80c1b5b7f26f17b
+SHA512: adc9c7cccd3b5647cb33f1d3b190591550cc6dc3a45698bb3954545cc26461099aa5f15c1b83fecd4166e8346d61965a508a54e736ae781868530aebe99325ee
+Homepage: http://search.cpan.org/~tyemq/Algorithm-Diff/
+Description: module to find differences between files
+ Algorithm::Diff is a Perl module that allows users to analyze text based on a
+ Longest Common Subsequence (LCS) algorithm. It can compare two files and find
+ the differences between them, which can produce the same information as the
+ common Unix tool 'diff'.
+ .
+ There is an XS-optimized implementation of the core loop, which accelerates
+ some types of diff output (see libalgorithm-diff-xs-perl).
+
 Package: libxdmcp6
 Architecture: amd64
 Version: 1:1.1.2-1.1
@@ -7956,6 +8464,34 @@ Description: asynchronous event notification library
  libevent_core and libevent_extra, the libevent source package builds
  the libevent library that includes everything in libevent_core and
  libevent_extra.
+
+Package: libjson-perl
+Architecture: all
+Version: 2.90-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 254
+Depends: perl
+Recommends: libjson-xs-perl (>= 2.340)
+Suggests: perl (>= 5.13.9) | libjson-pp-perl
+Filename: xenial/./libjson-perl_2.90-1_all.deb
+Size: 79394
+MD5sum: 80816a81a4b1248883422c8bc77bad43
+SHA1: a8c57251ea38fc2cb35b12d9320650f385f877eb
+SHA256: bc9aa3a3c83ce9e89ed112706472e1d0b70eb8e697a8b305a3d5c803c69bde3d
+SHA512: 0c1d6f5908df8ccf9ecc308f0af2f44e4a87e736dfad6b640dd9c50c54f6969ca73fc81b753c6e11ff83df2556d7001fd3e2413cc629e277c4503b8a1272a4be
+Homepage: https://metacpan.org/release/JSON
+Description: module for manipulating JSON-formatted data
+ JSON is a Perl module for manipulating data stored in the format of the same
+ name. JavaScript Object Notation (JSON) is a simple data serialization format
+ (defined in RFC 4627) that serves as an alternative to XML.
+ .
+ The primary purpose of this module is to select an appropriate backend JSON
+ implementation. It prefers either JSON::XS (see libjson-xs-perl) or JSON::PP
+ (see libjson-pp-perl), but will fall back on a backport implementation if
+ neither are available.
 
 Package: erlang-asn1
 Architecture: amd64
@@ -8812,6 +9348,36 @@ Description: XSLT 1.0 processing library - development kit
  .
  This package contains the development files for libxslt.
 
+Package: libencode-locale-perl
+Architecture: all
+Version: 1.05-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 32
+Depends: perl
+Filename: xenial/./libencode-locale-perl_1.05-1_all.deb
+Size: 12274
+MD5sum: 452574a48a280b12e98799dcef3980c1
+SHA1: 5c79dfc6f5cfe239121c21f5badd1ee129b70907
+SHA256: 5a9ec933a74baedd6c5883654dc66a8e71b48f472f1bb9a799e25bc71cf83389
+SHA512: 8c99e2ef5af3ccb67ab164e17d0a5fe1bd5e7ee48f6f7b8169d8500938f2379f43cf4d4ad184794eb3ba3215fcef068a202b17d24a17facc82cdd51856c0f64b
+Homepage: https://metacpan.org/release/Encode-Locale
+Description: utility to determine the locale encoding
+ In many applications it's wise to let Perl use Unicode for the strings it
+ processes. Most of the interfaces Perl has to the outside world are still byte
+ based. Programs therefore need to decode byte strings that enter the program
+ from the outside and encode them again on the way out.
+ .
+ The POSIX locale system is used to specify both the language conventions
+ requested by the user and the preferred character set to consume and output.
+ The Encode::Locale module looks up the charset and encoding (called a CODESET
+ in the locale jargon) and arranges for the Encode module to know this encoding
+ under the name "locale". It means bytes obtained from the environment can be
+ converted to Unicode strings by calling Encode::encode(locale => $bytes) and
+ converted back again with Encode::decode(locale => $string).
+
 Package: libpython2.7
 Architecture: amd64
 Version: 2.7.12-1ubuntu0~16.04.9
@@ -8889,6 +9455,38 @@ Description: minimal subset of the Python language (default version)
  in the boot process for some basic tasks.
  See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
  contained in this package.
+
+Package: libfile-listing-perl
+Architecture: all
+Version: 6.04-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 55
+Depends: perl, libhttp-date-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libfile-listing-perl_6.04-1_all.deb
+Size: 9774
+MD5sum: a69f2a45649ddd30a1679e5a90db41c5
+SHA1: 7e13a66085509f229b7e51008cdaab5c813ec36a
+SHA256: b3557750ae80d586d6e0fccf16d3d8b2cbd60f14e21e7710bf56e9180b4f286f
+SHA512: 14cbc1ecfee2901ce79ccad072c74ac7c2e1ab34764742367dd7e84138f33342c1bd405ef7674d118b2ba398d8edc56bd08e33cd03e1697145c4f1cf3c502e27
+Homepage: http://search.cpan.org/dist/File-Listing/
+Description: module to parse directory listings
+ File::Listing exports a single function called parse_dir(), which can be used
+ to parse directory listings.
+ .
+ The first parameter to parse_dir() is the directory listing to parse. It can
+ be a scalar, a reference to an array of directory lines or a glob
+ representing a filehandle to read the directory listing from.
+ .
+ The second parameter is the time zone to use when parsing time stamps in the
+ listing. If this value is undefined, then the local time zone is assumed.
+ .
+ The third parameter is the type of listing to assume. Currently supported
+ formats are 'unix', 'apache' and 'dosftp'. The default value 'unix'.
 
 Package: python2.7-dev
 Architecture: amd64
@@ -8991,6 +9589,30 @@ SHA512: 26b2cf053490b09bf065ae64e5cbaa3e1fc022502443855e8439de150e321586a41a6e78
 Homepage: http://gcc.gnu.org/
 Description: GCC cc1 plugin for GDB
  libcc1 is a plugin for GDB.
+
+Package: liblwp-mediatypes-perl
+Architecture: all
+Version: 6.02-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 100
+Depends: perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./liblwp-mediatypes-perl_6.02-1_all.deb
+Size: 21690
+MD5sum: 654e7f05d341f4a859799eec9538b2c0
+SHA1: 55ae4ed3668dcbe02a918947bf75929040a6c5c0
+SHA256: bfc80beb41aad1a1ea886ec3605cb692eff10d4451d902520b8db443ee66c96a
+SHA512: afd8f7ee383abac33e9c54b46467a24379cfbca3a2456f1620e6829c33332a5a8cdf0cf191bd8e3923cf8c9536ba7ff8fcc141e9b6789269bdfac8829c9b0eb6
+Homepage: http://search.cpan.org/dist/LWP-MediaTypes/
+Description: module to guess media type for a file or a URL
+ LWP::MediaTypes provides functions for handling media (also known as MIME)
+ types and encodings. The mapping from file extensions to media types is
+ defined by the media.types file. If the ~/.media.types file exists it is used
+ instead. For backwards compatibility it will also look for ~/.mime.types.
 
 Package: libgmp10
 Architecture: amd64
@@ -9408,6 +10030,37 @@ Description: general-purpose scalable concurrent malloc(3) implementation
  Notable features are reduced lock contention, predictable low fragmentation,
  and introspection with heap profiling.
 
+Package: libio-socket-ip-perl
+Architecture: all
+Version: 0.37-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 101
+Depends: netbase, perl-base (>= 5.15.6) | libsocket-perl (>= 1.97)
+Filename: xenial/./libio-socket-ip-perl_0.37-1_all.deb
+Size: 24042
+MD5sum: 78901b9df98a65365e555462d4d0a3ab
+SHA1: 3167b02c30c8eb73a2dc835856fda8daf8bc8b82
+SHA256: e3c5c9ad6c0e155df8aff0f246af1f05e07352036b775095ec3693c06c437378
+SHA512: 4ee5b7af6e8b0be00df74529dce09ead7e533d598b8b893c89ef0058c04642253f4467eb798e34fdb3fa0247aa53ff1a0c8cdf01d44ea964598f2559d9aae52c
+Homepage: https://metacpan.org/release/IO-Socket-IP
+Description: module for using IPv4 and IPv6 sockets in a protocol-independent way
+ IO::Socket::IP provides a protocol-independent way to use IPv4 and IPv6
+ sockets. It allows new connections to be made by specifying the hostname and
+ service name or port number. It allows for connections to be accepted by
+ sockets listening on local ports, by service name or port number.
+ .
+ It uses Socket::GetAddrInfo's getaddrinfo function to convert
+ hostname/service name pairs into sets of possible addresses to connect to.
+ This allows it to work for IPv6 where the system supports it, while still
+ falling back to IPv4-only on systems which don't.
+ .
+ It provides an API which, for most typical cases, should be a drop-in
+ replacement for IO::Socket::INET; most constructor arguments and methods are
+ provided in a compatible way.
+
 Package: docker-ce-cli
 Architecture: amd64
 Version: 5:19.03.6~3-0~ubuntu-xenial
@@ -9654,6 +10307,28 @@ Description: Foreign Function Interface library (development files)
  allows code written in one language to call code written in another
  language.
 
+Package: netbase
+Architecture: all
+Version: 5.3
+Multi-Arch: foreign
+Priority: important
+Section: admin
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 66
+Depends: lsb-base (>= 3.0-6)
+Recommends: ifupdown
+Breaks: ifupdown (<< 0.7)
+Filename: xenial/./netbase_5.3_all.deb
+Size: 12906
+MD5sum: 98b2fc463221bbf6f07e0f1b5a0a91ee
+SHA1: 842e40117f9852facc185f854bb2e9d6627b83d5
+SHA256: e8b9da811554f9189e043c6461f357d3373b5ab403c1f26c88ab17a9f77c0795
+SHA512: eafb13e8771e7e5c46d16ecd9317da2c36156aac779719e9f0282130ab26c1c9246d7f73b6842e258439cc52e25505c9baf736d951192a835c6af19676f8cefd
+Description: Basic TCP/IP networking system
+ This package provides the necessary infrastructure for basic TCP/IP based
+ networking.
+
 Package: iso-codes
 Architecture: all
 Version: 3.65-1
@@ -9703,6 +10378,41 @@ SHA512: 8b925b43cfce1ea2a6a796582a0bdfd316a91f4e255eaa07f7e4ebe194226a7e920ea516
 Description: Minimal subset of the Python language (version 2.7)
  This package contains some essential modules. It is normally not
  used on it's own, but as a dependency of python2.7-minimal.
+
+Package: liblwp-protocol-https-perl
+Architecture: all
+Version: 6.06-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 56
+Depends: perl, ca-certificates, libio-socket-ssl-perl (>= 1.54), libnet-http-perl, libwww-perl (>= 6.05-2)
+Suggests: libcrypt-ssleay-perl
+Breaks: libwww-perl (<< 6.02)
+Replaces: libwww-perl (<< 6.02)
+Filename: xenial/./liblwp-protocol-https-perl_6.06-2_all.deb
+Size: 8682
+MD5sum: d678b338f235146f2b3592ecfed08777
+SHA1: 3424e9394fb7da75c9f7927eba6338179a1c6490
+SHA256: 47183ac22ca29a7ec4556ba2dbb1b18451f203a7533c732974d601a323c75cfc
+SHA512: 4c5d37b489375fd973d9cecc43f16e8c5f91a9aa9fbc7d541cbbdb8588fce12b065f0966d9dbbc344f1fc61ae769c1ccec31ddb94905d289e8d48e64cee4ef80
+Homepage: https://metacpan.org/release/LWP-Protocol-https
+Description: HTTPS driver for LWP::UserAgent
+ The LWP::Protocol::https module provides support for using HTTPS schemed URLs
+ with LWP. LWP::Protocol::https is a plug-in to the LWP protocol handling, so
+ you don't use it directly. Once the module is installed LWP is able to access
+ sites using HTTP over SSL/TLS.
+ .
+ If hostname verification is requested by LWP::UserAgent's ssl_opts, and
+ neither SSL_ca_file nor SSL_ca_path is set, then SSL_ca_file is implied to be
+ the one provided by ca-certificates.
+ .
+ This module used to be bundled with libwww-perl, but it was unbundled in
+ v6.02 in order to be able to declare its dependencies properly for the CPAN
+ tool-chain. Applications that need HTTPS support can just declare their
+ dependency on LWP::Protocol::https and will no longer need to know what
+ underlying modules to install.
 
 Package: iptables
 Architecture: amd64
@@ -10211,6 +10921,34 @@ Description: library for common error values and messages in GnuPG components
  components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
  pinentry, SmartCard Daemon and possibly more in the future.
 
+Package: libjson-pp-perl
+Architecture: all
+Version: 2.27300-2
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 160
+Depends: perl
+Recommends: libjson-perl (>= 2.50)
+Breaks: libjson-perl (<< 2.50)
+Replaces: libjson-perl (<< 2.50)
+Filename: xenial/./libjson-pp-perl_2.27300-2_all.deb
+Size: 46966
+MD5sum: 0025dbcb62c7d1833bbc534a4ae0b4b0
+SHA1: d7ca4d1af0fc27de792f1c67855194e22dd9374e
+SHA256: 23d0652b63c479b5e464df0c79ff9d36726969016d87d90f198e2801611aa736
+SHA512: 17e5ab0e1387b03e8d0227ace3d35b30da739e0e3e57c8e5830497acbbd458a3eda2c25177d10afe9c284eb6e9c123d5a9ca990328aa94e237cad4832632d10b
+Homepage: https://metacpan.org/release/JSON-PP
+Description: module for manipulating JSON-formatted data (Pure Perl)
+ JSON::PP is a module for manipulating data stored in the JavaScript Object
+ Notation (JSON) serialization format (defined in RFC 4627), which serves as
+ an alternative to XML.
+ .
+ This Pure Perl JSON implementation will become a core module beginning with
+ perl 5.13, and will be loaded by the JSON module (see libjson-perl) if the
+ C/XS-accelerated version (see libjson-xs-perl) is not available.
+
 Package: libsystemd0
 Architecture: amd64
 Version: 229-4ubuntu21.22
@@ -10378,6 +11116,42 @@ Description: Erlang/OTP IDL compiler
  Definition Language) compiler. Depending on the choice of back-end the
  code will map to Erlang, C, or Java. The compiler generates client stubs
  and server skeletons.
+
+Package: libhttp-cookies-perl
+Architecture: all
+Version: 6.01-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 75
+Depends: perl, libhttp-date-perl, libhttp-message-perl
+Breaks: libwww-perl (<< 6.00)
+Replaces: libwww-perl (<< 6.00)
+Filename: xenial/./libhttp-cookies-perl_6.01-1_all.deb
+Size: 17188
+MD5sum: a677bc52786fad145cf03e43e7cf8964
+SHA1: e45b66ccc2875afa463ddb08e2d29b8e405e8228
+SHA256: 085679fa60a4120f2ccd78d9b4723850593c79c27c095a03f33fef24c5a75c1e
+SHA512: 5f107e557e068517470a06c340062329b873531bbe83d5d2dac4e12b89fb8e8098d8199659762f4d26b7276f4f7e70ede46f09376068ecf384be670421cf423b
+Homepage: https://metacpan.org/release/HTTP-Cookies
+Description: HTTP cookie jars
+ This class is for objects that represent a "cookie jar" -- that is, a
+ database of all the HTTP cookies that a given LWP::UserAgent object knows
+ about.
+ .
+ Cookies are a general mechanism which server side connections can use to both
+ store and retrieve information on the client side of the connection. For more
+ information about cookies refer to
+ <URL:http://curl.haxx.se/rfc/cookie_spec.html> and
+ <URL:http://www.cookiecentral.com/>. HTTP::Cookies also implements the new
+ style cookies described in RFC 2965. The two variants of cookies are supposed
+ to be able to coexist happily.
+ .
+ Instances of the class HTTP::Cookies are able to store a collection of
+ Set-Cookie2: and Set-Cookie: headers and are able to use this information to
+ initialize Cookie-headers in HTTP::Request objects. The state of a
+ HTTP::Cookies object can be saved in and restored from files.
 
 Package: ucf
 Architecture: all
@@ -10741,6 +11515,28 @@ Description: generic font configuration library - configuration
  specified by applications.
  .
  This package contains the configuration files and scripts for fontconfig.
+
+Package: libcapture-tiny-perl
+Architecture: all
+Version: 0.32-1
+Priority: optional
+Section: perl
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 57
+Depends: perl, perl (>= 5.21.5) | libjson-pp-perl (>= 2.27300)
+Filename: xenial/./libcapture-tiny-perl_0.32-1_all.deb
+Size: 20158
+MD5sum: e37a7f21affdbbfd705ddd73292c78bf
+SHA1: d41a6481f2db85223de25790137cca0768fd7c34
+SHA256: 36de6b4f8cde67e6357fadac9195d59f1ec80c5ee1003a17c63ce37610a9fdd4
+SHA512: c22b64cc19925f7c017294dda3223f87c28248981969a7532f8398ebe173d1818088e8c75c4e4c6c679012a17784544f395b7e32cea536a57376f91ad7a9a6f3
+Homepage: https://metacpan.org/release/Capture-Tiny
+Description: module to capture STDOUT and STDERR
+ Capture::Tiny is a Perl module that provides a simple, portable way to
+ capture anything sent to STDOUT or STDERR, regardless of whether it comes
+ from Perl, XS code or an external program. Further, output can be captured
+ while being passed through to the original handles.
 
 Package: base-files
 Architecture: amd64
