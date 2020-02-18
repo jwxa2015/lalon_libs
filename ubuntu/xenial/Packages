@@ -1137,6 +1137,28 @@ Description: generic font configuration library - runtime
  This package contains the runtime library needed to launch applications
  using fontconfig.
 
+Package: erlang-runtime-tools
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 381
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-mnesia (= 1:21.3.8.13-1), libc6 (>= 2.14)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-runtime-tools_1%3a21.3.8.13-1_amd64.deb
+Size: 216056
+MD5sum: cf7da4e95480dbc8f8a4e36bc41705d8
+SHA1: f238e4b5d41ed2d2af57645c0bf232dea391b7a3
+SHA256: 8a3d9e3f766e1b0d3a7d467b8115a5c9e1ed795af1cde024f399fe9d303da928
+SHA512: 2394f429db9cb5006f725b38161e5b17180a47c31e9aa1ddf9188b44fee8c85a6c6a4e20dc1e8bd0c5b2bb734ec3e8e653fc4a8cf746881f2051ce125415f2c2
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP runtime tracing/debugging tools
+ Runtime_Tools provides low-footprint tracing/debugging tools suitable
+ for inclusion in a production system.
+
 Package: libevent-core-1.4-2
 Architecture: amd64
 Version: 1.4.14b-stable-0ubuntu1
@@ -2682,6 +2704,27 @@ Description: high-quality block-sorting file compressor library - runtime
  The archive file format of bzip2 (.bz2) is incompatible with that of its
  predecessor, bzip (.bz).
 
+Package: libudev1
+Architecture: amd64
+Version: 229-4ubuntu21.27
+Multi-Arch: same
+Priority: important
+Section: libs
+Source: systemd
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Debian systemd Maintainers <pkg-systemd-maintainers@lists.alioth.debian.org>
+Installed-Size: 207
+Depends: libc6 (>= 2.16)
+Filename: xenial/./libudev1_229-4ubuntu21.27_amd64.deb
+Size: 54458
+MD5sum: cd5f9b2bc6ad41a358900f3cf1d692df
+SHA1: 36a073366f4c4b0994887c1a2ebda49e2a8d5366
+SHA256: e7c8b5394c6bef779daa7fef0dd628b71f6b9efc537bf0ece3067bd0dedc264e
+SHA512: 0c1f7156794ff98946f84b6409dcb1d49c0ac6edf6d57406a11cdd55266d6d5ea5fd11b2675a9c5e46f3a227ed48b69f67b51b9af2d740a18149a0f75b7c10c4
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+Description: libudev shared library
+ This library provides access to udev device information.
+
 Package: libgssapi3-heimdal
 Architecture: amd64
 Version: 1.7~git20150920+dfsg-4ubuntu1.16.04.1
@@ -2943,6 +2986,28 @@ Description: common error description library
  libcomerr is an attempt to present a common error-handling mechanism to
  manipulate the most common form of error code in a fashion that does not
  have the problems identified with mechanisms commonly in use.
+
+Package: erlang-os-mon
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 233
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-mnesia (= 1:21.3.8.13-1), erlang-snmp (= 1:21.3.8.13-1), libc6 (>= 2.4)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-os-mon_1%3a21.3.8.13-1_amd64.deb
+Size: 124598
+MD5sum: af9c36e35bdc85092784f144292e8cc5
+SHA1: 1d66af813700e7ffc14401f65e326dd9918913b0
+SHA256: 4d6311b412c8cab49ebb5dd924e41af0bee8bc23095928bccf6adcd33d026b7e
+SHA512: eeb25ea84bfe6a3399967b501a85d4c161830f408d843d9316b61ab9eda349328b97af47ba161ac91e60114415280929cbfe4d2ce3b3786285f85d290c1820b2
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP operating system monitor
+ The operating system monitor, OS_Mon, provides services for
+ monitoring CPU load, disk usage, memory usage and OS messages.
 
 Package: libx11-data
 Architecture: all
@@ -4211,6 +4276,29 @@ Description: GCC OpenMP (GOMP) support library
  GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
  in the GNU Compiler Collection.
 
+Package: erlang-inets
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 912
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-mnesia (= 1:21.3.8.13-1), erlang-runtime-tools (= 1:21.3.8.13-1), erlang-ssl (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-inets_1%3a21.3.8.13-1_amd64.deb
+Size: 617218
+MD5sum: 1e45ea26402630298580d07fca192afa
+SHA1: 462f5d066986ef869b26d70a1888bd574b62fca2
+SHA256: af052ef5d96c1f9d9d93b9fc9e54a7f3e22ece79f00e0e8c36e8d3ebdb1c33ae
+SHA512: 63ad484778942cc351663cf49e0a177c04c952246c113c98374847757c9d0a2438350605c09c806717a04e1df13bd9dc92a0047af81e1a51e6e89ec0aebc1280
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP Internet clients and servers
+ Inets is a container for Internet clients and servers. Currently
+ a FTP client, a HTTP client and server, and a TFTP client and
+ server are provided in Inets.
+
 Package: libvpx3
 Architecture: amd64
 Version: 1.5.0-2ubuntu1
@@ -4624,6 +4712,38 @@ Description: Apply a diff file to an original
  those differences to an original file, producing a patched
  version.
 
+Package: erlang-base
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 13130
+Provides: erlang-abi-17.0
+Depends: procps, adduser, libc6 (>= 2.15), libtinfo5 (>= 6), zlib1g (>= 1:1.2.8)
+Recommends: libsctp1 (>= 1.0.16+dfsg), erlang-crypto (= 1:21.3.8.13-1), erlang-syntax-tools (= 1:21.3.8.13-1)
+Suggests: erlang-tools (= 1:21.3.8.13-1), erlang, erlang-manpages, erlang-doc
+Conflicts: erlang (<< 1:21.3.8.13-1), erlang-base-hipe, erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-doc-html (<< 1:13.b.4), erlang-manpages (<= 1:11.b.1-2)
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base-hipe, erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-doc-html (<< 1:13.b.4), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-typer (<< 1:20.0+dfsg), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-base_1%3a21.3.8.13-1_amd64.deb
+Size: 7701368
+MD5sum: 390b29a3ea8a3fec8fa3a7521ae3d4ee
+SHA1: bb8cbfd9cbf39db1074948b8ee1c60e9489f667c
+SHA256: 04f772c237900af832ad74495d3672953cfcffd423884e631036fd742c9bf853
+SHA512: 4559c067549cb1eab618f3fff7bb0faf31d329de65919bcc8aa95e453a13d9f38c85eb5031a41fdc51d81ea4ec14a08d7b0461ce43364a8a79862ded17cbef5b
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP virtual machine and base applications
+ This package contains the Erlang/OTP runtime implementation, which is
+ configured and built without HiPE support (compiles to byte-code only),
+ and minimal set of Erlang applications:
+  compiler - compiles Erlang code to byte-code;
+  erts - the Erlang runtime system application;
+  kernel - code necessary to run the Erlang runtime system itself;
+  ose - code for Enea OSE operating system;
+  sasl - the system architecture support libraries application;
+  stdlib - modules for manipulating lists, strings, files etc.
+
 Package: libquadmath0
 Architecture: amd64
 Version: 5.4.0-6ubuntu1~16.04.12
@@ -4926,6 +5046,53 @@ Description: Simple DirectMedia Layer
  This version of SDL is compiled with X11 and caca graphics drivers and OSS,
  ALSA and PulseAudio sound drivers.
 
+Package: erlang-snmp
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 2895
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-crypto (= 1:21.3.8.13-1), erlang-mnesia (= 1:21.3.8.13-1), erlang-runtime-tools (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-snmp_1%3a21.3.8.13-1_amd64.deb
+Size: 1566116
+MD5sum: ae9beb0ce29acf8bfb11f1dd94bbe037
+SHA1: 267dddac279115a36a9b40c5371790d4298417c6
+SHA256: 6b868d3d9560a6be7043c9e5373f4ea01642200b393304e836b6f2c65d563f06
+SHA512: 909f09c9ffbe9148648cdd44159aa0db6ac7edd3685618ac9a4018e74132f7429b532498b08cc84e1ab7199e465db0d729f53f19507bdfb8445480aace19f629
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP SNMP applications
+ A multilingual Simple Network Management Protocol application features
+ an Extensible Agent, simple manager, a MIB compiler and facilities for
+ implementing SNMP MIBs etc.
+ .
+ The OTP_Mibs application provides an SNMP management information base
+ for Erlang nodes.
+
+Package: erlang-ssl
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 1156
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-crypto (= 1:21.3.8.13-1), erlang-public-key (= 1:21.3.8.13-1)
+Suggests: erlang-inets (= 1:21.3.8.13-1), erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-ssl_1%3a21.3.8.13-1_amd64.deb
+Size: 923602
+MD5sum: 80abbd12614144db3c494555e37f60d6
+SHA1: 2579e2aeed9ef428c354e46d38381e1074c4bb85
+SHA256: 941a2d97692d9a7fc5497893658447e640403b63251885c553affd2449e6c39e
+SHA512: e250bfdf07a617be93f6954448d26ed4934e5dee5cf5669427725995f0cd5b0ff7f96d1097f7bc930502400199848e5c82f7e816c96a88cc681c06501a126cb9
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP implementation of SSL
+ The SSL application provides secure communication over sockets.
+
 Package: passwd
 Architecture: amd64
 Version: 1:4.2-3.1ubuntu5.4
@@ -5065,6 +5232,28 @@ Description: Freefont Serif, Sans and Mono Truetype fonts
  Freefont is a set of free high-quality TrueType fonts covering the UCS
  character set. These fonts are similar to the widely known Helvetica,
  Times and Courier fonts.
+
+Package: erlang-eldap
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 196
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-asn1 (= 1:21.3.8.13-1), erlang-ssl (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-eldap_1%3a21.3.8.13-1_amd64.deb
+Size: 133218
+MD5sum: e7d6a6ce7f96b8473dffe41f1ccb8c4d
+SHA1: 92a9f4703438fd3a1155822fe0b35c8b79a5c68a
+SHA256: bad9ea792ea2508144328490688142caff1a3987a5ce73c693b09134d219fba4
+SHA512: 70d571319a79950e90b3660e5ccb14d4ada728a4430da3b7964de5fcc40ca615eea9136d55bbe15f0283ca5f1b1f98851f76e5efa634331af989ad574dc12584
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP LDAP library
+ Eldap is a module which provides a client API to the Lightweight
+ Directory Access Protocol (LDAP).
 
 Package: erlang-tools
 Architecture: amd64
@@ -5229,6 +5418,27 @@ Description: /proc file system utilities
  .
  It contains free, kill, pkill, pgrep, pmap, ps, pwdx, skill, slabtop,
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
+
+Package: erlang-xmerl
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 1579
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-xmerl_1%3a21.3.8.13-1_amd64.deb
+Size: 997950
+MD5sum: 4dc60890b10f26745fb389bf1b2c45ab
+SHA1: aa6aff344fb4bb3c2962d4e3359efe9920671cab
+SHA256: a2af05737306ba2bdedb0ff2598ca2d6e5817b76bcdbf7f7e461bee610d206a1
+SHA512: 655975ad85d6144a54c335a3b1325bb6f0b30b6ad354f952de0fe35f60ae643e3e53b491821616edb73b385d87c6a16c128a55ef7984f5203d57f254b74233d4
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP XML tools
+ The xmerl application contains modules for processing XML.
 
 Package: python-pkg-resources
 Architecture: all
@@ -6614,6 +6824,45 @@ Description: Debian package management system
  .
  For Debian package development tools, install dpkg-dev.
 
+Package: erlang-tools
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 1150
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-runtime-tools (= 1:21.3.8.13-1), libc6 (>= 2.14)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-tools_1%3a21.3.8.13-1_amd64.deb
+Size: 528978
+MD5sum: 18331f0648b2d68ffb4bf5c3885051f2
+SHA1: 14558530826d1ab87912b35ba66e9dc386656349
+SHA256: 61a9ff345aba52d64a11b12bae423df50d2a3d5a17f45331a9be9f2f4d7ba134
+SHA512: a2d747401fc70ec4acd4ae79d4adc38528f2b609536113f79a1205b56b0d288eecb25aaaad237ed2b168913787f270e7d874c6a23d14bc8efcc4ee4b12c22aa9
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP various tools
+ The Tools application contains a number of stand-alone tools, which are
+ useful when developing Erlang programs.
+ .
+  cover - A coverage analysis tool for Erlang.
+  cprof - A profiling tool that shows how many times each function
+    is called. Uses a kind of local call trace breakpoints containing
+    counters to achieve very low runtime performance degradation.
+  eprof - A time profiling tool; measures how time is used in Erlang
+    programs. Predecessor of fprof (see below).
+  fprof - Another Erlang profiler; measures how time is used in Erlang
+    programs. Uses trace to file to minimize runtime performance
+    impact, and displays time for calling and called functions.
+  instrument - Utility functions for obtaining and analyzing resource
+    usage in an instrumented Erlang runtime system.
+  make - A make utility for Erlang similar to UNIX make.
+  tags - A tool for generating Emacs TAGS files from Erlang source
+    files.
+  xref - A cross reference tool. Can be used to check dependencies
+    between functions, modules, applications and releases.
+
 Package: dpkg
 Architecture: amd64
 Version: 1.18.4ubuntu1.5
@@ -7531,6 +7780,24 @@ Description: support library providing __atomic built-in functions
  library providing __atomic built-in functions. When an atomic call cannot
  be turned into lock-free instructions, GCC will make calls into this library.
 
+Package: rabbitmq-server
+Architecture: all
+Version: 3.8.2-1
+Priority: extra
+Section: net
+Maintainer: RabbitMQ Team <info@rabbitmq.com>
+Installed-Size: 13212
+Depends: init-system-helpers (>= 1.13~), erlang-base (>= 1:21.3) | erlang-base-hipe (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-base (<< 1:23.0) | erlang-base-hipe (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-crypto (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-crypto (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-eldap (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-eldap (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-inets (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-inets (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-mnesia (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-mnesia (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-os-mon (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-os-mon (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-parsetools (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-parsetools (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-public-key (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-public-key (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-runtime-tools (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-runtime-tools (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-ssl (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-ssl (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-syntax-tools (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-syntax-tools (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-tools (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-tools (<< 1:23.0) | esl-erlang (<< 1:23.0), erlang-xmerl (>= 1:21.3) | esl-erlang (>= 1:21.3), erlang-xmerl (<< 1:23.0) | esl-erlang (<< 1:23.0), adduser, logrotate, socat
+Filename: xenial/./rabbitmq-server_3.8.2-1_all.deb
+Size: 11703622
+MD5sum: b99928c3b163b1ced078205ab09ed6b2
+SHA1: bf1d7f03df00dcbc11e73ed3a781e8052910d18f
+SHA256: aebdb80be49fe3adbf99c859006d8a503f531be79a0cd0712a30341e4c72054f
+SHA512: 714c5d73ebe3723235a60a0a26230685dc4ee548230a8fa0f17c3f1910936c739aade9f9815cd7e6a117371fd153c92c5dc8dc527e31bf9b4d2ffc1d1c10482e
+Homepage: https://www.rabbitmq.com/
+Description: Multi-protocol messaging broker
+ RabbitMQ is an open source multi-protocol messaging broker.
+
 Package: dpkg-dev
 Architecture: all
 Version: 1.18.4ubuntu1.5
@@ -7689,6 +7956,28 @@ Description: asynchronous event notification library
  libevent_core and libevent_extra, the libevent source package builds
  the libevent library that includes everything in libevent_core and
  libevent_extra.
+
+Package: erlang-asn1
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 1042
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), libc6 (>= 2.14)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-asn1_1%3a21.3.8.13-1_amd64.deb
+Size: 754208
+MD5sum: f40b6e7a2da9f840d09bae5d2d4af97c
+SHA1: 72de30053f350f516e691c173676736269b602d8
+SHA256: 71c9e6355c5a801b990ab11e1b3e1fbbb893e52a127a45f6975e486e53acf244
+SHA512: 4f1a7d30939699b893ee80e234e36c62e7c7c68c6d033bb53dfa742279f06deff18dd28b2a3956e5e1f75c26e068a58454c6bfe1eea193ce0860654f46304b53
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP modules for ASN.1 support
+ The Asn1 application contains modules with compile-time and run-time
+ support for ASN.1 in Erlang/OTP.
 
 Package: qemu-system-x86
 Architecture: amd64
@@ -7915,6 +8204,30 @@ Description: Interactive high-level object-oriented language (version 3.5)
  Python is a high-level, interactive, object-oriented language. Its 3.5 version
  includes an extensive class library with lots of goodies for
  network programming, system administration, sounds and graphics.
+
+Package: erlang-parsetools
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 264
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-parsetools_1%3a21.3.8.13-1_amd64.deb
+Size: 184938
+MD5sum: f6fcd13b623472e315cc2213e6047e6d
+SHA1: a4742c7c4cb8e25a7edc29abddc45fe8187cd33c
+SHA256: 8e46dde1fd40679f2afe762fc02a6d14ef94feaeefc7a3e7dc182212625a4ef9
+SHA512: ce8a8be7ddbd4bcd345e05c3edbfeaaa171596c689dbc7889537ac7a243627c2d6826c08a08931fb278bac920a3d8a388b6c485c847bffe10cac733f83b35f8e
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP parsing tools
+ The Parsetools application contains utilities for parsing. Currently,
+ it includes yecc module. Yecc is an LALR-1 parser generator for Erlang,
+ similar to yacc. Yecc takes a BNF grammar definition as input, and
+ produces Erlang code for a parser as output.
 
 Package: libassuan0
 Architecture: amd64
@@ -9095,6 +9408,36 @@ Description: general-purpose scalable concurrent malloc(3) implementation
  Notable features are reduced lock contention, predictable low fragmentation,
  and introspection with heap profiling.
 
+Package: docker-ce-cli
+Architecture: amd64
+Version: 5:19.03.6~3-0~ubuntu-xenial
+Priority: optional
+Section: admin
+Source: docker-ce
+Maintainer: Docker <support@docker.com>
+Installed-Size: 178625
+Depends: libc6 (>= 2.4)
+Conflicts: docker (<< 1.5~), docker-engine, docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Breaks: docker-ce (<< 5:0)
+Replaces: docker-ce (<< 5:0)
+Filename: xenial/./docker-ce-cli_5%3a19.03.6~3-0~ubuntu-xenial_amd64.deb
+Size: 42489936
+MD5sum: 2c2b0305814002b860d08f7e9e664e9c
+SHA1: 77930c99b445db3c9ffd8b51a563a4b246d7241b
+SHA256: 32a9c1c453b8a5ac0ad3839140c0f97357c403fe1309837e4a15309cd55fe51a
+SHA512: c18d8285f295e7438b8d38631b2c41808c77ad79537c86063c9347389f56f416ccdcff1d7bd3c1ec0a546212f8de3043d804a7ab7a1f208592a31453c682ccf8
+Homepage: https://www.docker.com
+Description: Docker CLI: the open-source application container engine
+ Docker is a product for you to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest cloud compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
+
 Package: python
 Architecture: amd64
 Version: 2.7.12-1~16.04
@@ -9918,6 +10261,32 @@ Description: GNU Standard C++ Library v3 (development files)
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
 
+Package: erlang-syntax-tools
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 556
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-syntax-tools_1%3a21.3.8.13-1_amd64.deb
+Size: 379520
+MD5sum: 71a89a9612645fac686b8becd3566215
+SHA1: 949ef027dc58c31725f517d635574fa3101adcf9
+SHA256: 17057e50d7071fd94a1ffb8fde432fec6f272a175d96a8334825df5d4e3057a9
+SHA512: 7a528404cfe5a2cf27544cdfad79758b8ffd5f9a1ff79e1fe17441dad4d0a4982e56210c6ed31d64585df6114330febf69e5333abc8e1f22d12b77c6a83ee2b4
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP modules for handling abstract Erlang syntax trees
+ Syntax_Tools contains modules for handling abstract Erlang syntax
+ trees in a way that is compatible with the "parse trees" of the
+ STDLIB module erl_parse, together with utilities for reading source
+ files in unusual ways and pretty-printing syntax trees. Also it
+ includes a module merger and renamer called Igor, as well as an
+ automatic code-cleaner.
+
 Package: mongodb-org-server
 Architecture: amd64
 Version: 4.2.3
@@ -10207,6 +10576,38 @@ Description: Parser for the usbredir protocol (runtime)
  Usbredirparse is a library containing the parser for the usbredir protocol.
  This package contains the runtime library.
 
+Package: erlang-base-hipe
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 16036
+Provides: erlang-abi-17.0
+Depends: procps, adduser, libc6 (>= 2.15), libtinfo5 (>= 6), zlib1g (>= 1:1.2.8)
+Recommends: libsctp1 (>= 1.0.16+dfsg), erlang-crypto (= 1:21.3.8.13-1), erlang-syntax-tools (= 1:21.3.8.13-1)
+Suggests: erlang-tools (= 1:21.3.8.13-1), erlang, erlang-manpages, erlang-doc
+Conflicts: erlang (<< 1:21.3.8.13-1), erlang-base, erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-doc-html (<< 1:13.b.4), erlang-manpages (<= 1:11.b.1-2)
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base, erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-doc-html (<< 1:13.b.4), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-typer (<< 1:20.0+dfsg), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-base-hipe_1%3a21.3.8.13-1_amd64.deb
+Size: 9462718
+MD5sum: bd570cec5576e41a4d16e939f40e17c5
+SHA1: 44e65aade2e31a8f970766c6d64b427e92c9c788
+SHA256: 68c4c2fb74d4632630f1d74340d5b734c963490f3337b7b8ba170fb829326b1b
+SHA512: 61301ed1fb92756a460ec8038cdf0da4b03f51dab516ef95e5236aba36716520a6184dd9712a563b3adb848ab6270f5f7085814e6def3aa5285b5ca6f568eb17
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP HiPE enabled virtual machine and base applications
+ This package contains the Erlang/OTP runtime implementation, which is
+ configured and built with HiPE support (allows compiling to native code),
+ and minimal set of Erlang applications:
+  compiler - compiles Erlang code to byte-code;
+  erts - the Erlang runtime system application;
+  kernel - code necessary to run the Erlang runtime system itself;
+  ose - code for Enea OSE operating system;
+  sasl - the system architecture support libraries application;
+  stdlib - modules for manipulating lists, strings, files etc.
+
 Package: gsfonts-x11
 Architecture: all
 Version: 0.24
@@ -10423,6 +10824,28 @@ Homepage: http://www.oracle.com/technetwork/database/database-technologies/berke
 Description: Berkeley v5.3 Database Libraries [runtime]
  This is the runtime package for programs that use the v5.3 Berkeley
  database library.
+
+Package: erlang-public-key
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 909
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), erlang-asn1 (= 1:21.3.8.13-1), erlang-crypto (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-public-key_1%3a21.3.8.13-1_amd64.deb
+Size: 605990
+MD5sum: b6ac1ac69982a09dbe9b97307f877399
+SHA1: ac8216831c4ca3e64c63ab7f8d66a41b1b596723
+SHA256: 5c61a4434b8e1bee0a4687e51a2c2713caf6b983d11c372e0a95a9e864618922
+SHA512: 2a08253358781b6fac32be7982be0c3df15383d70b5496115a27f209a7c68ff0f6f5b0292750b81838e27720642b335fc48323380911169a6ca7f9e45bed5ab4
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP public key infrastructure
+ Provides functions to handle public key infrastructure from RFC 3280
+ (X.509 certificates) and some parts of the PKCS-standard.
 
 Package: libsystemd0
 Architecture: amd64
@@ -10773,6 +11196,29 @@ Description: userspace USB programming library
  This package contains what you need to run programs that use this
  library.
 
+Package: erlang-crypto
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 263
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1), libc6 (>= 2.14), libssl1.0.0 (>= 1.0.1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-crypto_1%3a21.3.8.13-1_amd64.deb
+Size: 147760
+MD5sum: 0a538f95e81c3602375f4ec0bdb36064
+SHA1: ebf98e90ed0f6054cb564b1071108e5be62545e4
+SHA256: 0f97d055f338827dfbaf302ec561ef7c7b918e7d5957fece51fc7d0f94859311
+SHA512: 30c9072fe3ad5ea867baf1dd219e409c077e133241088cf320ab44461963264bc39b6c8b5691574d1782b9ac93643d530aea9e511cdef3b56bebeb5c2df1a87c
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP cryptographic modules
+ The Crypto Application provides functions for computation of message
+ digests, encryption and decryption functions. It uses OpenSSL for
+ actual calculations.
+
 Package: debianutils
 Architecture: amd64
 Version: 4.7
@@ -10910,6 +11356,29 @@ Homepage: http://gcc.gnu.org/
 Description: GCC support library (development files)
  This package contains the headers and static library files necessary for
  building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: erlang-mnesia
+Architecture: amd64
+Version: 1:21.3.8.13-1
+Priority: optional
+Section: interpreters
+Source: erlang
+Maintainer: Debian Erlang Packagers <pkg-erlang-devel@lists.alioth.debian.org>
+Installed-Size: 1051
+Depends: erlang-base (= 1:21.3.8.13-1) | erlang-base-hipe (= 1:21.3.8.13-1)
+Suggests: erlang, erlang-manpages, erlang-doc
+Replaces: erlang (<< 1:21.3.8.13-1), erlang-base (<< 1:21.3.8.13-1), erlang-base-hipe (<< 1:21.3.8.13-1), erlang-dev (<< 1:21.3.8.13-1), erlang-doc (>> 1:21.3.8.13-999), erlang-doc (<< 1:21.3.8.13), erlang-examples (<< 1:21.3.8.13-1), erlang-manpages (<= 1:11.b.1-2), erlang-mode (<< 1:12.b.1-dfsg-2), erlang-nox (<< 1:21.3.8.13-1), erlang-src (<< 1:21.3.8.13-1), erlang-x11 (<< 1:21.3.8.13-1)
+Filename: xenial/./erlang-mnesia_1%3a21.3.8.13-1_amd64.deb
+Size: 756684
+MD5sum: 14aff1e05fffce30925c95ffce6321c8
+SHA1: 8f2c90ebb39bb1cbbb7abfd79e3095e4414f4bf7
+SHA256: ff08edef0b372307b0295eb61681fa5e486898c4ce8f37963530d88bebd77a7f
+SHA512: 55c90ea1ae88e9c8e36c6f9f3e827660ca7cbbb88dac885d8790604f3342e39f75dfdd8dd512ff7f4fe9d95015e5876eb61ed484bc153881382c5ec8cad8ac40
+Homepage: http://www.erlang.org/
+Description: Erlang/OTP distributed relational/object hybrid database
+ Mnesia is a distributed Database Management System (DBMS), appropriate
+ for telecommunications applications and other Erlang applications
+ which require continuous operation and exhibit soft real-time properties.
 
 Package: python-libxslt1
 Architecture: amd64
@@ -11052,6 +11521,35 @@ Description: MongoDB tools
  * Aggregation Framework & Native MapReduce
  .
  This package contains standard utilities for interacting with MongoDB.
+
+Package: docker-ce
+Architecture: amd64
+Version: 5:19.03.6~3-0~ubuntu-xenial
+Priority: optional
+Section: admin
+Maintainer: Docker <support@docker.com>
+Installed-Size: 106916
+Depends: docker-ce-cli, containerd.io (>= 1.2.2-3), iptables, libseccomp2 (>= 2.3.0), libc6 (>= 2.8), libdevmapper1.02.1 (>= 2:1.02.97), libsystemd0
+Recommends: aufs-tools, ca-certificates, cgroupfs-mount | cgroup-lite, git, pigz, xz-utils, libltdl7, apparmor
+Conflicts: docker (<< 1.5~), docker-engine, docker-engine-cs, docker.io, lxc-docker, lxc-docker-virtual-package
+Replaces: docker-engine
+Filename: xenial/./docker-ce_5%3a19.03.6~3-0~ubuntu-xenial_amd64.deb
+Size: 22815646
+MD5sum: af6debd73806d2e6a0de3a842aec52af
+SHA1: 623247eb71bf03efe8f810e80e5a2a17409f3b77
+SHA256: ca6781dc0811d41eb657785a7d0345e85b1c0b048c805745bcc94c7d76a90751
+SHA512: 0c62223f1ff54b0e6e27c8d5999e2df65dbfda808300244558e6634dc2ca38819427fde5884cfd15d9b72476eb69c67e819bd1c2ca952b25ac8cbd5c685f75d3
+Homepage: https://www.docker.com
+Description: Docker: the open-source application container engine
+ Docker is a product for you to build, ship and run any application as a
+ lightweight container
+ .
+ Docker containers are both hardware-agnostic and platform-agnostic. This means
+ they can run anywhere, from your laptop to the largest cloud compute instance and
+ everything in between - and they don't require you to use a particular
+ language, framework or packaging system. That makes them great building blocks
+ for deploying and scaling web apps, databases, and backend services without
+ depending on a particular stack or provider.
 
 Package: gcc-6-base
 Architecture: amd64
