@@ -2189,6 +2189,31 @@ Description: PNG library - runtime
  This package contains the runtime library files needed to run software
  using libpng.
 
+Package: masscan
+Architecture: amd64
+Version: 1.0.3-95-gb395f18~ds0-2
+Priority: optional
+Section: net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Alessio Treglia <alessio@debian.org>
+Installed-Size: 369
+Depends: libc6 (>= 2.15), libpcap0.8 (>= 0.9.8)
+Filename: xenial/./masscan_1.0.3-95-gb395f18~ds0-2_amd64.deb
+Size: 164454
+MD5sum: a28f4302865585402e5b5efe2dae1536
+SHA1: de5ef0abff06711b9392dbe37c4d3d7be5047de5
+SHA256: 8ef6f95f6b0748a583a446acd4b34457f770644fe2fc326b9d466b8e15f053c3
+SHA512: 1a74c9aae4f9dc38cec996e9cea3bd1884f1f13299330297515a14fe3ab04584a3a65e3e734bb9b7184388618570be5a14a7cca4ac6f41821c57fde65d0d253a
+Homepage: https://github.com/robertdavidgraham/masscan
+Description: TCP port scanner
+ MASSCAN is TCP port scanner which transmits SYN packets
+ asynchronously and produces results similar to nmap,
+ the most famous port scanner. Internally, it operates
+ more like scanrand, unicornscan, and ZMap, using
+ asynchronous transmission.
+ It's a flexible utility that allows arbitrary address and
+ port ranges.
+
 Package: mongodb-org
 Architecture: amd64
 Version: 3.4.20
@@ -11847,6 +11872,36 @@ Description: JBIGkit libraries
  document processing software.
  .
  This package contains the dynamically linked library.
+
+Package: libpcap0.8
+Architecture: amd64
+Version: 1.7.4-2ubuntu0.1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libpcap
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Romain Francoise <rfrancoise@debian.org>
+Installed-Size: 304
+Depends: libc6 (>= 2.14)
+Replaces: libpcap0.8-dev (<< 1.0.0-2)
+Filename: xenial/./libpcap0.8_1.7.4-2ubuntu0.1_amd64.deb
+Size: 116898
+MD5sum: b38d2927b878c024c6904b861f60634e
+SHA1: bb7d8434c6bc7bede2c544a1b6bd4d0ab136243f
+SHA256: 59336e09b77152800a15cb3da6a1fe819925f7522526f1b38990f32b19591a11
+SHA512: 6e20c9fbcf0b73705533b5ba1c9f2786c66ec02d76b3742bcd93790fc3ae931ad49ded1080d76416203ff18c53be1f3f950a26e68f23c61ad4a57ca7a1a32531
+Homepage: http://www.tcpdump.org/
+Description: system interface for user-level packet capture
+ libpcap (Packet CAPture) provides a portable framework for low-level
+ network monitoring.  Applications include network statistics collection,
+ security monitoring, network debugging, etc.
+ .
+ Since almost every system vendor provides a different interface for
+ packet capture, and since there are several tools that require this
+ functionality, the libpcap authors created this system-independent API
+ to ease in porting and to alleviate the need for several
+ system-dependent packet capture modules in each application.
 
 Package: erlang-percept
 Architecture: amd64
