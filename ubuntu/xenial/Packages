@@ -7022,6 +7022,30 @@ Description: GLib library of C routines
  .
  This package contains the shared libraries.
 
+Package: linux-libc-dev
+Architecture: amd64
+Version: 4.4.0-177.207
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Installed-Size: 4563
+Provides: linux-kernel-headers
+Conflicts: linux-kernel-headers
+Replaces: linux-kernel-headers
+Filename: xenial/./linux-libc-dev_4.4.0-177.207_amd64.deb
+Size: 850730
+MD5sum: 3959cea8f9dc26b21ebb78644fa51ae5
+SHA1: 2f318521086156b00273c10c0c2184026d039c20
+SHA256: b359e7d1a4d4c05fd1e126537b4ec891cf8fd32546f7feaefe594229f80dee91
+SHA512: 7371491008585b5b12b82d4383f8975c7c4fa7279fb9c4072a16f37e44b6b984e0231004494160019940e5a4a029f12eb0cc1665f4aecbba494e683cafaaef9b
+Description: Linux Kernel Headers for development
+ This package provides headers from the Linux kernel.  These headers
+ are used by the installed headers for GNU glibc and other system
+ libraries. They are NOT meant to be used to build third-party modules for
+ your kernel. Use linux-headers-* packages for that.
+
 Package: libcurl3-gnutls
 Architecture: amd64
 Version: 7.47.0-1ubuntu2.14
@@ -10534,6 +10558,34 @@ Description: HTTPS driver for LWP::UserAgent
  dependency on LWP::Protocol::https and will no longer need to know what
  underlying modules to install.
 
+Package: libpam0g-dev
+Architecture: amd64
+Version: 1.1.8-3.2ubuntu2.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: pam
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Steve Langasek <vorlon@debian.org>
+Installed-Size: 372
+Provides: libpam-dev
+Depends: libpam0g (= 1.1.8-3.2ubuntu2.1), libc6-dev | libc-dev
+Filename: xenial/./libpam0g-dev_1.1.8-3.2ubuntu2.1_amd64.deb
+Size: 109150
+MD5sum: 97302f6708d5e830143b47e7599a67e5
+SHA1: 5d00a04515c71ec14ef79db98cc8274391e54ea9
+SHA256: 75d145752010799159e1db52354de6f6c3a4d0c3fce5ff996245e216b2f7612e
+SHA512: 54fb59476c1637d8921fdcef8559a5a316473f0892fcc31bf17c6f3b425d5320ec19cf19bdb6a07c0327419d571855cf655e5b57d98466eeec247f64a191276d
+Homepage: http://pam.sourceforge.net/
+Description: Development files for PAM
+ Contains C header files and development libraries for libpam, the Pluggable
+ Authentication Modules, a library that enables the local system
+ administrator to choose how applications authenticate users.
+ .
+ PAM decouples applications from the authentication mechanism, making it
+ possible to upgrade the authentication system without recompiling or
+ rewriting the applications.
+
 Package: iptables
 Architecture: amd64
 Version: 1.6.0-2ubuntu3
@@ -11783,6 +11835,28 @@ SHA512: b9410523b231e3e37a4d0da2d00ca13db785800b4be515c731b7ea58d2523b1bcd98cc91
 Homepage: http://www.freedesktop.org/wiki/Software/systemd
 Description: systemd utility library
  The libsystemd0 library provides interfaces to various systemd components.
+
+Package: nginx
+Architecture: amd64
+Version: 1.18.0-1~xenial
+Priority: optional
+Section: httpd
+Maintainer: Sergey Budnevitch <sb@nginx.com>
+Installed-Size: 2960
+Provides: httpd
+Depends: init-system-helpers (>= 1.18~), libc6 (>= 2.17), libpcre3, libssl1.0.0 (>= 1.0.2~beta3), zlib1g (>= 1:1.1.4), lsb-base (>= 3.0-6), adduser
+Conflicts: nginx-common, nginx-core
+Replaces: nginx-common, nginx-core
+Filename: xenial/./nginx_1.18.0-1~xenial_amd64.deb
+Size: 845672
+MD5sum: b1aa0da39b9c8fff029a1390989a4e57
+SHA1: 3a9edaa29f5ee2df8fd8227c4cd1e13005bd0017
+SHA256: 2c2129266e11a3f6d9dca1741bee939feb7f18cdeadade69c2e88dcfe2c1ddf8
+SHA512: 13e833d68dee2b7a5f29cfc90ae2c00dd28b838200f83665f07e9b3a8415910515ba82c2649c409576bbe8d96b5e77b487b3103f6b74e1f5eb073af43d080105
+Homepage: http://nginx.org
+Description: high performance web server
+ nginx [engine x] is an HTTP and reverse proxy server, as well as
+ a mail proxy server.
 
 Package: libselinux1
 Architecture: amd64
