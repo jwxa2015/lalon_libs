@@ -12,7 +12,7 @@ do
   echo "download $libs"
   # download libs dependen. deep in 3
   i=0
-  while [ $i -lt 5 ] ;
+  while [ $i -lt 10 ] ;
   do
     let i++
     echo $i
