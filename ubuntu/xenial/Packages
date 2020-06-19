@@ -5669,29 +5669,6 @@ Description: X11 Xinerama extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXinerama
 
-Package: libsqlite3-0
-Architecture: amd64
-Version: 3.11.0-1ubuntu1.3
-Multi-Arch: same
-Priority: standard
-Section: libs
-Source: sqlite3
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Installed-Size: 952
-Depends: libc6 (>= 2.14)
-Filename: xenial/./libsqlite3-0_3.11.0-1ubuntu1.3_amd64.deb
-Size: 397236
-MD5sum: a7f887f2c64473b10d22c48400f48013
-SHA1: e21288d22541af8a52b43e7184bb4196c75613d5
-SHA256: db4ddb70836ff127cebeb6b56a9675e8a929f736b71e268b6290a0af950e7ff5
-SHA512: 1cc086b9772f2a883d4599018733f0d1a4f18b1790a4d77e62228c0d4f1ad894cf44ea7c98d1a0ac1506764794b9c8abc60dcc3d6e95537f34af674fcffeb42b
-Homepage: http://www.sqlite.org/
-Description: SQLite 3 shared library
- SQLite is a C library that implements an SQL database engine.
- Programs that link with the SQLite library can have SQL database
- access without running a separate RDBMS process.
-
 Package: netcat-openbsd
 Architecture: amd64
 Version: 1.105-7ubuntu1
@@ -9468,29 +9445,6 @@ Description: Erlang/OTP SNMP applications
  The OTP_Mibs application provides an SNMP management information base
  for Erlang nodes.
 
-Package: libsqlite3-0
-Architecture: amd64
-Version: 3.11.0-1ubuntu1.1
-Multi-Arch: same
-Priority: standard
-Section: libs
-Source: sqlite3
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Installed-Size: 947
-Depends: libc6 (>= 2.14)
-Filename: xenial/./libsqlite3-0_3.11.0-1ubuntu1.1_amd64.deb
-Size: 396232
-MD5sum: adc886d78f7eb8d08a534149fc687317
-SHA1: a5d27f4451d1e0a7dd88203313961451875c4e85
-SHA256: 7a2b6040fd0f1a310ef77e356dbfb73eb80ce508cc0ad285347ed576d02c257e
-SHA512: dac5d259d4c108d31d074e7fca407b7269f2e5e1574063788f4284cc71668e50f971cfca085969f7b94f524d9b1a6b47e8ea51aa267a2e4b0cf2bb7c1932b40a
-Homepage: http://www.sqlite.org/
-Description: SQLite 3 shared library
- SQLite is a C library that implements an SQL database engine.
- Programs that link with the SQLite library can have SQL database
- access without running a separate RDBMS process.
-
 Package: python-pip
 Architecture: all
 Version: 8.1.1-2ubuntu0.4
@@ -12781,29 +12735,6 @@ Description: Interactive high-level object-oriented language (version 3.5)
  includes an extensive class library with lots of goodies for
  network programming, system administration, sounds and graphics.
 
-Package: libsqlite3-0
-Architecture: amd64
-Version: 3.11.0-1ubuntu1.5
-Multi-Arch: same
-Priority: standard
-Section: libs
-Source: sqlite3
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Installed-Size: 952
-Depends: libc6 (>= 2.14)
-Filename: xenial/./libsqlite3-0_3.11.0-1ubuntu1.5_amd64.deb
-Size: 397884
-MD5sum: ed7808a5b3e6fb131e465b7f572b34f1
-SHA1: 7142946abe16267c5e2ceea52378b6301e121026
-SHA256: 5582283edf40f13f2bf23ebeb9021e6e7c07a21f7de13df046ae7a8e7fef56c0
-SHA512: 5661a5792dbd1ea63fca9f5ba702bbdb7ea63f2829a82db88f18055d4c8e616cc5a2f3197e800adbb8ee9e69810b1922947e216739fca95d34b4d74e6319edf2
-Homepage: http://www.sqlite.org/
-Description: SQLite 3 shared library
- SQLite is a C library that implements an SQL database engine.
- Programs that link with the SQLite library can have SQL database
- access without running a separate RDBMS process.
-
 Package: erlang-parsetools
 Architecture: amd64
 Version: 1:21.3.8.13-1
@@ -13136,32 +13067,6 @@ Description: IP lookup command line tools that use the GeoIP library
  .
  This package contains the command line utilities to resolve the IP numbers
  using the GeoIP library.
-
-Package: libsqlite3-dev
-Architecture: amd64
-Version: 3.11.0-1ubuntu1.3
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: sqlite3
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Installed-Size: 1668
-Depends: libsqlite3-0 (= 3.11.0-1ubuntu1.3), libc6-dev
-Suggests: sqlite3-doc
-Filename: xenial/./libsqlite3-dev_3.11.0-1ubuntu1.3_amd64.deb
-Size: 508902
-MD5sum: 076dfc025d49e9afa221303aa1820fa7
-SHA1: 1b105e7da70480e35ba39275a9c114fbef0d1dcd
-SHA256: d206df2d3439277dcf0a477837b4ceace0dbb5c312b1a00f5f1de6f0b4b20966
-SHA512: 0f8a49204ebda7977630090dfe9f0428a412361f8d31425c2cefe417fac254744edc2f934c990e3d025c796d49299780606c2bbbc3036cdb145e89013711bed6
-Homepage: http://www.sqlite.org/
-Description: SQLite 3 development files
- SQLite is a C library that implements an SQL database engine.
- Programs that link with the SQLite library can have SQL database
- access without running a separate RDBMS process.
- .
- This package contains the development files (headers, static libraries)
 
 Package: libmpx0
 Architecture: amd64
@@ -14509,32 +14414,6 @@ SHA256: 6b7409c61e8af2c2e74840644534b2af984582f5de56836212f78d18054a3d57
 SHA512: 412e5f40b531532fe3c851a07984e30035c938e77f2d6d8e660c15b92e483f53b94d33ce9b859eaed5a01f6c2bedb9c37b4b6f5e069b2109c3143a5d9f656e61
 Description: Independent JPEG Group's JPEG runtime library (dependency package)
  libjpeg8-dev dependency package, depending on libjpeg-turbo8-dev.
-
-Package: libsqlite3-dev
-Architecture: amd64
-Version: 3.11.0-1ubuntu1.1
-Multi-Arch: same
-Priority: optional
-Section: libdevel
-Source: sqlite3
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-Original-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
-Installed-Size: 1659
-Depends: libsqlite3-0 (= 3.11.0-1ubuntu1.1), libc6-dev
-Suggests: sqlite3-doc
-Filename: xenial/./libsqlite3-dev_3.11.0-1ubuntu1.1_amd64.deb
-Size: 508050
-MD5sum: 9c05adba703036f382756e80a5552f1c
-SHA1: a1c31c962308a4c87e46f1b6e95aef88e07092c7
-SHA256: d447358b0ffb5df86436eeb8054720bc53429392b3acf19b64b0147ec4d1737a
-SHA512: 69d6aa4450fdf22e452f2aa42c8097a4940daec59e0bb53b6397c708a9ebfbd769e5d41a2a4d479216a23b57920a01c39afdbd8844363342ada00613d02fe375
-Homepage: http://www.sqlite.org/
-Description: SQLite 3 development files
- SQLite is a C library that implements an SQL database engine.
- Programs that link with the SQLite library can have SQL database
- access without running a separate RDBMS process.
- .
- This package contains the development files (headers, static libraries)
 
 Package: rabbitmq-server
 Architecture: all
